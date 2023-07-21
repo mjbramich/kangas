@@ -24,12 +24,15 @@ module.exports = {
 		},
 		extend: {
 			backgroundImage: {
-				'in-action': "url('../images/inAction.png')",
+				quote: "url('./dist/images/quotes.png')",
 			},
 			height: {
 				'navbar-height': '6rem',
 			},
 		},
 	},
-	plugins: [require('@tailwindcss/aspect-ratio')],
+	plugins: [
+		require('@tailwindcss/aspect-ratio'),
+		require('@tailwindcss/forms'),
+	],
 };
