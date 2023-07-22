@@ -8,8 +8,10 @@ module.exports = {
 			white: '#f1f6f9',
 			gray: '#e2edf3',
 			dark: '#04101c',
+			'dark-gray': '#d1d5db',
 			text: 'rgba(0,0,0,0.6)',
 			overlay: '#44403c',
+			richblack: '#111827',
 		},
 		screens: {
 			mobile: '390px',

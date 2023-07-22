@@ -1,33 +1,38 @@
-const menuButton = document.getElementById('menu-button');
-const dropdownMenu = document.getElementById('dropdown-menu');
+// Get the file input and the parent container
+const fileInput = document.getElementById('file-input');
+const parentContainer = document.getElementById('file-input-container');
 
-let isMenuOpen = false;
+// Handle key press events on the file attachment input
+parentContainer.addEventListener('keydown', (event) => {
+	if (event.key === 'Enter') {
+		fileInput.click();
+	}
+});
 
-menuButton.addEventListener('click', () => {
-	if (isMenuOpen) {
-		closeDropdown();
+const privacyToggle = document.querySelector('#privacy-toggle-btn');
+const privacySlider = document.querySelector('#privacy-slider');
+
+console.log(privacyToggle);
+
+let privacyEnabled = false;
+
+privacyToggle.onclick = () => {
+	privacyEnabled = !privacyEnabled;
+	console.log(privacyToggle);
+	if (privacyEnabled) {
+		privacyToggle.classList.add('bg-blue');
+		privacyToggle.classList.remove('bg-dark-gray');
+		privacySlider.classList.add('translate-x-3.5');
+		privacySlider.classList.remove('translate-x-0');
 	} else {
-		openDropdown();
+		privacyToggle.classList.remove('bg-blue');
+		privacyToggle.classList.add('bg-dark-gray');
+		privacySlider.classList.remove('translate-x-3.5');
+		privacySlider.classList.add('translate-x-0');
 	}
-});
+};
 
-function openDropdown() {
-	dropdownMenu.classList.remove('hidden');
-	dropdownMenu.classList.add('scale-100', 'opacity-100');
-	isMenuOpen = true;
-}
-
-function closeDropdown() {
-	dropdownMenu.classList.remove('scale-100', 'opacity-100');
-	dropdownMenu.classList.add('hidden', 'scale-95', 'opacity-0');
-	isMenuOpen = false;
-}
-
-document.body.addEventListener('click', (event) => {
-	if (
-		!menuButton.contains(event.target) &&
-		!dropdownMenu.contains(event.target)
-	) {
-		closeDropdown();
-	}
-});
+// Update year in the footer
+const yearText = document.getElementById('get-year');
+const currentYear = new Date().getFullYear();
+yearText.innerText = `${currentYear}`;
