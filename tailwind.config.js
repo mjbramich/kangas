@@ -30,6 +30,7 @@ module.exports = {
 			},
 			height: {
 				'navbar-height': '6rem',
+				'mb-menu-height': 'calc(100vh - 6rem)',
 			},
 		},
 	},
