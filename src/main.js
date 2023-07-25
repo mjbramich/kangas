@@ -38,38 +38,73 @@ const currentYear = new Date().getFullYear();
 yearText.innerText = `${currentYear}`;
 
 // Hamburger menu
+const createMobileMenu = () => {
+	let isOpen = false;
+	const mobileMenu = document.getElementById('mobile-menu');
+	const mobileMenuList = document.getElementById('mobile-menu-list');
+	const body = document.body;
 
-const navbar = document.getElementById('navbar');
-const navBtn = document.getElementById('navBtn');
-const navOpenIcon = document.getElementById('navOpenBtn');
-const navCloseIcon = document.getElementById('navCloseBtn');
-const mobileMenu = document.getElementById('mobile-menu');
-const mainContent = document.getElementById('main-content');
-
-let menuOpen = false;
-
-navBtn.onclick = (e) => {
-	menuOpen = !menuOpen;
-	if (menuOpen) {
-		navOpenBtn.classList.add('hidden');
-		navCloseBtn.classList.remove('hidden');
-		mobileMenu.classList.remove('hidden');
-		mainContent.classList.add('hidden');
-	} else {
-		navCloseBtn.classList.add('hidden');
-		navOpenBtn.classList.remove('hidden');
-		mobileMenu.classList.add('hidden');
-		mainContent.classList.remove('hidden');
+	function toggleMobileMenu() {
+		isOpen = !isOpen;
+		if (isOpen) {
+			openMobileMenu();
+		} else {
+			closeMobileMenu();
+		}
 	}
+
+	function openMobileMenu() {
+		mobileMenu.classList.add('w-full');
+		mobileMenuList.classList.add('opacity-100');
+		body.classList.add('overflow-hidden');
+
+		// Add event listeners for focus trapping when the mobile menu is opened
+		mobileMenuList.addEventListener('focus', () => {
+			const mobileMenuLinks = Array.from(
+				mobileMenu.querySelectorAll('#mobile-menu-list a')
+			);
+			const firstMenuLink = mobileMenuLinks[0];
+			const lastMenuLink = mobileMenuLinks[mobileMenuLinks.length - 1];
+		});
+		mobileMenuList.addEventListener('keydown', handleFocusTrap);
+	}
+
+	function closeMobileMenu() {
+		mobileMenu.classList.remove('w-full');
+		body.classList.remove('overflow-hidden');
+		mobileMenuList.classList.remove('opacity-100');
+
+		// Remove event listeners when the mobile menu is closed
+		mobileMenuList.removeEventListener('focus', () => {
+			firstMenuLink = mobileMenuList.querySelector('a:first-child');
+			lastMenuLink = mobileMenuList.querySelector('a:last-child');
+		});
+		mobileMenuList.removeEventListener('keydown', handleFocusTrap);
+	}
+
+	const handleFocusTrap = (event) => {
+		if (event.key === 'Tab') {
+			if (event.shiftKey) {
+				// Shift + Tab: Go to the previous link in the mobile menu
+				if (document.activeElement === firstMenuLink) {
+					lastMenuLink.focus();
+					event.preventDefault();
+				}
+			} else {
+				// Tab: Go to the next link in the mobile menu
+				if (document.activeElement === lastMenuLink) {
+					firstMenuLink.focus();
+					event.preventDefault();
+				}
+			}
+		}
+	};
+
+	return {
+		toggleMobileMenu,
+	};
 };
 
-function adjustNavbarHeight() {
-	if (window.innerWidth >= 768) {
-		// Change this value to match your mobile screen size breakpoint
-		mainContent.classList.remove('hidden');
-	} else if (menuOpen) {
-		mainContent.classList.add('hidden');
-	}
-}
-
-window.addEventListener('resize', adjustNavbarHeight);
+const mobileMenuInstance = createMobileMenu();
+const navBtn = document.getElementById('navBtn');
+navBtn.addEventListener('click', () => mobileMenuInstance.toggleMobileMenu());

@@ -14,7 +14,7 @@
     <script src="main.js" defer></script>
 </head>
 
-<body class="">
+<body class="lg:overflow-auto">
     <!-- NAVBAR -->
 
     <nav class="drop-shadow-xl bg-blue" id="navbar" role="navigation" aria-label="main navigation">
@@ -26,8 +26,8 @@
                     </a>
                 </div>
 
-                <div class="hidden md:flex" id="navbar-dropdown">
-                    <ul class="md:flex gap-4 items-center uppercase text-white font-semibold">
+                <div class="hidden lg:flex" id="navbar-dropdown">
+                    <ul class="lg:flex gap-4 items-center uppercase  text-white font-semibold">
                         <li><a class="transition duration-200 ease-in hover:bg-white hover:text-blue rounded p-2"
                                 href="#">About</a></li>
                         <li>
@@ -48,7 +48,7 @@
                         #">Call us
                         </a></button>
 
-                    <div class="flex -mr-2 md:hidden">
+                    <div class="flex -mr-2 lg:hidden">
                         <button id="navBtn"
                             class="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                             aria-controls="mobile-menu" aria-expanded="false">
@@ -72,21 +72,50 @@
                 </div>
             </div>
         </div>
-        <div class="hidden md:hidden transition-transform duration-300 ease-in-out" id="mobile-menu">
-            <div
-                class="space-y-1 px-2 pb-3 pt-6 h-mb-menu-height flex flex-col items-center justify-start text-lg uppercase">
+        <!--Hamburger Menu-->
+        <div class=" will-change-transform ease-in-out duration-1000 overflow-x-hidden fixed  bg-richblack opacity-90 overflow-y-hidden text-white w-0  lg:hidden"
+            id="mobile-menu">
+            <div class="space-y-1 px-2 pb-3 pt-6 h-mb-menu-height flex flex-col items-center justify-center text-2xl uppercase opacity-0 transition-opacity duration-1000"
+                id="mobile-menu-list">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-gray-900 block rounded-md px-3 py-2 font-medium" aria-current="page">Home</a>
+                <a href="#" class="bg-gray-900 block rounded-md px-3 py-2 font-medium transition"
+                    aria-current="page">Home</a>
                 <a href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium ">About</a>
+                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium  transition">About</a>
                 <a href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium ">Services</a>
+                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition">Services</a>
                 <a href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium ">Gallery</a>
+                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition">Gallery</a>
                 <a href="#"
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium ">Contact</a>
+                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white  duration-200 ease-in">Contact</a>
+                <a href="#"
+                    class="  md:hidden hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition truncate">Call
+                    Us</a>
 
-                <img src="./images/logoHead.png" class="w-48" alt="">
+
+
+
+                <p class="hover:bg-gray-700 hover:text-white block rounded-md px-3 pt-8 truncate">Follow us</p>
+
+
+                <div class="px-3 py-2 flex items-center justify-between gap-8">
+
+                    <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-700">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-10 h-10" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+
+                    <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-700">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+
+                </div>
 
             </div>
         </div>
@@ -654,7 +683,7 @@
 
         <footer class="bg-blue">
 
-            <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8 text-white">
                 <div class="pt-16 pb-4">
                     <div class="grid grid-cols-1 gap-x-8 gap-y-8 lg:grid-cols-2">
                         <div class="max-w-sm">
