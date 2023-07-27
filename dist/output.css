@@ -842,14 +842,6 @@ select{
   top: 50%;
 }
 
-.top-full{
-  top: 100%;
-}
-
-.right-full{
-  right: 100%;
-}
-
 .isolate{
   isolation: isolate;
 }
@@ -1008,10 +1000,6 @@ select{
   height: calc(100vh - 6rem);
 }
 
-.h-screen{
-  height: 100vh;
-}
-
 .max-h-\[93vh\]{
   max-height: 93vh;
 }
@@ -1107,22 +1095,6 @@ select{
 
 .shrink-0{
   flex-shrink: 0;
-}
-
-.origin-center{
-  transform-origin: center;
-}
-
-.origin-left{
-  transform-origin: left;
-}
-
-.origin-top{
-  transform-origin: top;
-}
-
-.origin-top-left{
-  transform-origin: top left;
 }
 
 .-translate-y-1\/2{
@@ -1656,26 +1628,12 @@ select{
   transition-duration: 150ms;
 }
 
-.transition-transform{
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .duration-1000{
   transition-duration: 1000ms;
 }
 
 .duration-200{
   transition-duration: 200ms;
-}
-
-.duration-500{
-  transition-duration: 500ms;
-}
-
-.duration-700{
-  transition-duration: 700ms;
 }
 
 .ease-in{
