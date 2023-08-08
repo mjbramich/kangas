@@ -118,7 +118,7 @@ const createPrivacyToggle = () => {
 	};
 };
 
-if (document.getElementById('#privacy-Toggle-Btn')) {
+if (document.getElementById('privacy-toggle-btn')) {
 	createPrivacyToggle();
 }
 
