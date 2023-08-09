@@ -118,12 +118,11 @@
 
                 </div>
 
+
             </div>
         </div>
     </nav>
 
-
-
     <!--
   This example requires some changes to your config:
   
@@ -139,62 +138,26 @@
   ```
 -->
 
-    <!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
-    <!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
-    <div class="relative isolate bg-white">
-        <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
-            <div class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
-                <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-                    <div
-                        class="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2">
-                        <svg class="absolute inset-0 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
-                            aria-hidden="true">
-                            <defs>
-                                <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="100%"
-                                    y="-1" patternUnits="userSpaceOnUse">
-                                    <path d="M130 200V.5M.5 .5H200" fill="none" />
-                                </pattern>
-                            </defs>
-                            <rect width="100%" height="100%" stroke-width="0" fill="white" />
-                            <svg x="100%" y="-1" class="overflow-visible fill-gray-50">
-                                <path d="M-470.5 0h201v201h-201Z" stroke-width="0" />
-                            </svg>
-                            <rect width="100%" height="100%" stroke-width="0"
-                                fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-                        </svg>
-                    </div>
-                    <h2 class="text-3xl font-bold tracking-tight text-gray-900">Get in touch</h2>
-                    <p class="mt-6 text-lg leading-8 text-gray-600">Proin volutpat consequat porttitor cras nullam
-                        gravida at. Orci molestie a eu arcu. Sed ut tincidunt integer elementum id sem. Arcu sed
-                        malesuada et magna.</p>
-                    <dl class="mt-10 space-y-4 text-base leading-7 text-gray-600">
-                        <div class="flex gap-x-4">
+
+    <!-- Existing -->
+    <div class="overflow-hidden relative py-16 bg-white">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <h2 class="text-base font-semibold leading-7  uppercase max-w-2xl mx-auto lg:mx-0 mb-2">
+                Contact
+                Us
+            </h2>
+            <div
+                class="mx-auto grid max-w-2xl auto-cols-min grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 ">
+                <div class="lg:pr-8 lg:max-w-lg relative flex flex-col justify-between ">
+                    <p class=" text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Get in touch
+                    </p>
+                    <p class="mt-6 text-lg leading-8 text-gray-600                     md:max-w-md">If you're ready
+                        to elevate your
+                        property's
+                        appeal and safeguard its value, don't hesitate to get in touch with us.</p>
+
+                    <dl class="mt-6 space-y-4 text-base leading-7 text-gray-600">
+                        <div class="flex gap-x-4 items-center">
                             <dt class="flex-none">
                                 <span class="sr-only">Address</span>
                                 <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -203,9 +166,9 @@
                                         d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
                                 </svg>
                             </dt>
-                            <dd>545 Mavis Island<br>Chicago, IL 99191</dd>
+                            <dd>93 Percival Street<br>Latrobe, TAS 7310</dd>
                         </div>
-                        <div class="flex gap-x-4">
+                        <div class="flex gap-x-4 items-center">
                             <dt class="flex-none">
                                 <span class="sr-only">Telephone</span>
                                 <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -214,9 +177,10 @@
                                         d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                                 </svg>
                             </dt>
-                            <dd><a class="hover:text-gray-900" href="tel:+1 (555) 234-5678">+1 (555) 234-5678</a></dd>
+                            <dd><a class="hover:text-gray-900" href="tel:+1 (555) 234-5678">+1 (555) 234-5678</a>
+                            </dd>
                         </div>
-                        <div class="flex gap-x-4">
+                        <div class="flex gap-x-4 items-center">
                             <dt class="flex-none">
                                 <span class="sr-only">Email</span>
                                 <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -228,182 +192,54 @@
                             <dd><a class="hover:text-gray-900" href="mailto:hello@example.com">hello@example.com</a>
                             </dd>
                         </div>
+                        <div class="flex gap-x-4 items-center">
+                            <dt class="flex-none">
+                                <span class="sr-only">ABN</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" />
+                                </svg>
+
+                            </dt>
+                            <dd><a class="hover:text-gray-900" href="mailto:hello@example.com">ABN - 12345678</a>
+                            </dd>
+                        </div>
                     </dl>
-                </div>
-            </div>
 
-            <form action="#" method="POST" class="mx-auto mt-16 max-w-2xl ">
-                <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 items-center">
-                    <div>
-                        <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First
-                            name</label>
-                        <div class="mt-2.5">
-                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" required
-                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                        </div>
-                    </div>
-                    <div>
-                        <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last
-                            name</label>
-                        <div class="mt-2.5">
-                            <input type="text" name="last-name" id="last-name" autocomplete="family-name" required
-                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                        </div>
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
-                        <div class="mt-2.5">
-                            <input type="email" name="email" id="email" autocomplete="email" required
-                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                        </div>
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label for="address" class="block text-sm font-semibold leading-6 text-gray-900">Address</label>
-                        <div class="mt-2.5">
-                            <input type="text" name="address" id="address" autocomplete="street-address" required
-                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                        </div>
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Phone
-                            number</label>
-                        <div class="relative mt-2.5">
-                            <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" required
-                                class="block w-full rounded-md border-0  px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                        </div>
-                    </div>
-
-
-                    <div class="sm:col-span-2">
-                        <label for="phone-number"
-                            class="block text-sm font-semibold leading-6 text-gray-900">Attachments</label>
-
-                        <label
-                            class="w-full mt-2.5 px-3.5 py-2 flex  justify-center items-center gap-4 text-kangadarkblue   form-textarea rounded-md shadow-sm tracking-wide uppercase border-0 border-kangablue cursor-pointer hover:bg-kangablue hover:text-white ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600"
-                            tabindex="0" id="file-input-container">
-                            <span class="font-semibold text-xs sm:text-sm ">Select a
-                                file</span>
-                            <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
+                    <div class="my-6 flex items-center justify-start gap-2">
+                        <span class="font-semibold">Follow Us:</span>
+                        <a class="text-gray-500 cursor-pointer hover:text-gray-700">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-8 h-8" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                             </svg>
+                        </a>
 
-                            <input type='file' class="sr-only" id="file-input" />
-                        </label>
-                    </div>
-
-
-
-                    <div class="sm:col-span-2">
-                        <h6 class="block text-sm font-semibold leading-6 text-gray-900">What service/s are
-                            you interested in?</h6>
-
-                        <div class="sm:flex gap-x-4 gap-y-2 flex-wrap capitalize ">
-                            <div class="flex items-center ">
-                                <input id="service1" name="pressure-washing" value="white" type="checkbox"
-                                    class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                                <label for="service1" class="ml-2 min-w-0 flex-1 text-gray-500 ">Pressure
-                                    Washing</label>
-                            </div>
-
-                            <div class="flex items-center">
-                                <input id="service2" name="soft-washing" value="white" type="checkbox"
-                                    class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                                <label for="service2" class="ml-2 min-w-0 flex-1 text-gray-500 ">Soft
-                                    Washing</label>
-                            </div>
-
-                            <div class="flex items-center">
-                                <input id="service3" name="solar-panel-cleaning" value="white" type="checkbox"
-                                    class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                                <label for="service3" class="ml-2 min-w-0 flex-1 text-gray-500 ">Solar
-                                    Panel
-                                    Cleaning</label>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="sm:col-span-2">
-                        <label for="description" class="block text-sm font-semibold leading-6 text-gray-900">Job
-                            Description</label>
-                        <div class="mt-2.5">
-                            <textarea name="description" id="description" rows="4" required
-                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="flex gap-x-4 sm:col-span-2">
-                        <div class="flex h-6 items-center">
-                            <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
-                            <button type="button" id="privacy-toggle-btn"
-                                class="bg-dark-gray flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                role="switch" aria-checked="false" aria-labelledby="switch-1-label">
-                                <span class="sr-only">Agree to policies</span>
-                                <!-- Enabled: "translate-x-3.5", Not Enabled: "translate-x-0" -->
-                                <span aria-hidden="true" id="privacy-slider"
-                                    class="translate-x-0 h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"></span>
-                            </button>
-                        </div>
-                        <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
-                            By selecting this, you agree to our
-                            <a href="#" class="font-semibold text-indigo-600">Privacy Policy</a>.
-                        </label>
-                    </div>
-
-
-                </div>
-
-                <div class="mt-10">
-                    <button
-                        class="block w-full rounded-md bg-kangablue px-3.5 py-2.5 text-center text-sm uppercase font-semibold text-white shadow-sm hover:bg-kangadarkblue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-kangadarkblue">Submit</button>
-                </div>
-
-            </form>
-
-        </div>
-    </div>
-
-
-
-
-    <!-- Existing -->
-    <div class="overflow-hidden h-mb-menu-height py-16">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 class="text-base font-semibold leading-7 text-indigo-600 uppercase max-w-2xl mx-auto lg:mx-0">
-                Contact
-                Us
-            </h2>
-            <div
-                class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 ">
-                <div class="lg:pr-8 ">
-
-                    <div class="lg:max-w-lg">
-                        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Get in touch
-                        </p>
-                        <p class="mt-6 text-lg leading-8 text-gray-600">If you're ready to elevate your property's
-                            appeal and safeguard its value, don't hesitate to get in touch with us.
-
+                        <a class="text-gray-500 cursor-pointer hover:text-gray-700">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                            </svg>
+                        </a>
 
 
                     </div>
+
+                    <div class="relative pb-[75%] h-0 overflow-auto bottom-0 ">
+                        <iframe width="600" height="450" class="absolute top-0 left-0 w-full h-full" style="border:0"
+                            loading="lazy" allowfullscreen
+                            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJebOSm7s2eqoRv2gPDU_41mI&key=AIzaSyBQ-kjPYvxHIKUh8SYGORLHt-UFkqqxeMY"></iframe>
+                    </div>
+
+
                 </div>
 
                 <div class="">
+                    <h5>Free quotes </h5>
 
-                    <h2 class="text-3xl font-bold tracking-tight text-center text-gray-900 sm:text-4xl mt-2">Get
-                        your
-                        free
-                        quote today!
-                    </h2>
-
-                    <form action="#" method="POST" class="mx-auto mt-16 max-w-2xl ">
+                    <form action="#" method="POST" class="mx-auto mt-6 lg:mt-0 max-w-2xl lg:max-w-lg">
                         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 items-center">
                             <div>
                                 <label for="first-name"
