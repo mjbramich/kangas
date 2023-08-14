@@ -105,13 +105,13 @@ const createPrivacyToggle = () => {
 		privacyEnabled = !privacyEnabled;
 		console.log(privacyToggle);
 		if (privacyEnabled) {
-			privacyToggle.classList.add('bg-blue');
-			privacyToggle.classList.remove('bg-dark-gray');
+			privacyToggle.classList.add('bg-kangablue');
+			privacyToggle.classList.remove('bg-kangagray');
 			privacySlider.classList.add('translate-x-3.5');
 			privacySlider.classList.remove('translate-x-0');
 		} else {
-			privacyToggle.classList.remove('bg-blue');
-			privacyToggle.classList.add('bg-dark-gray');
+			privacyToggle.classList.remove('bg-kangablue');
+			privacyToggle.classList.add('bg-kangagray');
 			privacySlider.classList.remove('translate-x-3.5');
 			privacySlider.classList.add('translate-x-0');
 		}
