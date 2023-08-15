@@ -107,12 +107,12 @@ const createPrivacyToggle = () => {
 		privacyEnabled = !privacyEnabled;
 		console.log(privacyToggle);
 		if (privacyEnabled) {
-			privacyToggle.classList.add('bg-kangablue');
+			privacyToggle.classList.add('bg-kangakangablue');
 			privacyToggle.classList.remove('bg-kangagray');
 			privacySlider.classList.add('translate-x-3.5');
 			privacySlider.classList.remove('translate-x-0');
 		} else {
-			privacyToggle.classList.remove('bg-kangablue');
+			privacyToggle.classList.remove('bg-kangakangablue');
 			privacyToggle.classList.add('bg-kangagray');
 			privacySlider.classList.remove('translate-x-3.5');
 			privacySlider.classList.add('translate-x-0');
@@ -173,4 +173,6 @@ const faqToggle = () => {
 	}
 };
 
-faqToggle();
+if (document.getElementById('faqList')) {
+	faqToggle();
+}
