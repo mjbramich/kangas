@@ -160,7 +160,7 @@
 
         <!--About US-->
 
-        <div class="overflow-hidden bg-gray py-24 sm:py-32">
+        <div class="overflow-hidden bg-kangawhite py-24 sm:py-32">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div
                     class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center">
@@ -197,7 +197,7 @@
 
         <!-- Why -->
 
-        <div class="overflow-hidden bg-white py-24 sm:py-32">
+        <div class="overflow-hidden bg-kangagray py-24 sm:py-32">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div
                     class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center ">
@@ -277,7 +277,7 @@
 
         <!--Services-->
 
-        <section class="overflow-hidden bg-gray py-24 sm:py-32">
+        <section class="overflow-hidden bg-kangawhite py-24 sm:py-32">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8  lg:mx-0 lg:max-w-none items-center">
 
@@ -363,7 +363,7 @@
         <!--CTA-->
 
 
-        <div class="bg-kangablue sm:bg-white">
+        <div class="bg-kangablue sm:bg-kangagray">
             <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
                 <div
                     class="relative isolate overflow-hidden bg-kangablue px-6 pt-16 sm:shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0 max-h-max">
@@ -533,7 +533,7 @@
   }
   ```
 -->
-        <div class=" bg-white px-6 py-24 sm:py-32 lg:px-8">
+        <div class=" bg-kangagray px-6 py-24 sm:py-32 lg:px-8">
 
             <div class="mx-auto max-w-2xl text-center">
                 <h2 class="text-base font-semibold leading-7 text-indigo-600 uppercase">Contact Us</h2>
@@ -606,27 +606,47 @@
                         <h6 class="block text-sm font-semibold leading-6 text-gray-900">What service/s are
                             you interested in?</h6>
 
-                        <div class="flex flex-col sm:flex-row gap-x-4 gap-y-2 flex-wrap capitalize mt-2.5">
-                            <div class="flex items-center">
-                                <input id="service1" name="pressure-washing" value="white" type="checkbox"
-                                    class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                                <label for="service1" class="ml-2 min-w-0 flex-1 text-gray-500 ">Pressure
-                                    Washing</label>
+                        <div class="sm:flex gap-x-4 gap-y-2 flex-wrap capitalize mt-2.5">
+                            <div class="flex items-center ">
+                                <input id="service1" name="roof-cleaning" value="white" type="checkbox"
+                                    class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
+                                <label for="service1" class="ml-2 min-w-0 flex-1 text-gray-500 ">Roof
+                                    Cleaning</label>
                             </div>
 
                             <div class="flex items-center">
-                                <input id="service2" name="soft-washing" value="white" type="checkbox"
-                                    class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                                <label for="service2" class="ml-2 min-w-0 flex-1 text-gray-500 ">Soft
-                                    Washing</label>
+                                <input id="service2" name="house-cleaning" value="white" type="checkbox"
+                                    class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
+                                <label for="service2" class="ml-2 min-w-0 flex-1 text-gray-500 ">House
+                                    Cleaning</label>
                             </div>
 
                             <div class="flex items-center">
-                                <input id="service3" name="solar-panel-cleaning" value="white" type="checkbox"
-                                    class="h-5 w-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
-                                <label for="service3" class="ml-2 min-w-0 flex-1 text-gray-500 ">Solar
+                                <input id="service3" name="driveway cleaning" value="white" type="checkbox"
+                                    class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
+                                <label for="service3" class="ml-2 min-w-0 flex-1 text-gray-500 ">Driveway
+                                    Cleaning</label>
+                            </div>
+
+                            <div class="flex items-center">
+                                <input id="service4" name="gutter-cleaning" value="white" type="checkbox"
+                                    class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
+                                <label for="service4" class="ml-2 min-w-0 flex-1 text-gray-500 ">Gutter
+                                    Cleaning</label>
+                            </div>
+
+                            <div class="flex items-center">
+                                <input id="service5" name="solarpanel-cleaning" value="white" type="checkbox"
+                                    class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
+                                <label for="service5" class="ml-2 min-w-0 flex-1 text-gray-500 ">Solar
                                     Panel
                                     Cleaning</label>
+                            </div>
+
+                            <div class="flex items-center">
+                                <input id="service6" name="other" value="white" type="checkbox"
+                                    class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
+                                <label for="service6" class="ml-2 min-w-0 flex-1 text-gray-500 ">Other</label>
                             </div>
 
                         </div>
