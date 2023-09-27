@@ -1398,6 +1398,11 @@ select{
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-kangawhite{
+  --tw-border-opacity: 1;
+  border-color: rgb(241 246 249 / var(--tw-border-opacity));
+}
+
 .bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -1541,6 +1546,11 @@ select{
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-32{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .pb-3{
@@ -1949,6 +1959,16 @@ select{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-kangawhite:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 246 249 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-kangadarkblue:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 26 64 / var(--tw-bg-opacity));
+}
+
 .hover\:text-dark:hover{
   --tw-text-opacity: 1;
   color: rgb(4 16 28 / var(--tw-text-opacity));
@@ -1969,6 +1989,11 @@ select{
   color: rgb(12 125 187 / var(--tw-text-opacity));
 }
 
+.hover\:text-kangagray:hover{
+  --tw-text-opacity: 1;
+  color: rgb(226 237 243 / var(--tw-text-opacity));
+}
+
 .hover\:text-slate-400:hover{
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
@@ -1977,6 +2002,16 @@ select{
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-kangawhite:hover{
+  --tw-text-opacity: 1;
+  color: rgb(241 246 249 / var(--tw-text-opacity));
+}
+
+.hover\:text-kangadarkblue:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 26 64 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus{
@@ -2184,6 +2219,10 @@ select{
     max-width: none;
   }
 
+  .md\:max-w-\[28rem\]{
+    max-width: 28rem;
+  }
+
   .md\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -2278,6 +2317,10 @@ select{
     display: none;
   }
 
+  .lg\:h-\[400px\]{
+    height: 400px;
+  }
+
   .lg\:max-w-4xl{
     max-width: 56rem;
   }
@@ -2292,6 +2335,10 @@ select{
 
   .lg\:max-w-screen-xl{
     max-width: 1280px;
+  }
+
+  .lg\:max-w-\[28rem\]{
+    max-width: 28rem;
   }
 
   .lg\:flex-auto{
@@ -2365,6 +2412,15 @@ select{
     overflow: auto;
   }
 
+  .lg\:rounded-3xl{
+    border-radius: 1.5rem;
+  }
+
+  .lg\:bg-kangagray{
+    --tw-bg-opacity: 1;
+    background-color: rgb(226 237 243 / var(--tw-bg-opacity));
+  }
+
   .lg\:px-0{
     padding-left: 0px;
     padding-right: 0px;
@@ -2393,6 +2449,11 @@ select{
   .lg\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .lg\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .lg\:pl-8{
@@ -2470,6 +2531,11 @@ select{
   .xl\:py-60{
     padding-top: 15rem;
     padding-bottom: 15rem;
+  }
+
+  .xl\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .xl\:text-3xl{
