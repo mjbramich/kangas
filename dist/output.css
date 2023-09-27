@@ -702,12 +702,56 @@ select{
   --tw-backdrop-sepia:  ;
 }
 
+.container{
+  width: 100%;
+}
+
+@media (min-width: 390px){
+  .container{
+    max-width: 390px;
+  }
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
 .aspect-h-1{
   --tw-aspect-h: 1;
 }
 
 .aspect-h-7{
   --tw-aspect-h: 7;
+}
+
+.aspect-h-9{
+  --tw-aspect-h: 9;
 }
 
 .aspect-w-1{
@@ -733,6 +777,22 @@ select{
 }
 
 .aspect-w-10 > *{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.aspect-w-16{
+  position: relative;
+  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  --tw-aspect-w: 16;
+}
+
+.aspect-w-16 > *{
   position: absolute;
   height: 100%;
   width: 100%;
@@ -870,6 +930,10 @@ select{
   order: 2;
 }
 
+.col-span-2{
+  grid-column: span 2 / span 2;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -882,10 +946,6 @@ select{
 
 .-mr-2{
   margin-right: -0.5rem;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
 }
 
 .mb-2{
@@ -1014,6 +1074,10 @@ select{
 
 .h-5{
   height: 1.25rem;
+}
+
+.h-52{
+  height: 13rem;
 }
 
 .h-6{
@@ -2271,6 +2335,10 @@ select{
 
   .lg\:order-last{
     order: 9999;
+  }
+
+  .lg\:col-span-4{
+    grid-column: span 4 / span 4;
   }
 
   .lg\:mx-0{
