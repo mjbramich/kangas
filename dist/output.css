@@ -842,14 +842,6 @@ select{
   z-index: 10;
 }
 
-.z-20{
-  z-index: 20;
-}
-
-.-z-0{
-  z-index: 0;
-}
-
 .order-2{
   order: 2;
 }
@@ -934,10 +926,6 @@ select{
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-32{
-  margin-top: 8rem;
 }
 
 .box-border{
@@ -1219,6 +1207,10 @@ select{
   justify-content: space-between;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
 .gap-2{
   gap: 0.5rem;
 }
@@ -1229,10 +1221,6 @@ select{
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-1{
-  gap: 0.25rem;
 }
 
 .gap-x-16{
@@ -1755,6 +1743,11 @@ select{
   color: rgb(12 125 187 / var(--tw-text-opacity));
 }
 
+.text-kangawhite{
+  --tw-text-opacity: 1;
+  color: rgb(241 246 249 / var(--tw-text-opacity));
+}
+
 .text-neutral-950{
   --tw-text-opacity: 1;
   color: rgb(10 10 10 / var(--tw-text-opacity));
@@ -1763,11 +1756,6 @@ select{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-kangawhite{
-  --tw-text-opacity: 1;
-  color: rgb(241 246 249 / var(--tw-text-opacity));
 }
 
 .opacity-0{
@@ -1931,14 +1919,6 @@ select{
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.last\:mt-8:last-child{
-  margin-top: 2rem;
-}
-
-.only\:mt-8:only-child{
-  margin-top: 2rem;
-}
-
 .hover\:bg-dark:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(4 16 28 / var(--tw-bg-opacity));
@@ -1967,11 +1947,6 @@ select{
 .hover\:bg-white:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-gray-900:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 .hover\:text-dark:hover{
