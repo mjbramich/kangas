@@ -16,12 +16,11 @@
 
 <body class="lg:overflow-auto">
     <!-- NAVBAR -->
-
-    <nav class="drop-shadow-xl bg-kangablue" id="navbar" role="navigation" aria-label="main navigation">
+    <nav class="drop-shadow-xl relative z-10 bg-kangablue" id="navbar" role="navigation" aria-label="main navigation">
         <div class=" mx-auto max-w-7xl px-4">
             <div class="flex items-center justify-between h-24" id="navbar">
                 <div class="logo w-36 object-cover">
-                    <a href="#">
+                    <a href="./index.html">
                         <img class='object-cover' src="./images/kangastext.png" alt="kangas exterior solutions">
                     </a>
                 </div>
@@ -29,29 +28,27 @@
                 <div class="hidden lg:flex" id="navbar-dropdown">
                     <ul class="lg:flex gap-4 items-center uppercase  text-white font-semibold">
                         <li><a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2"
-                                href="#">About</a></li>
+                                href="./about.html">About</a></li>
                         <li>
                             <a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2"
-                                href="#">Services</a>
+                                href="./services.html">Services</a>
                         </li>
                         <li><a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2"
-                                href="#">Gallery</a></li>
+                                href="./gallery.html">Gallery</a></li>
                         <li><a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2"
-                                href="
-                                #">Contact us</a></li>
+                                href="./contact.html">Contact us</a></li>
                     </ul>
                 </div>
 
                 <div class="flex gap-4 items-center justify-center text-white">
-                    <button
-                        class=" hidden md:block rounded-md border-2 border-white px-4 py-2 text-sm font-semibold uppercase text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-white hover:text-kangablue focus:outline-none">
-                        <a href="
-                        #">Call us
+                    <button>
+                        <a class=" hidden md:block rounded-md border-2 border-white px-4 py-2 text-sm font-semibold uppercase text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-white hover:text-kangablue focus:outline-none"
+                            href="tel:0488352175">Call us
                         </a></button>
 
-                    <div class="flex -mr-2 lg:hidden">
+                    <div class="flex -mr-2 lg:hidden ">
                         <button id="navBtn"
-                            class="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                            class="text-white dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                             aria-controls="mobile-menu" aria-expanded="false">
                             <span class="sr-only">Open main menu</span>
 
@@ -76,39 +73,44 @@
         <!--Hamburger Menu-->
         <div class=" will-change-transform ease-in-out duration-1000 overflow-x-hidden fixed  bg-richblack opacity-90 overflow-y-hidden text-white w-0  lg:hidden"
             id="mobile-menu">
-            <div class="space-y-1 px-2 pb-3 pt-6 h-mb-menu-height flex flex-col items-center justify-center text-2xl uppercase opacity-0 transition-opacity duration-1000"
+            <div class="gap-1 px-2 pb-3 pt-6 h-mb-menu-height flex flex-col items-center justify-center text-2xl uppercase opacity-0 transition-opacity duration-1000"
                 id="mobile-menu-list">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-gray-900 block rounded-md px-3 py-2 font-medium transition"
+                <a href="./index.html"
+                    class="hover:bg-gray-700  hover:text-white block rounded-md px-3 py-2 font-medium transition"
                     aria-current="page">Home</a>
-                <a href="#"
+                <a href="./about.html"
                     class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium  transition">About</a>
-                <a href="#"
+                <a href="./services.html"
                     class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition">Services</a>
-                <a href="#"
+                <a href="./gallery.html"
                     class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition">Gallery</a>
-                <a href="#"
+                <a href="./contact.html"
                     class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white  duration-200 ease-in">Contact</a>
-                <a href="#"
+                <a href="tel:0488352175"
                     class="  md:hidden hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition truncate">Call
                     Us</a>
 
 
 
 
-                <p class="hover:bg-gray-700 hover:text-white block rounded-md px-3 pt-8 truncate">Follow us</p>
+                <p class="block rounded-md px-3 mt-8   font-medium truncate">
+                    Follow
+                    us
+                </p>
 
 
                 <div class="px-3 py-2 flex items-center justify-between gap-8">
 
-                    <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-700">
+                    <a href="https://www.facebook.com/profile.php?id=100091895966657"
+                        class="text-white cursor-pointer hover:text-gray-700">
                         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             class="w-10 h-10" viewBox="0 0 24 24">
                             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                         </svg>
                     </a>
 
-                    <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-700">
+                    <a href="#" class="text-kangawhite cursor-pointer hover:text-gray-700">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
                             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
@@ -118,16 +120,16 @@
 
                 </div>
 
+
             </div>
         </div>
     </nav>
 
 
+    <!--CONTENT-->
     <main id="main-content">
-        <!------------------------
-        HERO
-    ------------------------->
 
+        <!--HERO-->
         <section
             class=" flex items-center bg-cover bg-no-repeat bg-[85%] min-h-[500px] max-h-[93vh] xl:h-screen bg-blend-overlay bg-overlay"
             style="background-image: url(./images/action.jpg)">
@@ -150,7 +152,7 @@
                         sed cupiditate accusamus, eveniet iure.</p>
 
                     <div class="box-border"> <a href="#"
-                            class="rounded-md border-2 border-white md:px-6 py-3 px-2 md:py-4 text-sm md:text-md font-semibold uppercase text-white shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-white hover:text-dark">Request
+                            class="rounded-md border-2 border-white md:px-6 py-3 px-2 md:py-4 text-sm md:text-md font-semibold uppercase text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-white hover:text-dark">Request
                             a quote</a></div>
 
                 </div>
@@ -158,7 +160,7 @@
         </section>
 
 
-        <!--About US-->
+        <!--ABOUT-->
 
         <div class="overflow-hidden bg-kangawhite py-24 sm:py-32">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -195,7 +197,7 @@
             </div>
         </div>
 
-        <!-- Why -->
+        <!-- WHY -->
 
         <div class="overflow-hidden bg-kangagray py-24 sm:py-32">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -275,7 +277,7 @@
 
 
 
-        <!--Services-->
+        <!--SERVICES-->
 
         <section class="overflow-hidden bg-kangawhite py-24 sm:py-32">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -407,7 +409,7 @@
             </div>
         </div>
 
-        <!-- Testimonials -->
+        <!--TESTIMONIALS-->
 
         <div class=" py-24 sm:py-32 sm:px-6 lg:px-8 relative max-w-7xl mx-auto">
 
@@ -523,22 +525,8 @@
         </div>
 
 
-        <!--Contact-->
+        <!--CONTACT-->
 
-        <!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
         <div class=" bg-kangagray px-6 py-24 sm:py-32 lg:px-8">
 
             <div class="mx-auto max-w-2xl text-center">
@@ -701,117 +689,129 @@
 
             </form>
         </div>
-
-
-        <!--Footer -->
-
-
-
-        <!-- FOOTER -->
-
-        <footer class="bg-kangablue">
-
-            <div class="mx-auto max-w-7xl px-6 lg:px-8 text-white">
-                <div class="pt-16 pb-4">
-                    <div class="grid grid-cols-1 gap-x-8 gap-y-8 lg:grid-cols-2">
-                        <div class="max-w-sm">
-                            <a href="/" aria-label="home" class="">
-                                <img class="h-16" src="./images/kangastext.png" alt="">
-                            </a>
-                            <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quos!
-                            </p>
-
-                            <div class="mt-4 flex items-center justify-start gap-2">
-                                <span class="font-semibold">Follow Us:</span>
-                                <a class="text-gray-500 cursor-pointer hover:text-gray-700">
-                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
-                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                    </svg>
-                                </a>
-
-                                <a class="text-gray-500 cursor-pointer hover:text-gray-700">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
-                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                                    </svg>
-                                </a>
-
-                                <a class="text-gray-500 cursor-pointer hover:text-gray-700">
-
-                                </a>
-
-                            </div>
-                        </div>
-
-                        <nav class="max-w-l">
-                            <ul role="list" class="grid grid-cols-2 gap-8 sm:grid-cols-3 ">
-                                <li class="">
-                                    <div class="font-display text-sm font-bold tracking-wider text-neutral-950">Company
-                                    </div>
-                                    <ul role="list" class="font-display text-sm tracking-wider text-neutral-950">
-                                        <li class="mt-4">About</li>
-                                        <li class="mt-2">Services</li>
-                                        <li class="mt-2">Gallery</li>
-                                        <li class="mt-2">Contact</li>
-                                        <li class="mt-2">Privacy policy</li>
-                                    </ul>
-                                </li>
-
-                                <li>
-                                    <div class="font-display text-sm font-bold tracking-wider text-neutral-950">Our
-                                        Services
-                                    </div>
-                                    <ul role="list" class="font-display text-sm tracking-wider text-neutral-950">
-                                        <li class="mt-4">Service 1</li>
-                                        <li class="mt-2">Service 2</li>
-                                        <li class="mt-2">Service 3</li>
-                                        <li class="mt-2">Service 4</li>
-                                        <li class="mt-2">Service 5</li>
-                                    </ul>
-                                </li>
-
-                                <li>
-                                    <div class="font-display text-sm font-bold tracking-wider text-neutral-950">Contact
-                                        Info
-                                    </div>
-                                    <ul role="list" class="font-display text-sm  tracking-wider text-neutral-950 ">
-                                        <li class="mt-4">0400 000 000</li>
-                                        <li class="mt-2">0411 111 111</li>
-                                        <li class="mt-2 break-words">kangas@example.com</li>
-                                        <li class="mt-2">Devonport, TAS.</li>
-                                        <li class="mt-2">ABN - 123456789</licl>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
-
-
-                    </div>
-
-                    <div class=" mb-4 mt-16  flex flex-wrap items-end justify-between gap-x-6 border-t
-                    border-neutral-950/10 pt-6 text-sm">
-
-
-
-                        <p>Copyright © <span id="get-year"></span>
-
-                            Kangas Exterior Solutions.
-                            All rights reserved
-                        </p>
-
-                        <p class="mt-0 text-sm text-center sm:text-left">Created by mjbramich</p>
-                    </div>
-
-                </div>
-            </div>
-        </footer>
-
-
     </main>
 
+    <!-- FOOTER -->
 
+    <footer class="bg-kangablue  ">
+
+        <div class="mx-auto max-w-7xl px-6 lg:px-8  text-white">
+            <div class=" pt-16 pb-4">
+                <div class="grid grid-cols-1 gap-x-8 gap-y-8 lg:grid-cols-2">
+                    <div class="max-w-sm">
+                        <a href="./index.html" aria-label="home" class="">
+                            <img class="h-16" src="./images/kangastext.png" alt="">
+                        </a>
+                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quos!
+                        </p>
+
+                        <div class="mt-4 flex items-center justify-start gap-2">
+                            <span class="font-semibold">Follow Us:</span>
+                            <a href="https://www.facebook.com/profile.php?id=100091895966657"
+                                aria-label="Kangas Facebook" class=" cursor-pointer hover:text-slate-400">
+                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-8 h-8" viewBox="0 0 24 24">
+                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                </svg>
+                            </a>
+
+                            <a href="https://www.instagram.com/kangas_exterior_solutions/?hl=en"
+                                aria-label="Kangas Instagram" class=" cursor-pointer hover:text-slate-400">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                                </svg>
+                            </a>
+
+
+
+                        </div>
+                    </div>
+
+                    <nav class="max-w-l">
+                        <ul role="list" class="grid grid-cols-2 gap-8 sm:grid-cols-3 text-white">
+                            <li class="">
+                                <div class="font-display text-sm font-bold tracking-wider ">Company
+                                </div>
+                                <ul role="list" class="font-display text-sm tracking-wider ">
+                                    <li class="mt-4 hover:text-slate-400"> <a href="./about.html">About</a></li>
+                                    <li class="mt-2 hover:text-slate-400"><a href="./services.html">Services</a>
+                                    </li>
+                                    <li class="mt-2 hover:text-slate-400"><a href="./gallery.html"> Gallery</a></li>
+                                    <li class="mt-2 hover:text-slate-400"><a href="./contact.html"> Contact</a></li>
+                                    <li class="mt-2 hover:text-slate-400"><a href="./privacy.html"> Privacy
+                                            policy</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <div class="font-display text-sm font-bold tracking-wider ">Our
+                                    Services
+                                </div>
+                                <ul role="list" class="font-display text-sm tracking-wider  ">
+                                    <li class="mt-4 hover:text-slate-400"><a
+                                            href="./services.html#pressure-washing">Roof
+                                            Cleaning</a></li>
+                                    <li class="mt-2 hover:text-slate-400"><a href="./services.html#soft-washing">House
+                                            Cleaning</a>
+                                    </li>
+                                    <li class="mt-2 hover:text-slate-400"><a
+                                            href="./services.html#pressure-washing">Driveway
+                                            Cleaning</a>
+                                    </li>
+                                    <li class="mt-2 hover:text-slate-400"><a href="./services.html#other">Gutter
+                                            Cleaning</a></li>
+                                    <li class="mt-2 hover:text-slate-400"><a href="./services.html#other">Solar
+                                            Panel Cleaning</a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <div class="font-display text-sm font-bold tracking-wider ">Contact
+                                    Info
+                                </div>
+                                <ul role="list" class="font-display text-sm  tracking-wider  ">
+                                    <li class="mt-4 hover:text-slate-400"><a href="tel:0488352175">0488 352 175</a>
+                                    </li>
+                                    <li class="mt-2 hover:text-slate-400"><a href="tel:0447286666">0447 286 666</a>
+                                    </li>
+                                    <li class="mt-2 break-words hover:text-slate-400"><a
+                                            href="mailto:kangas.exterior.solutions@gmail.com">solutions@kangas.au</a>
+                                    </li>
+                                    <li class="mt-2">Devonport, TAS.</li>
+                                    <li class="mt-2">ABN - 24 328 415 081</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+                </div>
+
+                <div class=" mb-4 mt-16  flex flex-wrap items-end justify-between gap-x-6 border-t
+                        border-white pt-6 text-sm">
+
+
+
+                    <p>Copyright © <span id="get-year"></span>
+
+                        Kangas Exterior Solutions.
+                        All rights reserved
+                    </p>
+
+                    <p class="mt-0 text-sm text-center sm:text-left"> <a href="https://www.mjbramich.dev"
+                            class="hover:text-slate-400"> Created
+                            by mjbramich</a></p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 
 </body>
 
