@@ -10,8 +10,7 @@
 
     <title>Document</title>
 
-    <link rel="stylesheet" href="../dist/output.css" />
-    <script src="main.js" defer></script>
+    <!--Dont need script tag, webpack generates it-->
 </head>
 
 <body class="lg:overflow-auto">
@@ -73,11 +72,11 @@
         <!--Hamburger Menu-->
         <div class=" will-change-transform ease-in-out duration-1000 overflow-x-hidden fixed  bg-richblack opacity-90 overflow-y-hidden text-white w-0  lg:hidden"
             id="mobile-menu">
-            <div class="gap-1 px-2 pb-3 pt-6 h-mb-menu-height flex flex-col items-center justify-center text-2xl uppercase opacity-0 transition-opacity duration-1000"
+            <div class="gap-1 px-2 pb-3 pt-6 h-mb-menu-height flex flex-col items-center justify-center text-2xl  uppercase opacity-0 transition-opacity duration-1000"
                 id="mobile-menu-list">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <a href="./index.html"
-                    class="hover:bg-gray-700  hover:text-white block rounded-md px-3 py-2 font-medium transition"
+                    class="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 font-medium transition"
                     aria-current="page">Home</a>
                 <a href="./about.html"
                     class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium  transition">About</a>
@@ -131,11 +130,10 @@
 
         <!--HERO-->
         <section
-            class=" flex items-center bg-cover bg-no-repeat bg-[85%] min-h-[500px] max-h-[93vh] xl:h-screen bg-blend-overlay bg-overlay"
-            style="background-image: url(./images/action.jpg)">
+            class=" flex items-center bg-cover bg-no-repeat bg-[85%] min-h-[500px] max-h-[93vh] xl:h-screen bg-blend-overlay  bg-[url('./images/action.jpg')] bg-overlay">
 
             <div
-                class="flex flex-col justify-start lg:max-w-screen-xl mx-auto gap-4 lg:gap-8 px-6 md:px-8  md:py-40 lg:py-52 xl:py-60">
+                class="flex flex-col justify-start lg:max-w-screen-xl mx-auto gap-4 lg:gap-8 px-6 md:px-8  md:py-40 lg:py-52 xl:py-60 ">
 
                 <div class="mr-auto ">
                     <h1
@@ -682,7 +680,7 @@
                 </div>
 
                 <div class="mt-10">
-                    <button
+                    <button id="form-submit"
                         class="block w-full rounded-md bg-kangablue px-3.5 py-2.5 text-center text-sm uppercase font-semibold text-white
                         hover:bg-sky-800 shadow-sm hover:bg-kangablue-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-kangablue-dark">Submit</button>
                 </div>
