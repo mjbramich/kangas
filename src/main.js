@@ -1,178 +1,29 @@
-// import faqToggle from './faqToggle';
+import './styles.css';
+import faqToggle from './faqToggle.js';
+import initializeMobileMenu from './mobileMenu.js';
+import { formFunctions } from './form.js';
+import updateFooterYear from './footer.js';
 
-// Hamburger menu
-const createMobileMenu = () => {
-	let isOpen = false;
-	const mobileMenu = document.getElementById('mobile-menu');
-	const mobileMenuList = document.getElementById('mobile-menu-list');
-	const openBtnImage = document.getElementById('navOpenBtn');
-	const closeBtnImage = document.getElementById('navCloseBtn');
-	const body = document.body;
-	let firstMenuLink, lastMenuLink;
+const { privacySlider, fileAttachmentClick, privacyCheck } = formFunctions;
 
-	function toggleMobileMenu() {
-		isOpen = !isOpen;
-		if (isOpen) {
-			openMobileMenu();
-		} else {
-			closeMobileMenu();
-		}
-	}
-
-	const mobileMenuLinks = Array.from(mobileMenu.querySelectorAll('a'));
-
-	function openMobileMenu() {
-		mobileMenu.classList.add('w-full');
-		mobileMenuList.classList.add('opacity-100');
-		body.classList.add('overflow-hidden');
-		openBtnImage.classList.add('hidden');
-		closeBtnImage.classList.remove('hidden');
-
-		console.log(mobileMenuLinks);
-
-		firstMenuLink = navBtn;
-		lastMenuLink = mobileMenuLinks[mobileMenuLinks.length - 1];
-
-		mobileMenuLinks.forEach((link) => link.setAttribute('tabindex', '0'));
-
-		// Add event listener for 'keydown' to manage focus trapping
-		mobileMenuList.addEventListener('keydown', handleFocusTrap);
-		navBtn.addEventListener('keydown', handleFocusTrap);
-	}
-
-	function closeMobileMenu() {
-		mobileMenu.classList.remove('w-full');
-		body.classList.remove('overflow-hidden');
-		mobileMenuList.classList.remove('opacity-100');
-		closeBtnImage.classList.add('hidden');
-		openBtnImage.classList.remove('hidden');
-
-		// need to remove focus if menu is closed
-		mobileMenuLinks.forEach((link) => link.setAttribute('tabindex', '-1'));
-
-		// Remove event listener when the mobile menu is closed
-		mobileMenuList.removeEventListener('keydown', handleFocusTrap);
-		navBtn.removeEventListener('keydown', handleFocusTrap);
-
-		navBtn.focus();
-	}
-
-	function handleFocusTrap(event) {
-		console.log('acitve:', document.activeElement);
-		if (event.key === 'Tab') {
-			if (event.shiftKey) {
-				// Shift + Tab: Go to the previous link in the mobile menu
-				if (document.activeElement === navBtn) {
-					lastMenuLink.focus();
-					event.preventDefault();
-				}
-			} else {
-				// Tab: Go to the next link in the mobile menu
-				if (document.activeElement === lastMenuLink) {
-					firstMenuLink.focus();
-					event.preventDefault();
-				}
-			}
-		}
-	}
-
-	return {
-		toggleMobileMenu,
-	};
-};
-
-const mobileMenuInstance = createMobileMenu();
-const navBtn = document.getElementById('navBtn');
-navBtn.addEventListener('click', () => mobileMenuInstance.toggleMobileMenu());
-
-const createPrivacyToggle = () => {
-	const fileInput = document.getElementById('file-input');
-	const parentContainer = document.getElementById('file-input-container');
-
-	// Handle key press events on the file attachment input
-	parentContainer.addEventListener('keydown', (event) => {
-		if (event.key === 'Enter') {
-			fileInput.click();
-		}
-	});
-
-	const privacyToggle = document.querySelector('#privacy-toggle-btn');
-	const privacySlider = document.querySelector('#privacy-slider');
-
-	console.log(privacyToggle);
-
-	let privacyEnabled = false;
-
-	privacyToggle.onclick = () => {
-		privacyEnabled = !privacyEnabled;
-		console.log(privacyToggle);
-		if (privacyEnabled) {
-			privacyToggle.classList.add('bg-kangablue');
-			privacyToggle.classList.remove('bg-kangagray');
-			privacySlider.classList.add('translate-x-3.5');
-			privacySlider.classList.remove('translate-x-0');
-		} else {
-			privacyToggle.classList.remove('bg-kangalue');
-			privacyToggle.classList.add('bg-kangagray');
-			privacySlider.classList.remove('translate-x-3.5');
-			privacySlider.classList.add('translate-x-0');
-		}
-	};
-};
-
-if (document.getElementById('privacy-toggle-btn')) {
-	createPrivacyToggle();
-}
-
-// Update year in the footer
-
-const updateFooterYear = () => {
-	const yearText = document.getElementById('get-year');
-	const currentYear = new Date().getFullYear();
-	yearText.innerText = `${currentYear}`;
-};
-
-if (document.querySelector('footer')) {
+// Fire when html has parsed
+document.addEventListener('DOMContentLoaded', () => {
 	updateFooterYear();
-}
+	initializeMobileMenu();
 
-const faqToggle = () => {
-	const faqList = document.getElementById('faqList');
-	const questions = Array.from(faqList.querySelectorAll('dt'));
-
-	questions.forEach((question) => {
-		question.addEventListener('click', handleClick);
-	});
-
-	// need to loop over list
-	function handleClick(e) {
-		const clickedQuestion = e.currentTarget;
-
-		// get the corresponding answet to the clicked question
-		const answerId = clickedQuestion
-			.querySelector('[aria-controls]')
-			.getAttribute('aria-controls');
-
-		const answer = document.getElementById(answerId);
-
-		const openIcon = clickedQuestion.querySelector('#openIcon');
-		const closeIcon = clickedQuestion.querySelector('#closeIcon');
-
-		const isExpanded =
-			clickedQuestion
-				.querySelector('[aria-expanded]')
-				.getAttribute('aria-expanded') === 'true';
-
-		clickedQuestion
-			.querySelector('[aria-expanded]')
-			.setAttribute('aria-expanded', !isExpanded);
-
-		answer.classList.toggle('hidden');
-		openIcon.classList.toggle('hidden');
-		closeIcon.classList.toggle('hidden');
+	// JS for specific pages
+	if (window.location.pathname === '/') {
+		// form functions
+		privacySlider();
+		fileAttachmentClick();
+		privacyCheck();
 	}
-};
 
-if (document.getElementById('faqList')) {
-	faqToggle();
-}
+	if (window.location.pathname === '/contact.html') {
+		faqToggle();
+		// form functions
+		privacySlider();
+		fileAttachmentClick();
+		privacyCheck();
+	}
+});
