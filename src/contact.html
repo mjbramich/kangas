@@ -10,48 +10,44 @@
 
     <title>Contact Us - Kangas</title>
 
-
-
 </head>
 
 <body class="lg:overflow-auto">
     <!-- NAVBAR -->
 
-    <nav class="drop-shadow-xl bg-kangablue" id="navbar" role="navigation" aria-label="main navigation">
+    <nav class="drop-shadow-xl relative z-10 bg-kangablue" id="navbar" role="navigation" aria-label="main navigation">
         <div class=" mx-auto max-w-7xl px-4">
             <div class="flex items-center justify-between h-24" id="navbar">
                 <div class="logo w-36 object-cover">
-                    <a href="#">
-                        <img class='object-cover' src="./images/kangastext.png" alt="kangas exterior solutions">
+                    <a href="./index.html">
+                        <img class='object-cover ' src=" ./images/kangastext.png" alt="kangas exterior solutions">
                     </a>
                 </div>
 
                 <div class="hidden lg:flex" id="navbar-dropdown">
                     <ul class="lg:flex gap-4 items-center uppercase  text-white font-semibold">
-                        <li><a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2"
-                                href="#">About</a></li>
+                        <li><a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                                href="./about.html">About</a></li>
                         <li>
-                            <a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2"
-                                href="#">Services</a>
+                            <a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                                href="./services.html">Services</a>
                         </li>
-                        <li><a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2"
-                                href="#">Gallery</a></li>
-                        <li><a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2"
-                                href="
-                                #">Contact us</a></li>
+                        <li><a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                                href="./gallery.html">Gallery</a></li>
+                        <li><a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                                href="./contact.html">Contact us</a></li>
                     </ul>
                 </div>
 
                 <div class="flex gap-4 items-center justify-center text-white">
-                    <button
-                        class=" hidden md:block rounded-md border-2 border-white px-4 py-2 text-sm font-semibold uppercase text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-white hover:text-kangablue focus:outline-none">
-                        <a href="
-                        #">Call us
+                    <button>
+                        <a class=" hidden md:block rounded-md border-2 border-white px-4 py-2 text-sm font-semibold uppercase text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-white hover:text-kangablue focus:outline-none"
+                            href="tel:0488352175">Call us
                         </a></button>
 
-                    <div class="flex -mr-2 lg:hidden">
+                    <div class="flex -mr-2 lg:hidden ">
                         <button id="navBtn"
-                            class="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                            class="text-white dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                             aria-controls="mobile-menu" aria-expanded="false">
                             <span class="sr-only">Open main menu</span>
 
@@ -76,39 +72,45 @@
         <!--Hamburger Menu-->
         <div class=" will-change-transform ease-in-out duration-1000 overflow-x-hidden fixed  bg-richblack opacity-90 overflow-y-hidden text-white w-0  lg:hidden"
             id="mobile-menu">
-            <div class="space-y-1 px-2 pb-3 pt-6 h-mb-menu-height flex flex-col items-center justify-center text-2xl uppercase opacity-0 transition-opacity duration-1000"
+            <div class="gap-1 px-2 pb-3 pt-6 h-mb-menu-height flex flex-col items-center justify-center text-2xl  uppercase opacity-0 transition-opacity duration-1000"
                 id="mobile-menu-list">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-gray-900 block rounded-md px-3 py-2 font-medium transition"
+                <a href="./index.html"
+                    class="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                     aria-current="page">Home</a>
-                <a href="#"
-                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium  transition">About</a>
-                <a href="#"
-                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition">Services</a>
-                <a href="#"
-                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition">Gallery</a>
-                <a href="#"
+                <a href="./about.html"
+                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">About</a>
+                <a href="./services.html"
+                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ">Services</a>
+                <a href="./gallery.html"
+                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Gallery</a>
+                <a href="./contact.html"
                     class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white  duration-200 ease-in">Contact</a>
-                <a href="#"
+                <a href="tel:0488352175"
                     class="  md:hidden hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition truncate">Call
                     Us</a>
 
 
 
 
-                <p class="hover:bg-gray-700 hover:text-white block rounded-md px-3 pt-8 truncate">Follow us</p>
+                <p class="block rounded-md px-3 mt-8   font-medium truncate">
+                    Follow
+                    us
+                </p>
 
 
                 <div class="px-3 py-2 flex items-center justify-between gap-8">
 
-                    <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-700">
+                    <a href="https://www.facebook.com/profile.php?id=100091895966657"
+                        class="text-white cursor-pointer hover:text-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             class="w-10 h-10" viewBox="0 0 24 24">
                             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                         </svg>
                     </a>
 
-                    <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-700">
+                    <a href="#"
+                        class="text-kangawhite cursor-pointer hover:text-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
                             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
@@ -118,24 +120,12 @@
 
                 </div>
 
+
             </div>
         </div>
     </nav>
 
-    <!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
+
 
 
     <!-- Contact Details / Form -->
@@ -177,8 +167,15 @@
                                             d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                                     </svg>
                                 </dt>
-                                <dd><a class="hover:text-slate-400" href="tel:+1 (555) 234-5678">+1 (555) 234-5678</a>
-                                </dd>
+                                <div>
+                                    <dd><a class="hover:text-slate-400 mr-4" href="tel:0488352175"> Jamie - 0488 352
+                                            175</a>
+
+                                    </dd>
+                                    <dd>
+                                        <a class="hover:text-slate-400" href="tel:0447286666"> Declan - 0447 286 666</a>
+                                    </dd>
+                                </div>
                             </div>
                             <div class="flex gap-x-4 items-center">
                                 <dt class="flex-none">
@@ -190,7 +187,7 @@
                                     </svg>
                                 </dt>
                                 <dd><a class="hover:text-slate-400"
-                                        href="mailto:hello@example.com">hello@example.com</a>
+                                        href="mailto:kangas.exterior.solutions@gmail.com">solutions@kangas.au</a>
                                 </dd>
                             </div>
                             <div class="flex gap-x-4 items-center">
@@ -203,21 +200,23 @@
                                     </svg>
 
                                 </dt>
-                                <dd><a class="hover:text-slate-400" href="#">ABN - 12345678</a>
+                                <dd class="hover:text-slate-400">ABN - 24 328 415 081
                                 </dd>
                             </div>
                         </dl>
 
                         <div class="my-6 flex items-center justify-start gap-2">
                             <span class="font-semibold">Follow Us:</span>
-                            <a class="text-gray-900 cursor-pointer hover:text-slate-400">
+                            <a class="text-gray-900 cursor-pointer hover:text-slate-400"
+                                href="https://www.facebook.com/profile.php?id=100091895966657">
                                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     class="w-8 h-8" viewBox="0 0 24 24">
                                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                                 </svg>
                             </a>
 
-                            <a class="text-gray-900 cursor-pointer hover:text-slate-400">
+                            <a class="text-gray-900 cursor-pointer hover:text-slate-400"
+                                href="https://www.instagram.com/kangas_exterior_solutions/">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
                                     <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
@@ -660,14 +659,17 @@
 
                         <div class="mt-4 flex items-center justify-start gap-2">
                             <span class="font-semibold">Follow Us:</span>
-                            <a href="#" aria-label="Kangas Facebook" class=" cursor-pointer hover:text-slate-400">
+                            <a href="https://www.facebook.com/profile.php?id=100091895966657"
+                                aria-label="Kangas Facebook"
+                                class=" cursor-pointer hover:text-slate-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     class="w-8 h-8" viewBox="0 0 24 24">
                                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                                 </svg>
                             </a>
 
-                            <a href="#" aria-label="Kangas Instagram" class=" cursor-pointer hover:text-slate-400">
+                            <a href="https://www.instagram.com/kangas_exterior_solutions/" aria-label="Kangas Instagram"
+                                class=" cursor-pointer hover:text-slate-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
                                     <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
@@ -686,11 +688,22 @@
                                 <div class="font-display text-sm font-bold tracking-wider ">Company
                                 </div>
                                 <ul role="list" class="font-display text-sm tracking-wider ">
-                                    <li class="mt-4 hover:text-slate-400"> <a href="/about">About</a></li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="#">Services</a></li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="#"> Gallery</a></li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="#"> Contact</a></li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="#"> Privacy policy</a></li>
+                                    <li class="mt-4 hover:text-slate-400"> <a href="/about.html"
+                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">About</a>
+                                    </li>
+                                    <li class="mt-2 hover:text-slate-400"><a href="/services.html"
+                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Services</a>
+                                    </li>
+                                    <li class="mt-2 hover:text-slate-400"><a href="/gallery.html"
+                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Gallery</a>
+                                    </li>
+                                    <li class="mt-2 hover:text-slate-400"><a href="/contact.html"
+                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Contact</a>
+                                    </li>
+                                    <li class="mt-2 hover:text-slate-400"><a href="/privacy.html"
+                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Privacy
+                                            Policy</a>
+                                    </li>
                                 </ul>
                             </li>
 
@@ -699,15 +712,24 @@
                                     Services
                                 </div>
                                 <ul role="list" class="font-display text-sm tracking-wider  ">
-                                    <li class="mt-4 hover:text-slate-400"><a href="#">Roof Cleaning</a></li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="#">House Cleaning</a></li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="#">Driveway Cleaning</a>
+                                    <li class="mt-4 hover:text-slate-400"><a href="./services.html#pressure-washing"
+                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Roof
+                                            Cleaning</a></li>
+                                    <li class="mt-2 hover:text-slate-400"><a href="./services.html#soft-washing"
+                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">House
+                                            Cleaning</a></li>
+                                    <li class="mt-2 hover:text-slate-400"><a href="./services.html#pressure-washing"
+                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Driveway
+                                            Cleaning</a>
                                     </li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="#">Gutter Cleaning</a></li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="#">Solar Panel Cleaning</a>
+                                    <li class="mt-2 hover:text-slate-400"><a href="./services.html#other"
+                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Gutter
+                                            Cleaning</a></li>
+                                    <li class="mt-2 hover:text-slate-400"><a href="./services.html#other"
+                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Solar
+                                            Panel
+                                            Cleaning</a>
                                     </li>
-
-
                                 </ul>
                             </li>
 
@@ -716,9 +738,17 @@
                                     Info
                                 </div>
                                 <ul role="list" class="font-display text-sm  tracking-wider  ">
-                                    <li class="mt-4 hover:text-slate-400"><a href="#">0400 000 000</a> </li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="">0411 111 111</a> </li>
-                                    <li class="mt-2 break-words hover:text-slate-400"><a href="">kangas@example.com</a>
+                                    <li class="mt-4 hover:text-slate-400"><a href="tel:0488352175"
+                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">0488
+                                            352 175</a>
+                                    </li>
+                                    <li class="mt-2 hover:text-slate-400"><a href="tel:0447286666"
+                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">0447
+                                            286 666</a>
+                                    </li>
+                                    <li class="mt-2 break-words hover:text-slate-400"><a
+                                            href="mailto:kangas.exterior.solutions@gmail.com"
+                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">solutions@kangas.au</a>
                                     </li>
                                     <li class="mt-2">Devonport, TAS.</li>
                                     <li class="mt-2">ABN - 123456789</licl>
@@ -741,7 +771,9 @@
                         All rights reserved
                     </p>
 
-                    <p class="mt-0 text-sm text-center sm:text-left"> <a href="#" class="hover:text-slate-400"> Created
+                    <p class="mt-0 text-sm text-center sm:text-left"> <a href="https://www.mjbramich.dev"
+                            class="hover:text-slate-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                            Created
                             by mjbramich</a></p>
                 </div>
 
