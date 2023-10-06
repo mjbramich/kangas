@@ -45,10 +45,20 @@ const config = {
 			},
 			{
 				test: /\.html$/i,
-				loader: 'html-loader',
+				use: {
+					loader: 'html-loader',
+					options: {
+						sources: {
+							list: [
+								// Configure which tags to process
+								{ tag: 'video', attribute: 'src', type: 'src' },
+							],
+						},
+					},
+				},
 			},
 			{
-				test: /\.(png|svg|jpg|jpeg|gif)$/i,
+				test: /\.(png|svg|jpg|jpeg|gif|mp4)$/i,
 				type: 'asset/resource',
 				generator: {
 					filename: 'images/[name][ext]',
