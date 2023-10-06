@@ -47,14 +47,14 @@ const config = {
 				test: /\.html$/i,
 				use: {
 					loader: 'html-loader',
-					options: {
-						sources: {
-							list: [
-								// Configure which tags to process
-								{ tag: 'video', attribute: 'src', type: 'src' },
-							],
-						},
-					},
+					// options: {
+					// 	sources: {
+					// 		list: [
+					// 			// Configure which tags to process
+					// 			{ tag: 'video', attribute: 'src', type: 'src' },
+					// 		],
+					// 	},
+					// },
 				},
 			},
 			{
