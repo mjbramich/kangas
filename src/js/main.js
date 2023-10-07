@@ -1,6 +1,6 @@
 import './styles.css';
-import initializeMobileMenu from './mobileMenu.js';
-import updateFooterYear from './footer.js';
+import initializeMobileMenu from '../../modules/mobileMenu.js';
+import updateFooterYear from '../../modules/footer.js';
 
 // Fire when html has parsed
 document.addEventListener('DOMContentLoaded', () => {

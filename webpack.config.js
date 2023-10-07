@@ -29,9 +29,9 @@ let multipleHtmlPlugins = htmlPageNames.map((name) => {
 
 const config = {
 	entry: {
-		index: './src/index.js',
-		contact: './src/contact.js',
-		main: './src/main.js',
+		index: './src/js/index.js',
+		contact: './src/js/contact.js',
+		main: './src/js/main.js',
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
