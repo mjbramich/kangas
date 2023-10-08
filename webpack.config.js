@@ -14,9 +14,7 @@ let htmlPageNames = [
 let multipleHtmlPlugins = htmlPageNames.map((name) => {
 	let chunks = ['main'];
 
-	if (name === 'index') {
-		chunks.push('index');
-	} else if (name === 'contact') {
+	if (name === 'contact') {
 		chunks.push('contact');
 	}
 
@@ -84,7 +82,7 @@ const config = {
 		new HtmlWebpackPlugin({
 			template: 'src/index.html',
 			filename: 'index.html',
-			// chunks: ['main', 'index'], // Include 'main' and 'index' entry point in this HTML file
+			chunks: ['main', 'index'], // Include 'main' and 'index' entry point in this HTML file
 		}),
 		...multipleHtmlPlugins, // array of html plugins
 		new MiniCssExtractPlugin({

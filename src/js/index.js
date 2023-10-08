@@ -1,5 +1,4 @@
-import './styles.css';
-import { formFunctions } from '../../modules/form';
+import { formFunctions } from './modules/form.js';
 
 const { privacySlider, fileAttachmentClick, privacyCheck } = formFunctions;
 
