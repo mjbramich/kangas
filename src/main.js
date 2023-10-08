@@ -10,16 +10,20 @@ const { privacySlider, fileAttachmentClick, privacyCheck } = formFunctions;
 document.addEventListener('DOMContentLoaded', () => {
 	updateFooterYear();
 	initializeMobileMenu();
-
+	console.log('HI', window.location.pathname);
 	// JS for specific pages
 	if (window.location.pathname === '/') {
+		console.log('Inside root', window.location.pathname);
 		// form functions
 		privacySlider();
 		fileAttachmentClick();
 		privacyCheck();
 	}
 
-	if (window.location.pathname === '/contact.html') {
+	console.log(window.location.pathname);
+
+	if (window.location.pathname === '/contact') {
+		console.log('Entering /contact.html condition');
 		faqToggle();
 		// form functions
 		privacySlider();

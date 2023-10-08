@@ -6,8 +6,11 @@ const faqToggle = () => {
 		question.addEventListener('click', handleClick);
 	});
 
+	console.log('FAQ fired');
+
 	// need to loop over list
 	function handleClick(e) {
+		console.log('FAQ fired', e);
 		const clickedQuestion = e.currentTarget;
 
 		// get the corresponding answet to the clicked question
