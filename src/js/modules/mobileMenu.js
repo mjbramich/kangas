@@ -19,7 +19,7 @@ const createMobileMenu = () => {
 	const mobileMenuLinks = Array.from(mobileMenu.querySelectorAll('a'));
 
 	function openMobileMenu() {
-		body.classList.add('h-full');
+		body.classList.add('fixed');
 		body.classList.add('overflow-hidden');
 		mobileMenu.classList.add('w-full');
 		mobileMenuList.classList.add('opacity-100');
@@ -39,7 +39,7 @@ const createMobileMenu = () => {
 	}
 
 	function closeMobileMenu() {
-		mobileMenu.classList.remove('w-full');
+		mobileMenu.classList.remove('fixed');
 		body.classList.remove('h-full');
 		body.classList.remove('overflow-hidden');
 		mobileMenuList.classList.remove('opacity-100');
