@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 let htmlPageNames = [
 	'about',
@@ -33,7 +34,9 @@ const config = {
 			{
 				test: /\.css$/i,
 				use: [
-					'style-loader',
+					process.env.NODE_ENV === 'production'
+						? MiniCssExtractPlugin.loader
+						: 'style-loader',
 					{
 						loader: 'css-loader',
 						options: {
@@ -71,7 +74,12 @@ const config = {
 			template: 'src/index.html',
 			filename: 'index.html',
 		}),
-	].concat(multipleHtmlPlugins),
+	].concat(multipleHtmlPlugins, [
+		// Add MiniCssExtractPlugin as a plugin for production
+		new MiniCssExtractPlugin({
+			filename: '[name].css', // Output CSS file name
+		}),
+	]),
 };
 
 module.exports = config;

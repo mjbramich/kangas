@@ -20,8 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		privacyCheck();
 	}
 
-	console.log(window.location.pathname);
-
 	if (window.location.pathname === '/contact') {
 		console.log('Entering /contact.html condition');
 		faqToggle();
