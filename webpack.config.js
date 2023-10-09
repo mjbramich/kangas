@@ -12,18 +12,30 @@ let htmlPageNames = [
 	'privacy',
 ];
 let multipleHtmlPlugins = htmlPageNames.map((name) => {
+	let chunks = ['main'];
+
+	if (name === 'index') {
+		chunks.push('index');
+	} else if (name === 'contact') {
+		chunks.push('contact');
+	}
+
 	return new HtmlWebpackPlugin({
 		template: `./src/${name}.html`, // relative path to the HTML files
 		filename: `${name}.html`, // output HTML files
-		// chunks: [`${name}`], // respective JS files
+		chunks: chunks, // respective JS files
 	});
 });
 
 const config = {
-	entry: './src/main.js',
+	entry: {
+		index: './src/index.js',
+		contact: './src/contact.js',
+		main: './src/main.js',
+	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'bundle.js',
+		filename: '[name].bundle.js', // Using [name] placeholder for dynamic filenames
 		clean: true,
 	},
 	devServer: {
@@ -34,9 +46,7 @@ const config = {
 			{
 				test: /\.css$/i,
 				use: [
-					process.env.NODE_ENV === 'production'
-						? MiniCssExtractPlugin.loader
-						: 'style-loader',
+					MiniCssExtractPlugin.loader,
 					{
 						loader: 'css-loader',
 						options: {
@@ -69,17 +79,18 @@ const config = {
 			},
 		],
 	},
+
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: 'src/index.html',
 			filename: 'index.html',
+			// chunks: ['main', 'index'], // Include 'main' and 'index' entry point in this HTML file
 		}),
-	].concat(multipleHtmlPlugins, [
-		// Add MiniCssExtractPlugin as a plugin for production
+		...multipleHtmlPlugins, // array of html plugins
 		new MiniCssExtractPlugin({
-			filename: '[name].css', // Output CSS file name
+			filename: 'output.css', // Output CSS file name using
 		}),
-	]),
+	],
 };
 
 module.exports = config;
