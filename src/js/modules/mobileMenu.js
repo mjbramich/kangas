@@ -41,7 +41,7 @@ const createMobileMenu = () => {
 	function closeMobileMenu() {
 		mobileMenu.classList.remove('w-full');
 		body.classList.remove('h-full');
-		body.classList.remove('overflow-hidden');-
+		body.classList.remove('overflow-hidden');
 		mobileMenuList.classList.remove('opacity-100');
 		closeBtnImage.classList.add('hidden');
 		openBtnImage.classList.remove('hidden');
