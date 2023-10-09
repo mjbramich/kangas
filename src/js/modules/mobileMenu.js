@@ -21,6 +21,7 @@ const createMobileMenu = () => {
 	function openMobileMenu() {
 		mobileMenu.classList.add('w-full');
 		mobileMenuList.classList.add('opacity-100');
+		body.classList.add('h-full');
 		body.classList.add('overflow-hidden');
 		openBtnImage.classList.add('hidden');
 		closeBtnImage.classList.remove('hidden');
@@ -39,7 +40,8 @@ const createMobileMenu = () => {
 
 	function closeMobileMenu() {
 		mobileMenu.classList.remove('w-full');
-		body.classList.remove('overflow-hidden');
+		body.classList.remove('h-full');
+		body.classList.remove('overflow-hidden');-
 		mobileMenuList.classList.remove('opacity-100');
 		closeBtnImage.classList.add('hidden');
 		openBtnImage.classList.remove('hidden');
