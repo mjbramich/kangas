@@ -19,9 +19,9 @@ const createMobileMenu = () => {
 	const mobileMenuLinks = Array.from(mobileMenu.querySelectorAll('a'));
 
 	function openMobileMenu() {
+		mobileMenu.classList.add('touch-none');
 		mobileMenu.classList.add('w-full');
 		mobileMenuList.classList.add('opacity-100');
-		body.classList.add('fixed');
 		body.classList.add('overflow-hidden');
 		openBtnImage.classList.add('hidden');
 		closeBtnImage.classList.remove('hidden');
