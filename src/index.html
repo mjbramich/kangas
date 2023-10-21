@@ -533,6 +533,7 @@
                 <h2 class="text-base font-semibold leading-7 text-gray-900 uppercase">Contact Us</h2>
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Get your free quote today!</h2>
             </div>
+
             <form action="#" id="quote" method="POST" name="Quote Request" class="mx-auto mt-16 max-w-2xl" netlify
                 enctype="multipart/form-data">
                 <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 items-center">
@@ -580,7 +581,7 @@
                         <label for="file-input"
                             class="block text-sm font-semibold leading-6 text-gray-900">Attachments</label>
 
-                        <label
+                        <!-- <label
                             class="w-full mt-2.5 px-3.5 py-2 flex  justify-center items-center gap-4 text-kangablue-dark   form-textarea rounded-md shadow-sm tracking-wide uppercase border-0 border-kangablue cursor-pointer hover:bg-kangablue hover:text-white ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-kangablue"
                             tabindex="0" id="file-input-container">
                             <span class="font-semibold text-xs sm:text-sm ">Select a
@@ -593,7 +594,13 @@
 
                             <input type='file' class="sr-only" id="file-input" />
 
-                        </label>
+                        </label> -->
+                        <div class="relative mt-2.5">
+                            <input
+                                class="block w-full file:border-0 file:bg-kangablue file:text-white file:px-3.5 text-gray-500 file:py-2.5 file:cursor-pointer file:text-sm file:font-semibold text-sm  border-0 shadow-sm ring-1 ring-inset focus:ring-2 focus:ring-inset focus:ring-kangablue border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 "
+                                id="file-input" type="file">
+                        </div>
+
                     </div>
 
 
