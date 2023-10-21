@@ -55,8 +55,31 @@ const privacyCheck = () => {
 	};
 };
 
+const filterCheckbox = () => {
+	document
+		.getElementById('quote')
+		.addEventListener('submit', function (event) {
+			// Get all checkbox inputs
+			const checkboxes = document.querySelectorAll(
+				'input[type="checkbox"]'
+			);
+
+			checkboxes.forEach((checkbox) => {
+				if (!checkbox.checked) {
+					// Remove the unchecked checkboxes from the form data
+					const name = checkbox.getAttribute('name');
+					if (name) {
+						this[name].remove();
+					}
+				}
+			});
+			// Form will  submit without the unchecked checkboxes
+		});
+};
+
 export const formFunctions = {
 	privacySlider,
 	privacyCheck,
 	fileAttachmentClick,
+	filterCheckbox,
 };
