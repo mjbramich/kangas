@@ -5,6 +5,6 @@ const { privacySlider, fileAttachmentClick, privacyCheck } = formFunctions;
 document.addEventListener('DOMContentLoaded', () => {
 	// form functions
 	privacySlider();
-	fileAttachmentClick();
+	// fileAttachmentClick();
 	privacyCheck();
 });
