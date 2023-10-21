@@ -533,7 +533,8 @@
                 <h2 class="text-base font-semibold leading-7 text-gray-900 uppercase">Contact Us</h2>
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Get your free quote today!</h2>
             </div>
-            <form action="#" id="quote" method="POST" name="Quote Request" class="mx-auto mt-16 max-w-2xl" netlify>
+            <form action="#" id="quote" method="POST" name="Quote Request" class="mx-auto mt-16 max-w-2xl" netlify
+                enctype="multipart/form-data">
                 <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 items-center">
                     <div>
                         <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First
@@ -576,7 +577,7 @@
 
 
                     <div class="sm:col-span-2">
-                        <label for="phone-number"
+                        <label for="file-input"
                             class="block text-sm font-semibold leading-6 text-gray-900">Attachments</label>
 
                         <label
@@ -591,6 +592,7 @@
                             </svg>
 
                             <input type='file' class="sr-only" id="file-input" />
+
                         </label>
                     </div>
 
