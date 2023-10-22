@@ -1,14 +1,14 @@
-const fileAttachmentClick = () => {
-	const fileInput = document.getElementById('file-input');
-	const parentContainer = document.getElementById('file-input-container');
+// const fileAttachmentClick = () => {
+// 	const fileInput = document.getElementById('file-input');
+// 	const parentContainer = document.getElementById('file-input-container');
 
-	// Handle key press events on the file attachment input
-	parentContainer.addEventListener('keydown', (event) => {
-		if (event.key === 'Enter') {
-			fileInput.click();
-		}
-	});
-};
+// 	// Handle key press events on the file attachment input
+// 	parentContainer.addEventListener('keydown', (event) => {
+// 		if (event.key === 'Enter') {
+// 			fileInput.click();
+// 		}
+// 	});
+// };
 
 const privacySlider = () => {
 	const privacyToggle = document.querySelector('#privacy-toggle-btn');
@@ -55,10 +55,7 @@ const privacyCheck = () => {
 	};
 };
 
-
-
 export const formFunctions = {
 	privacySlider,
 	privacyCheck,
-	fileAttachmentClick,
 };
