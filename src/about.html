@@ -1,453 +1,645 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Kangas Exterior Solutions offers high-quality and professional exterior services, including pressure-washing, soft-washing, roofs, windows, and more. Contact us for reliable solutions to enhance the beauty and durability of your property.">
-
-    <title>Document</title>
-
-
-
-</head>
-
-<body class="lg:overflow-auto">
-    <!-- NAVBAR -->
-
-    <nav class="drop-shadow-xl relative z-10 bg-kangablue" id="navbar" role="navigation" aria-label="main navigation">
-        <div class=" mx-auto max-w-7xl px-4">
-            <div class="flex items-center justify-between h-24" id="navbar">
-                <div class="logo w-36 object-cover">
-                    <a href="./index.html">
-                        <img class='object-cover ' src=" ./images/kangastext.png" alt="kangas exterior solutions">
-                    </a>
-                </div>
-
-                <div class="hidden lg:flex" id="navbar-dropdown">
-                    <ul class="lg:flex gap-4 items-center uppercase  text-white font-semibold">
-                        <li><a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                                href="./about.html">About</a></li>
-                        <li>
-                            <a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                                href="./services.html">Services</a>
-                        </li>
-                        <li><a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                                href="./gallery.html">Gallery</a></li>
-                        <li><a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                                href="./contact.html">Contact us</a></li>
-                    </ul>
-                </div>
-
-                <div class="flex gap-4 items-center justify-center text-white">
-                    <button>
-                        <a class=" hidden md:block rounded-md border-2 border-white px-4 py-2 text-sm font-semibold uppercase text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-white hover:text-kangablue focus:outline-none"
-                            href="tel:0488352175">Call us
-                        </a></button>
-
-                    <div class="flex -mr-2 lg:hidden ">
-                        <button id="navBtn"
-                            class="text-white dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                            aria-controls="mobile-menu" aria-expanded="false">
-                            <span class="sr-only">Open main menu</span>
-
-                            <!--Hamburger Open Btn-->
-                            <svg width="20" height="20" id="navOpenBtn" fill="currentColor" class="w-8 h-8"
-                                viewBox="0 0 1792 1792" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z">
-                                </path>
-                            </svg>
-
-                            <!--Hamburger Close Btn-->
-                            <svg class="hidden h-8 w-8" id="navCloseBtn" fill="none" viewBox="0 0 24 24"
-                                stroke-width="3" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Hamburger Menu-->
-        <div class=" will-change-transform ease-in-out duration-1000 overflow-x-hidden fixed  bg-richblack opacity-90 overflow-y-hidden text-white w-0  lg:hidden"
-            id="mobile-menu">
-            <div class="gap-1 px-2 pb-3 pt-6 h-mb-menu-height flex flex-col items-center justify-center text-2xl  uppercase opacity-0 transition-opacity duration-1000"
-                id="mobile-menu-list">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="./index.html"
-                    class="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                    aria-current="page">Home</a>
-                <a href="./about.html"
-                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">About</a>
-                <a href="./services.html"
-                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ">Services</a>
-                <a href="./gallery.html"
-                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Gallery</a>
-                <a href="./contact.html"
-                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white  duration-200 ease-in">Contact</a>
-                <a href="tel:0488352175"
-                    class="  md:hidden hover:bg-gray-700 hover:text-white  block rounded-md px-3 py-2  font-medium transition truncate focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white  duration-200 ease-in">Call
-                    Us</a>
-
-
-
-
-                <p class="block rounded-md px-3 mt-8   font-medium truncate">
-                    Follow
-                    us
-                </p>
-
-
-                <div class="px-3 py-2 flex items-center justify-between gap-8">
-
-                    <a href="https://www.facebook.com/profile.php?id=100091895966657"
-                        class="text-white cursor-pointer hover:text-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            class="w-10 h-10" viewBox="0 0 24 24">
-                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                        </svg>
-                    </a>
-
-                    <a href="#"
-                        class="text-kangawhite cursor-pointer hover:text-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
-                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                        </svg>
-                    </a>
-
-                </div>
-
-
-            </div>
-        </div>
-    </nav>
-
-
-    <!--CONTENT-->
-    <main id="main-content" class="bg-kangagray pb-56">
-
-        <!--JOURNEY-->
-        <div class="overflow-hidden  pt-16 pb-8">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div
-                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center">
-
-                    <div class="lg:pr-8 ">
-                        <div class="lg:max-w-lg text-gray-900">
-                            <h2 class="text-base font-semibold leading-7  uppercase">About us</h2>
-                            <p class="mt-2 text-3xl font-bold tracking-tight  sm:text-4xl">Our Story
-                            </p>
-                            <p class="mt-6 text-lg leading-8 ">Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Voluptatibus doloremque soluta, ducimus harum neque corporis sapiente?
-                                Nostrum voluptatem, obcaecati in, dolores ad ducimus deserunt omnis est molestiae unde
-                                iste saepe!
-                                Nihil, iusto, aliquam, quis neque deleniti aperiam voluptatem velit tempore libero
-                                inventore quasi veritatis dolorem dignissimos qui itaque porro doloribus reprehenderit?
-                                Facilis eius unde itaque libero nihil placeat, consectetur aliquid!
-
-                            <p class="mt-6 text-lg leading-8 ">Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Earum, nihil totam debitis
-                                aspernatur sapiente, eligendi, commodi iste molestiae quasi a eum! Tempora illum vel
-                                iusto
-                                aut, laudantium autem. Laboriosam, sint.
-                                Veniam quisquam alias earum quod asperiores doloribus deleniti sint pariatur id autem
-                                velit
-                                harum sit corporis labore, expedita tempore ipsa temporibus? Reprehenderit eius, vel
-                                nostrum
-                                eligendi voluptatum deserunt? Eum, ipsam!</p>
-                        </div>
-
-
-                    </div>
-
-                    <img src="./images/362175669_295443113051387_2234845035332693075_n.jpg" alt="Product screenshot"
-                        class=" rounded-lg shadow-xl  ring-gray-400/10  w-full">
-                </div>
-            </div>
-        </div>
-
-
-        <!--MISSION-->
-        <div class="overflow-hidden bg-gray pt-8 pb-8 ">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div
-                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center">
-
-                    <img src="./images/362175669_295443113051387_2234845035332693075_n.jpg" alt="Product screenshot"
-                        class="order-2  rounded-lg shadow-xl  ring-gray-400/10  w-full">
-
-                    <div class="lg:pl-8 lg:order-3 text-gray-900">
-                        <div class="lg:max-w-lg">
-                            <p class="mt-2 text-3xl font-bold tracking-tight  sm:text-4xl">Our Mission
-                            </p>
-                            <p class="mt-6 text-lg leading-8 ">Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Voluptatibus doloremque soluta, ducimus harum neque corporis sapiente?
-                                Nostrum voluptatem, obcaecati in, dolores ad ducimus deserunt omnis est molestiae unde
-                                iste saepe!
-                                Nihil, iusto, aliquam, quis neque deleniti aperiam voluptatem velit tempore libero
-                                inventore quasi veritatis dolorem dignissimos qui itaque porro doloribus reprehenderit?
-                                Facilis eius unde itaque libero nihil placeat, consectetur aliquid!
-
-                            <p class="mt-6 text-lg leading-8 ">Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Earum, nihil totam debitis
-                                aspernatur sapiente, eligendi, commodi iste molestiae quasi a eum! Tempora illum vel
-                                iusto
-                                aut, laudantium autem. Laboriosam, sint.
-                                Veniam quisquam alias earum quod asperiores doloribus deleniti sint pariatur id autem
-                                velit
-                                harum sit corporis labore, expedita tempore ipsa temporibus? Reprehenderit eius, vel
-                                nostrum
-                                eligendi voluptatum deserunt? Eum, ipsam!</p>
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- VALUES -->
-        <div class="pt-8 overflow-hidden">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none justify-center lg:grid-cols-2
-                    items-center">
-                    <div>
-                        <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl ">Our Values</h2>
-                        <p class="mt-6 text-lg leading-8 text-gray-900 lg:max-w-lg">At Kangas, we established our
-                            founding
-                            principles when we first started, and we revisit them regularly to ensure they remain
-                            relevant and authentic. We are committed to upholding these values throughout our journey,
-                            and you can hold us accountable to them:
-                        </p>
-                    </div>
-
-
-
-                </div>
-                <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none text-gray-900">
-
-                    <dl class=" grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-                        <div class="flex flex-col">
-                            <dt class="text-2xl font-bold leading-9 tracking-tight">Integrity</dt>
-                            <dd class="text-base leading-7  ">Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Laboriosam, ratione!</dd>
-                        </div>
-                        <div class="flex flex-col">
-                            <dt class="text-2xl font-bold leading-9 tracking-tight">Innovation</dt>
-                            <dd class="text-base leading-7  ">Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Et, culpa.</dd>
-                        </div>
-                        <div class="flex flex-col">
-                            <dt class="text-2xl font-bold leading-9 tracking-tight">Honesty</dt>
-                            <dd class="text-base leading-7 ">Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Ipsum, facilis?</dd>
-                        </div>
-                        <div class="flex flex-col">
-                            <dt class="text-2xl font-bold leading-9 tracking-tight">Environmental Responsibility
-                            </dt>
-                            <dd class="text-base leading-7 ">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Quis, necessitatibus!</dd>
-                        </div>
-                    </dl>
-                </div>
-            </div>
-        </div>
-
-
-    </main>
-
-
-
-    <!-- FOOTER -->
-    <footer class="bg-kangablue relative pt-56">
-
-        <div class="absolute max-w-7xl sm:px-6  lg:px-8 z-10 top-[-10rem] left-0 right-0 mx-auto ">
-            <div
-                class="relative isolate overflow-hidden  bg-richblack  xl:shadow-2xl rounded-3xl px-4 flex justify-between lg:gap-x-20 lg:px-24 lg:pt-0 max-h-max">
-                <svg viewBox="0 0 1024 1024"
-                    class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem]  [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full ml-80 lg:left-1/2 translate-x-1/2 translate-y-0"
-                    aria-hidden="true">
-                    <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
-                        fill-opacity="0.7" />
-                    <defs>
-                        <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                            <stop stop-color="#7775D6" />
-                            <stop offset="1" stop-color="#E935C1" />
-                        </radialGradient>
-                    </defs>
-                </svg>
-                <div
-                    class="mx-auto flex flex-col justify-center max-w-sm sm:max-w-lg sm:px-4 lg:px-0 py-8 lg:py-8 text-center lg:mx-0 lg:flex-auto  xl:py-12 sm:text-left h-80">
-                    <h2 class=" text-xl md:text-2xl xl:text-3xl font-bold tracking-tight text-white ">Is it time to
-                        start
-                        looking
-                        after your investments?</h2>
-                    <p class="mt-4 xl:mt-8 text-md lg:text-lg  text-gray-300">Ac euismod vel sit maecenas id
-                        pellentesque eu
-                        sed
-                        consectetur. Malesuada adipiscing sagittis vel nulla.</p>
-                    <div class=" mt-4 xl:mt-8 flex items-center justify-center gap-x-6 sm:justify-start">
-                        <a href="#"
-                            class="rounded-md border-2 border-white md:px-6 py-3 px-2 md:py-4 text-sm md:text-md font-semibold uppercase text-white shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-white hover:text-dark">Get
-                            in touch</a>
-
-                    </div>
-
-                </div>
-                <div class=" lg:mt-0 items-end justify-center hidden sm:flex">
-                    <img class="max-w-[20rem] md:max-w-[24rem]  xl:max-w-[28rem]  rounded-md"
-                        src="./images/kangaBody.png" alt="App screenshot" width="1824" height="1080">
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="mx-auto max-w-7xl px-6 lg:px-8 text-white">
-            <div class="pb-4">
-                <div class="grid grid-cols-1 gap-x-8 gap-y-8 lg:grid-cols-2">
-                    <div class="max-w-sm">
-                        <a href="/" aria-label="home" class="">
-                            <img class="h-16" src="./images/kangastext.png" alt="">
-                        </a>
-                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quos!
-                        </p>
-
-                        <div class="mt-4 flex items-center justify-start gap-2">
-                            <span class="font-semibold">Follow Us:</span>
-                            <a href="https://www.facebook.com/profile.php?id=100091895966657"
-                                aria-label="Kangas Facebook"
-                                class=" cursor-pointer hover:text-slate-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    class="w-8 h-8" viewBox="0 0 24 24">
-                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                </svg>
-                            </a>
-
-                            <a href="https://www.instagram.com/kangas_exterior_solutions/" aria-label="Kangas Instagram"
-                                class=" cursor-pointer hover:text-slate-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
-                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                                </svg>
-                            </a>
-
-
-
-                        </div>
-                    </div>
-
-                    <nav class="max-w-l">
-                        <ul role="list" class="grid grid-cols-2 gap-8 sm:grid-cols-3 text-white">
-                            <li class="">
-                                <div class="font-display text-sm font-bold tracking-wider ">Company
-                                </div>
-                                <ul role="list" class="font-display text-sm tracking-wider ">
-                                    <li class="mt-4 hover:text-slate-400"> <a href="/about.html"
-                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">About</a>
-                                    </li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="/services.html"
-                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Services</a>
-                                    </li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="/gallery.html"
-                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Gallery</a>
-                                    </li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="/contact.html"
-                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Contact</a>
-                                    </li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="/privacy.html"
-                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Privacy
-                                            Policy</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <div class="font-display text-sm font-bold tracking-wider ">Our
-                                    Services
-                                </div>
-                                <ul role="list" class="font-display text-sm tracking-wider  ">
-                                    <li class="mt-4 hover:text-slate-400"><a href="./services.html#pressure-washing"
-                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Roof
-                                            Cleaning</a></li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="./services.html#soft-washing"
-                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">House
-                                            Cleaning</a></li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="./services.html#pressure-washing"
-                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Driveway
-                                            Cleaning</a>
-                                    </li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="./services.html#other"
-                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Gutter
-                                            Cleaning</a></li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="./services.html#other"
-                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Solar
-                                            Panel
-                                            Cleaning</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <div class="font-display text-sm font-bold tracking-wider ">Contact
-                                    Info
-                                </div>
-                                <ul role="list" class="font-display text-sm  tracking-wider  ">
-                                    <li class="mt-4 hover:text-slate-400"><a href="tel:0488352175"
-                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">0488
-                                            352 175</a>
-                                    </li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="tel:0447286666"
-                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">0447
-                                            286 666</a>
-                                    </li>
-                                    <li class="mt-2 break-words hover:text-slate-400"><a
-                                            href="mailto:kangas.exterior.solutions@gmail.com"
-                                            class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">solutions@kangas.au</a>
-                                    </li>
-                                    <li class="mt-2">Devonport, TAS.</li>
-                                    <li class="mt-2">ABN - 24 328 415</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-
-
-                </div>
-
-                <div class=" mb-4 mt-16  flex flex-wrap items-end justify-between gap-x-6 border-t
-                        border-white pt-6 text-sm">
-
-
-
-                    <p>Copyright © <span id="get-year"></span>
-
-                        Kangas Exterior Solutions.
-                        All rights reserved
-                    </p>
-
-                    <p class="mt-0 text-sm text-center sm:text-left"> <a href="https://www.mjbramich.dev"
-                            class="hover:text-slate-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                            Created
-                            by mjbramich</a></p>
-                </div>
-
-            </div>
-        </div>
-    </footer>
-</body>
-
-
-
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Kangas Exterior Solutions offers high-quality and professional exterior services, including pressure-washing, soft-washing, roofs, windows, and more. Contact us for reliable solutions to enhance the beauty and durability of your property."
+		/>
+
+		<title>Document</title>
+	</head>
+
+	<body class="lg:overflow-auto">
+		<!-- NAVBAR -->
+
+		<nav
+			class="drop-shadow-xl relative z-10 bg-kangablue"
+			id="navbar"
+			role="navigation"
+			aria-label="main navigation"
+		>
+			<div class="mx-auto max-w-7xl px-4">
+				<div class="flex items-center justify-between h-24" id="navbar">
+					<div class="logo w-36 object-cover">
+						<a href="./index.html">
+							<img
+								class="object-cover"
+								src=" ./images/kangastext.png"
+								alt="kangas exterior solutions"
+							/>
+						</a>
+					</div>
+
+					<div class="hidden lg:flex" id="navbar-dropdown">
+						<ul
+							class="lg:flex gap-4 items-center uppercase text-white font-semibold"
+						>
+							<li>
+								<a
+									class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+									href="./about.html"
+									>About</a
+								>
+							</li>
+							<li>
+								<a
+									class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+									href="./services.html"
+									>Services</a
+								>
+							</li>
+							<li>
+								<a
+									class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+									href="./gallery.html"
+									>Gallery</a
+								>
+							</li>
+							<li>
+								<a
+									class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+									href="./contact.html"
+									>Contact us</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div class="flex gap-4 items-center justify-center text-white">
+						<button>
+							<a
+								class="hidden md:block rounded-md border-2 border-white px-4 py-2 text-sm font-semibold uppercase text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-white hover:text-kangablue focus:outline-none"
+								href="tel:0488352175"
+								>Call us
+							</a>
+						</button>
+
+						<div class="flex -mr-2 lg:hidden">
+							<button
+								id="navBtn"
+								class="text-white dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+								aria-controls="mobile-menu"
+								aria-expanded="false"
+							>
+								<span class="sr-only">Open main menu</span>
+
+								<!--Hamburger Open Btn-->
+								<svg
+									width="20"
+									height="20"
+									id="navOpenBtn"
+									fill="currentColor"
+									class="w-8 h-8"
+									viewBox="0 0 1792 1792"
+									aria-hidden="true"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z"
+									></path>
+								</svg>
+
+								<!--Hamburger Close Btn-->
+								<svg
+									class="hidden h-8 w-8"
+									id="navCloseBtn"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="3"
+									stroke="currentColor"
+									aria-hidden="true"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M6 18L18 6M6 6l12 12"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Hamburger Menu-->
+			<div
+				class="will-change-transform bg-richblack opacity-0 overflow-hidden text-white fixed w-screen h-mb-menu-height invisible aria-hidden pointer-events-none lg:hidden"
+				id="mobile-menu"
+			>
+				<div
+					class="gap-1 h-mb-menu-height flex flex-col items-center justify-center text-2xl uppercase"
+					id="mobile-menu-list"
+				>
+					<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+					<a
+						href="./index.html"
+						class="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						>Home</a
+					>
+					<a
+						href="./about.html"
+						class="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						>About</a
+					>
+					<a
+						href="./services.html"
+						class="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						>Services</a
+					>
+					<a
+						href="./gallery.html"
+						class="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						>Gallery</a
+					>
+					<a
+						href="./contact.html"
+						class="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						>Contact</a
+					>
+					<a
+						href="tel:0488352175"
+						class="md:hidden hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 font-medium truncate focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						>Call Us</a
+					>
+
+					<p class="block rounded-md px-3 mt-8 font-medium truncate">
+						Follow us
+					</p>
+
+					<div class="px-3 py-2 flex items-center justify-between gap-8">
+						<a
+							href="https://www.facebook.com/profile.php?id=100091895966657"
+							class="text-white cursor-pointer hover:text-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						>
+							<svg
+								fill="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								class="w-10 h-10"
+								viewBox="0 0 24 24"
+							>
+								<path
+									d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+								></path>
+							</svg>
+						</a>
+
+						<a
+							href="#"
+							class="text-kangawhite cursor-pointer hover:text-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						>
+							<svg
+								fill="none"
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								class="w-10 h-10"
+								viewBox="0 0 24 24"
+							>
+								<rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+								<path
+									d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+								></path>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!--CONTENT-->
+		<main id="main-content" class="bg-kangagray pb-56">
+			<!--JOURNEY-->
+			<div class="overflow-hidden pt-16 pb-8">
+				<div class="mx-auto max-w-7xl px-6 lg:px-8">
+					<div
+						class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center"
+					>
+						<div class="lg:pr-8">
+							<div class="lg:max-w-lg text-gray-900">
+								<h2 class="text-base font-semibold leading-7 uppercase">
+									About us
+								</h2>
+								<p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
+									Our Story
+								</p>
+								<p class="mt-6 text-lg leading-8">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Voluptatibus doloremque soluta, ducimus harum neque corporis
+									sapiente? Nostrum voluptatem, obcaecati in, dolores ad ducimus
+									deserunt omnis est molestiae unde iste saepe! Nihil, iusto,
+									aliquam, quis neque deleniti aperiam voluptatem velit tempore
+									libero inventore quasi veritatis dolorem dignissimos qui
+									itaque porro doloribus reprehenderit? Facilis eius unde itaque
+									libero nihil placeat, consectetur aliquid!
+								</p>
+
+								<p class="mt-6 text-lg leading-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Earum, nihil totam debitis aspernatur sapiente, eligendi,
+									commodi iste molestiae quasi a eum! Tempora illum vel iusto
+									aut, laudantium autem. Laboriosam, sint. Veniam quisquam alias
+									earum quod asperiores doloribus deleniti sint pariatur id
+									autem velit harum sit corporis labore, expedita tempore ipsa
+									temporibus? Reprehenderit eius, vel nostrum eligendi
+									voluptatum deserunt? Eum, ipsam!
+								</p>
+							</div>
+						</div>
+
+						<img
+							src="./images/362175669_295443113051387_2234845035332693075_n.jpg"
+							alt="Product screenshot"
+							class="rounded-lg shadow-xl ring-gray-400/10 w-full"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<!--MISSION-->
+			<div class="overflow-hidden bg-gray pt-8 pb-8">
+				<div class="mx-auto max-w-7xl px-6 lg:px-8">
+					<div
+						class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center"
+					>
+						<img
+							src="./images/362175669_295443113051387_2234845035332693075_n.jpg"
+							alt="Product screenshot"
+							class="order-2 rounded-lg shadow-xl ring-gray-400/10 w-full"
+						/>
+
+						<div class="lg:pl-8 lg:order-3 text-gray-900">
+							<div class="lg:max-w-lg">
+								<p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
+									Our Mission
+								</p>
+								<p class="mt-6 text-lg leading-8">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Voluptatibus doloremque soluta, ducimus harum neque corporis
+									sapiente? Nostrum voluptatem, obcaecati in, dolores ad ducimus
+									deserunt omnis est molestiae unde iste saepe! Nihil, iusto,
+									aliquam, quis neque deleniti aperiam voluptatem velit tempore
+									libero inventore quasi veritatis dolorem dignissimos qui
+									itaque porro doloribus reprehenderit? Facilis eius unde itaque
+									libero nihil placeat, consectetur aliquid!
+								</p>
+
+								<p class="mt-6 text-lg leading-8">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Earum, nihil totam debitis aspernatur sapiente, eligendi,
+									commodi iste molestiae quasi a eum! Tempora illum vel iusto
+									aut, laudantium autem. Laboriosam, sint. Veniam quisquam alias
+									earum quod asperiores doloribus deleniti sint pariatur id
+									autem velit harum sit corporis labore, expedita tempore ipsa
+									temporibus? Reprehenderit eius, vel nostrum eligendi
+									voluptatum deserunt? Eum, ipsam!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- VALUES -->
+			<div class="pt-8 overflow-hidden">
+				<div class="mx-auto max-w-7xl px-6 lg:px-8">
+					<div
+						class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none justify-center lg:grid-cols-2 items-center"
+					>
+						<div>
+							<h2
+								class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+							>
+								Our Values
+							</h2>
+							<p class="mt-6 text-lg leading-8 text-gray-900 lg:max-w-lg">
+								At Kangas, we established our founding principles when we first
+								started, and we revisit them regularly to ensure they remain
+								relevant and authentic. We are committed to upholding these
+								values throughout our journey, and you can hold us accountable
+								to them:
+							</p>
+						</div>
+					</div>
+					<div
+						class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none text-gray-900"
+					>
+						<dl class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+							<div class="flex flex-col">
+								<dt class="text-2xl font-bold leading-9 tracking-tight">
+									Integrity
+								</dt>
+								<dd class="text-base leading-7">
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+									Laboriosam, ratione!
+								</dd>
+							</div>
+							<div class="flex flex-col">
+								<dt class="text-2xl font-bold leading-9 tracking-tight">
+									Innovation
+								</dt>
+								<dd class="text-base leading-7">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et,
+									culpa.
+								</dd>
+							</div>
+							<div class="flex flex-col">
+								<dt class="text-2xl font-bold leading-9 tracking-tight">
+									Honesty
+								</dt>
+								<dd class="text-base leading-7">
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+									Ipsum, facilis?
+								</dd>
+							</div>
+							<div class="flex flex-col">
+								<dt class="text-2xl font-bold leading-9 tracking-tight">
+									Environmental Responsibility
+								</dt>
+								<dd class="text-base leading-7">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Quis, necessitatibus!
+								</dd>
+							</div>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- FOOTER -->
+		<footer class="bg-kangablue relative pt-56">
+			<div
+				class="absolute max-w-7xl sm:px-6 lg:px-8 z-10 top-[-10rem] left-0 right-0 mx-auto"
+			>
+				<div
+					class="relative isolate overflow-hidden bg-richblack xl:shadow-2xl rounded-3xl px-4 flex justify-between lg:gap-x-20 lg:px-24 lg:pt-0 max-h-max"
+				>
+					<svg
+						viewBox="0 0 1024 1024"
+						class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full ml-80 lg:left-1/2 translate-x-1/2 translate-y-0"
+						aria-hidden="true"
+					>
+						<circle
+							cx="512"
+							cy="512"
+							r="512"
+							fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+							fill-opacity="0.7"
+						/>
+						<defs>
+							<radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+								<stop stop-color="#7775D6" />
+								<stop offset="1" stop-color="#E935C1" />
+							</radialGradient>
+						</defs>
+					</svg>
+					<div
+						class="mx-auto flex flex-col justify-center max-w-sm sm:max-w-lg sm:px-4 lg:px-0 py-8 lg:py-8 text-center lg:mx-0 lg:flex-auto xl:py-12 sm:text-left h-80"
+					>
+						<h2
+							class="text-xl md:text-2xl xl:text-3xl font-bold tracking-tight text-white"
+						>
+							Is it time to start looking after your investments?
+						</h2>
+						<p class="mt-4 xl:mt-8 text-md lg:text-lg text-gray-300">
+							Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
+							Malesuada adipiscing sagittis vel nulla.
+						</p>
+						<div
+							class="mt-4 xl:mt-8 flex items-center justify-center gap-x-6 sm:justify-start"
+						>
+							<a
+								href="#"
+								class="rounded-md border-2 border-white md:px-6 py-3 px-2 md:py-4 text-sm md:text-md font-semibold uppercase text-white shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-white hover:text-dark"
+								>Get in touch</a
+							>
+						</div>
+					</div>
+					<div class="lg:mt-0 items-end justify-center hidden sm:flex">
+						<img
+							class="max-w-[20rem] md:max-w-[24rem] xl:max-w-[28rem] rounded-md"
+							src="./images/kangaBody.png"
+							alt="App screenshot"
+							width="1824"
+							height="1080"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div class="mx-auto max-w-7xl px-6 lg:px-8 text-white">
+				<div class="pb-4">
+					<div class="grid grid-cols-1 gap-x-8 gap-y-8 lg:grid-cols-2">
+						<div class="max-w-sm">
+							<a href="/" aria-label="home" class="">
+								<img class="h-16" src="./images/kangastext.png" alt="" />
+							</a>
+							<p class="mt-4">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Excepturi, quos!
+							</p>
+
+							<div class="mt-4 flex items-center justify-start gap-2">
+								<span class="font-semibold">Follow Us:</span>
+								<a
+									href="https://www.facebook.com/profile.php?id=100091895966657"
+									aria-label="Kangas Facebook"
+									class="cursor-pointer hover:text-slate-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+								>
+									<svg
+										fill="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										class="w-8 h-8"
+										viewBox="0 0 24 24"
+									>
+										<path
+											d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+										></path>
+									</svg>
+								</a>
+
+								<a
+									href="https://www.instagram.com/kangas_exterior_solutions/"
+									aria-label="Kangas Instagram"
+									class="cursor-pointer hover:text-slate-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+								>
+									<svg
+										fill="none"
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										class="w-8 h-8"
+										viewBox="0 0 24 24"
+									>
+										<rect
+											width="20"
+											height="20"
+											x="2"
+											y="2"
+											rx="5"
+											ry="5"
+										></rect>
+										<path
+											d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+										></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+
+						<nav class="max-w-l">
+							<ul
+								role="list"
+								class="grid grid-cols-2 gap-8 sm:grid-cols-3 text-white"
+							>
+								<li class="">
+									<div class="font-display text-sm font-bold tracking-wider">
+										Company
+									</div>
+									<ul role="list" class="font-display text-sm tracking-wider">
+										<li class="mt-4 hover:text-slate-400">
+											<a
+												href="/about.html"
+												class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+												>About</a
+											>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a
+												href="/services.html"
+												class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+												>Services</a
+											>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a
+												href="/gallery.html"
+												class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+												>Gallery</a
+											>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a
+												href="/contact.html"
+												class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+												>Contact</a
+											>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a
+												href="/privacy.html"
+												class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+												>Privacy Policy</a
+											>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<div class="font-display text-sm font-bold tracking-wider">
+										Our Services
+									</div>
+									<ul role="list" class="font-display text-sm tracking-wider">
+										<li class="mt-4 hover:text-slate-400">
+											<a
+												href="./services.html#pressure-washing"
+												class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+												>Roof Cleaning</a
+											>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a
+												href="./services.html#soft-washing"
+												class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+												>House Cleaning</a
+											>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a
+												href="./services.html#pressure-washing"
+												class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+												>Driveway Cleaning</a
+											>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a
+												href="./services.html#other"
+												class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+												>Gutter Cleaning</a
+											>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a
+												href="./services.html#other"
+												class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+												>Solar Panel Cleaning</a
+											>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<div class="font-display text-sm font-bold tracking-wider">
+										Contact Info
+									</div>
+									<ul role="list" class="font-display text-sm tracking-wider">
+										<li class="mt-4 hover:text-slate-400">
+											<a
+												href="tel:0488352175"
+												class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+												>0488 352 175</a
+											>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a
+												href="tel:0447286666"
+												class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+												>0447 286 666</a
+											>
+										</li>
+										<li class="mt-2 break-words hover:text-slate-400">
+											<a
+												href="mailto:kangas.exterior.solutions@gmail.com"
+												class="focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+												>solutions@kangas.au</a
+											>
+										</li>
+										<li class="mt-2">Devonport, TAS.</li>
+										<li class="mt-2">ABN - 24 328 415</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div
+						class="mb-4 mt-16 flex flex-wrap items-end justify-between gap-x-6 border-t border-white pt-6 text-sm"
+					>
+						<p>
+							Copyright © <span id="get-year"></span>
+
+							Kangas Exterior Solutions. All rights reserved
+						</p>
+
+						<p class="mt-0 text-sm text-center sm:text-left">
+							<a
+								href="https://www.mjbramich.dev"
+								class="hover:text-slate-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+							>
+								Created by mjbramich</a
+							>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
