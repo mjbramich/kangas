@@ -4,6 +4,7 @@ const createMobileMenu = () => {
 	const mobileMenuList = document.getElementById('mobile-menu-list');
 	const openBtnImage = document.getElementById('navOpenBtn');
 	const closeBtnImage = document.getElementById('navCloseBtn');
+	const mainContent = document.getElementById('main-content');
 	const body = document.body;
 	let firstMenuLink, lastMenuLink;
 
@@ -20,8 +21,9 @@ const createMobileMenu = () => {
 
 	function openMobileMenu() {
 		mobileMenu.classList.add('touch-none');
-		mobileMenu.classList.add('w-full');
-		mobileMenuList.classList.add('opacity-100');
+		mobileMenu.classList.add('opacity-100');
+		mobileMenu.classList.remove('invisible');
+		mobileMenu.classList.remove('pointer-events-none');
 		body.classList.add('overflow-hidden');
 		openBtnImage.classList.add('hidden');
 		closeBtnImage.classList.remove('hidden');
@@ -39,8 +41,11 @@ const createMobileMenu = () => {
 	}
 
 	function closeMobileMenu() {
-		mobileMenu.classList.remove('w-full');
-		mobileMenuList.classList.remove('opacity-100');
+		mobileMenu.classList.remove('opacity-100');
+		mobileMenu.classList.add('invisible');
+		mobileMenu.classList.remove('touch-none');
+		mobileMenu.classList.add('pointer-events-none');
+
 		body.classList.remove('fixed');
 		body.classList.remove('overflow-hidden');
 		closeBtnImage.classList.add('hidden');
@@ -83,9 +88,7 @@ const createMobileMenu = () => {
 function initializeMobileMenu() {
 	const mobileMenuInstance = createMobileMenu();
 	const navBtn = document.getElementById('navBtn');
-	navBtn.addEventListener('click', () =>
-		mobileMenuInstance.toggleMobileMenu()
-	);
+	navBtn.addEventListener('click', () => mobileMenuInstance.toggleMobileMenu());
 }
 
 export default initializeMobileMenu;

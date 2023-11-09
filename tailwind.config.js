@@ -32,6 +32,20 @@ module.exports = {
 				overlay: '#44403c',
 				richblack: '#111827',
 			},
+			keyframes: {
+				fadein: {
+					'0%': { opacity: 0, visibility: 'visible' },
+					'100%': { opacity: 1 },
+				},
+				fadeout: {
+					'100%': { opacity: 1 },
+					'0%': { opacity: 0, visibility: 'hidden' },
+				},
+			},
+			animation: {
+				'open-menu': 'fadein 1s ease-in-out ',
+				'close-menu': 'fadeout 2s ease-in-out',
+			},
 		},
 	},
 	plugins: [
