@@ -1,0 +1,17 @@
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    HSID = "HSID=value; Domain=.google.com; Path=/; SameSite=None; Secure"
+    SSID = "SSID=value; Domain=.google.com; Path=/; SameSite=None; Secure"
+    APISID = "APISID=value; Domain=.google.com; Path=/; SameSite=None; Secure"
+    SAPISID = "SAPISID=value; Domain=.google.com; Path=/; SameSite=None; Secure"
+    __Secure-1PAPISID = "__Secure-1PAPISID=value; Domain=.google.com; Path=/; SameSite=None; Secure"
+    OGPC = "OGPC=value; Domain=.google.com; Path=/; SameSite=None; Secure"
+    SID = "SID=value; Domain=.google.com; Path=/; SameSite=None; Secure"
+    __Secure-1PSID = "__Secure-1PSID=value; Domain=.google.com; Path=/; SameSite=None; Secure"
+    OTZ = "OTZ=value; Domain=www.google.com; Path=/; SameSite=None; Secure"
+    __Secure-1PSIDTS = "__Secure-1PSIDTS=value; Domain=.google.com; Path=/; SameSite=None; Secure"
+    DV = "DV=value; Domain=www.google.com; Path=/; SameSite=None; Secure"
+    SIDCC = "SIDCC=value; Domain=.google.com; Path=/; SameSite=None; Secure"
+    __Secure-1PSIDCC = "__Secure-1PSIDCC=value; Domain=.google.com; Path=/; SameSite=None; Secure"
