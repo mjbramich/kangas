@@ -236,7 +236,7 @@
 
                 </div>
 
-                <form action="#" method="POST" class="mx-auto mt-6 lg:mt-0 max-w-2xl ">
+                <form id="quote" method="POST" name="Quote Request" netlify class="mx-auto mt-6 lg:mt-0 max-w-2xl ">
                     <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 items-center">
                         <div>
                             <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First
@@ -282,10 +282,10 @@
 
 
                         <div class="sm:col-span-2">
-                            <label for="attachment"
+                            <label for="file-input"
                                 class="block text-sm font-semibold leading-6 text-gray-900">Attachments</label>
 
-                            <label
+                            <!-- <label
                                 class="w-full mt-2.5 px-3.5 py-2 flex  justify-center items-center gap-4 text-kangadarkkangablue   form-textarea rounded-md shadow-sm tracking-wide uppercase border-0 border-kangablue cursor-pointer hover:bg-kangablue hover:text-white ring-1 ring-inset  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-kangablue"
                                 tabindex="0" id="file-input-container">
                                 <span class="font-semibold text-xs sm:text-sm ">Select a
@@ -297,7 +297,13 @@
                                 </svg>
 
                                 <input type='file' class="sr-only" id="file-input" />
-                            </label>
+                            </label> -->
+
+                            <div class="relative mt-2.5">
+                                <input
+                                    class="block w-full file:border-0 file:bg-kangablue file:text-white file:px-3.5 text-gray-500 file:py-2.5 file:cursor-pointer file:text-sm file:font-semibold text-sm  border-0 shadow-sm ring-1 ring-inset focus:ring-2 focus:ring-inset focus:ring-kangablue border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 "
+                                    id="file-input" type="file" name="Attachments">
+                            </div>
                         </div>
 
 
@@ -308,35 +314,35 @@
 
                             <div class="sm:flex gap-x-4 gap-y-2 flex-wrap capitalize mt-2.5">
                                 <div class="flex items-center ">
-                                    <input id="service1" name="roof-cleaning" value="white" type="checkbox"
+                                    <input id="service1" name="roof-cleaning" value="true" type="checkbox"
                                         class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
                                     <label for="service1" class="ml-2 min-w-0 flex-1 text-gray-500 ">Roof
                                         Cleaning</label>
                                 </div>
 
                                 <div class="flex items-center">
-                                    <input id="service2" name="house-cleaning" value="white" type="checkbox"
+                                    <input id="service2" name="house-cleaning" value="true" type="checkbox"
                                         class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
                                     <label for="service2" class="ml-2 min-w-0 flex-1 text-gray-500 ">House
                                         Cleaning</label>
                                 </div>
 
                                 <div class="flex items-center">
-                                    <input id="service3" name="driveway cleaning" value="white" type="checkbox"
+                                    <input id="service3" name="driveway cleaning" value="true" type="checkbox"
                                         class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
                                     <label for="service3" class="ml-2 min-w-0 flex-1 text-gray-500 ">Driveway
                                         Cleaning</label>
                                 </div>
 
                                 <div class="flex items-center">
-                                    <input id="service4" name="gutter-cleaning" value="white" type="checkbox"
+                                    <input id="service4" name="gutter-cleaning" value="true" type="checkbox"
                                         class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
                                     <label for="service4" class="ml-2 min-w-0 flex-1 text-gray-500 ">Gutter
                                         Cleaning</label>
                                 </div>
 
                                 <div class="flex items-center">
-                                    <input id="service5" name="solarpanel-cleaning" value="white" type="checkbox"
+                                    <input id="service5" name="solarpanel-cleaning" value="true" type="checkbox"
                                         class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
                                     <label for="service5" class="ml-2 min-w-0 flex-1 text-gray-500 ">Solar
                                         Panel
@@ -344,7 +350,7 @@
                                 </div>
 
                                 <div class="flex items-center">
-                                    <input id="service6" name="other" value="white" type="checkbox"
+                                    <input id="service6" name="other" value="true" type="checkbox"
                                         class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
                                     <label for="service6" class="ml-2 min-w-0 flex-1 text-gray-500 ">Other</label>
                                 </div>
@@ -602,10 +608,10 @@
 
     <!-- FOOTER -->
     <footer class="bg-kangablue relative pt-56">
-
+        <!--CTA-->
         <div class="absolute max-w-7xl sm:px-6  lg:px-8 z-10 top-[-10rem] left-0 right-0 mx-auto ">
             <div
-                class="relative isolate overflow-hidden  bg-richblack  xl:shadow-2xl rounded-3xl px-4 flex justify-between lg:gap-x-20 lg:px-24 lg:pt-0 max-h-max">
+                class="relative isolate overflow-hidden  bg-richblack  xl:shadow-2xl sm:rounded-3xl px-4 flex justify-between lg:gap-x-20 lg:px-24 lg:pt-0 max-h-max">
                 <svg viewBox="0 0 1024 1024"
                     class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem]  [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full ml-80 lg:left-1/2 translate-x-1/2 translate-y-0"
                     aria-hidden="true">
@@ -629,9 +635,8 @@
                         sed
                         consectetur. Malesuada adipiscing sagittis vel nulla.</p>
                     <div class=" mt-4 xl:mt-8 flex items-center justify-center gap-x-6 sm:justify-start">
-                        <a href="#"
-                            class="rounded-md border-2 border-white md:px-6 py-3 px-2 md:py-4 text-sm md:text-md font-semibold uppercase text-white shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-white hover:text-dark">Get
-                            in touch</a>
+                        <a href=""
+                            class="rounded-md border-2 border-white md:px-6 py-3 px-2 md:py-4 text-sm md:text-md font-semibold uppercase text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-white hover:text-dark">Call us today</a>
 
                     </div>
 

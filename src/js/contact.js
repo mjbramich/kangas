@@ -1,12 +1,11 @@
 import faqToggle from './modules/faqToggle';
 import { formFunctions } from './modules/form';
 
-const { privacySlider, fileAttachmentClick, privacyCheck } = formFunctions;
+const { privacySlider, privacyCheck } = formFunctions;
 
 document.addEventListener('DOMContentLoaded', () => {
 	faqToggle();
 	// form functions
 	privacySlider();
-	fileAttachmentClick();
 	privacyCheck();
 });
