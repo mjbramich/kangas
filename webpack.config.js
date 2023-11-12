@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 let htmlPageNames = [
 	'about',
@@ -69,10 +70,17 @@ const config = {
 				},
 			},
 			{
-				test: /\.(png|svg|jpg|jpeg|gif|mp4)$/i,
+				test: /\.(|png|svg|jpg|jpeg|gif|mp4)$/i,
 				type: 'asset/resource',
 				generator: {
 					filename: 'images/[name][ext]',
+				},
+			},
+			{
+				test: /\.(webmanifest|xml|ico)$/i,
+				type: 'asset/resource',
+				generator: {
+					filename: 'favicons/[name][ext]',
 				},
 			},
 		],
@@ -88,6 +96,7 @@ const config = {
 		new MiniCssExtractPlugin({
 			filename: 'output.css', // Output CSS file name using
 		}),
+		new FaviconsWebpackPlugin('./src/images/kangaHead.png'),
 	],
 };
 
