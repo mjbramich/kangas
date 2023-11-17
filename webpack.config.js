@@ -3,6 +3,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 let htmlPageNames = [
 	'about',
@@ -75,7 +76,7 @@ const config = {
 				},
 			},
 			{
-				test: /\.(|png|svg|jpg|jpeg|gif|mp4)$/i,
+				test: /\.(png|svg|jpg|jpeg|gif|mp4)$/i,
 				type: 'asset/resource',
 				generator: {
 					filename: 'images/[name][ext]',
@@ -102,6 +103,12 @@ const config = {
 			filename: '[name].css', // Output CSS file name using
 		}),
 		new FaviconsWebpackPlugin('./src/images/kangaHead.png'),
+		new CopyWebpackPlugin({
+			patterns: [
+				// Copy all files within src/images over to the dist folder
+				{ from: 'src/images', to: 'images' },
+			],
+		}),
 	],
 };
 

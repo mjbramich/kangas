@@ -1,9 +1,17 @@
-import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import 'photoswipe/style.css';
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
 
-const lightbox = new PhotoSwipeLightbox({
-	gallery: '#my-gallery',
-	children: 'a',
-	pswpModule: () => import('photoswipe'),
+document.addEventListener('DOMContentLoaded', function () {
+	const lightbox = new PhotoSwipeLightbox({
+		gallery: '#my-gallery',
+		children: 'a',
+		pswpModule: () => import('photoswipe'),
+	});
+	lightbox.init();
+
+	lightbox.on('beforeOpen', (e) => {
+		console.log(e);
+		console.log('beforeOpen');
+		// photoswipe starts to open
+	});
 });
-lightbox.init();

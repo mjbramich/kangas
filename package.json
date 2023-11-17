@@ -8,14 +8,15 @@
 	"license": "ISC",
 	"scripts": {
 		"clean": "rm dist/*",
-		"build-dev": "webpack --mode development",
-		"build-prod": "webpack --mode production",
+		"build-dev": "webpack --mode=development",
+		"build-prod": "webpack --mode=production",
 		"start": "webpack serve --mode=development"
 	},
 	"devDependencies": {
 		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"@tailwindcss/forms": "^0.5.4",
 		"autoprefixer": "^10.4.14",
+		"copy-webpack-plugin": "^11.0.0",
 		"css-loader": "^6.8.1",
 		"cssnano": "^6.0.1",
 		"favicons-webpack-plugin": "^6.0.1",
