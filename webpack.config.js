@@ -19,6 +19,10 @@ let multipleHtmlPlugins = htmlPageNames.map((name) => {
 		chunks.push('contact');
 	}
 
+	if (name === 'gallery') {
+		chunks.push('gallery');
+	}
+
 	return new HtmlWebpackPlugin({
 		template: `./src/${name}.html`, // relative path to the HTML files
 		filename: `${name}.html`, // output HTML files
@@ -31,6 +35,7 @@ const config = {
 		index: './src/js/index.js',
 		contact: './src/js/contact.js',
 		main: './src/js/main.js',
+		gallery: './src/js/gallery.js',
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
@@ -94,7 +99,7 @@ const config = {
 		}),
 		...multipleHtmlPlugins, // array of html plugins
 		new MiniCssExtractPlugin({
-			filename: 'output.css', // Output CSS file name using
+			filename: '[name].css', // Output CSS file name using
 		}),
 		new FaviconsWebpackPlugin('./src/images/kangaHead.png'),
 	],
