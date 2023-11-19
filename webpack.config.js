@@ -3,6 +3,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 let htmlPageNames = [
 	'about',
@@ -19,6 +20,10 @@ let multipleHtmlPlugins = htmlPageNames.map((name) => {
 		chunks.push('contact');
 	}
 
+	if (name === 'gallery') {
+		chunks.push('gallery');
+	}
+
 	return new HtmlWebpackPlugin({
 		template: `./src/${name}.html`, // relative path to the HTML files
 		filename: `${name}.html`, // output HTML files
@@ -31,6 +36,7 @@ const config = {
 		index: './src/js/index.js',
 		contact: './src/js/contact.js',
 		main: './src/js/main.js',
+		gallery: './src/js/gallery.js',
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
@@ -70,7 +76,7 @@ const config = {
 				},
 			},
 			{
-				test: /\.(|png|svg|jpg|jpeg|gif|mp4)$/i,
+				test: /\.(png|svg|jpg|jpeg|gif|mp4)$/i,
 				type: 'asset/resource',
 				generator: {
 					filename: 'images/[name][ext]',
@@ -94,9 +100,15 @@ const config = {
 		}),
 		...multipleHtmlPlugins, // array of html plugins
 		new MiniCssExtractPlugin({
-			filename: 'output.css', // Output CSS file name using
+			filename: '[name].css', // Output CSS file name using
 		}),
 		new FaviconsWebpackPlugin('./src/images/kangaHead.png'),
+		new CopyWebpackPlugin({
+			patterns: [
+				// Copy all files within src/images over to the dist folder
+				{ from: 'src/images', to: 'images' },
+			],
+		}),
 	],
 };
 
