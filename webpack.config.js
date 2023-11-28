@@ -76,7 +76,7 @@ const config = {
 				},
 			},
 			{
-				test: /\.(png|svg|jpg|jpeg|gif|mp4)$/i,
+				test: /\.(png|svg|jpg|jpeg|gif|mp4|webp)$/i,
 				type: 'asset/resource',
 				generator: {
 					filename: 'images/[name][ext]',
@@ -102,7 +102,7 @@ const config = {
 		new MiniCssExtractPlugin({
 			filename: '[name].css', // Output CSS file name using
 		}),
-		new FaviconsWebpackPlugin('./src/images/kangaHead.png'),
+		new FaviconsWebpackPlugin('./src/images/kangaHeadnew.png'),
 		new CopyWebpackPlugin({
 			patterns: [
 				// Copy all files within src/images over to the dist folder
