@@ -1,46 +1,15 @@
 import 'photoswipe/style.css';
 import PhotoSwipe from 'photoswipe';
-import roofData from './data/roof-gallery';
-
-const options = {
-	dataSource: [
-		{
-			src: '../images/beforeafters/roof/roof1.jpeg',
-			width: 1439,
-			height: 1800,
-			alt: 'Before and after roof clean',
-		},
-		{
-			src: '../images/beforeafters/roof/roof2.jpeg',
-			width: 1439,
-			height: 1800,
-			alt: 'Before and after roof clean',
-		},
-
-		{
-			src: 'https://dummyimage.com/800x600/555/fff/?text=3',
-			width: 800,
-			height: 600,
-		},
-		{
-			src: 'https://dummyimage.com/800x600/555/fff/?text=4',
-			width: 800,
-			height: 600,
-		},
-		{
-			src: 'https://dummyimage.com/800x600/555/fff/?text=5',
-			width: 800,
-			height: 600,
-		},
-	],
-	pswpModule: () => import('photoswipe'),
-};
+import roofData from './data/roof';
+import houseData from './data/house';
+import gutterData from './data/gutter';
+import solarpanelData from './data/solarpanel';
 
 const galleries = {
 	'roof-gallery': roofData,
-	'house-gallery': roofData,
-	'gutter-gallery': roofData,
-	'solarpanel-gallery': roofData,
+	'house-gallery': houseData,
+	'gutter-gallery': gutterData,
+	'solarpanel-gallery': solarpanelData,
 	'driveway-gallery': roofData,
 	'bandp-gallery': roofData,
 };
@@ -51,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			const options = {
 				dataSource: dataSource,
 				pswpModule: () => import('photoswipe'),
-				// Add other common options for all galleries
+				// Add other options for all galleries
 			};
 			const lightbox = new PhotoSwipe(options);
 			lightbox.init();
