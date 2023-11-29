@@ -4,13 +4,14 @@ import roofData from './data/roof';
 import houseData from './data/house';
 import gutterData from './data/gutter';
 import solarpanelData from './data/solarpanel';
+import drivewayData from './data/driveway';
 
 const galleries = {
 	'roof-gallery': roofData,
 	'house-gallery': houseData,
 	'gutter-gallery': gutterData,
 	'solarpanel-gallery': solarpanelData,
-	'driveway-gallery': roofData,
+	'driveway-gallery': drivewayData,
 	'bandp-gallery': roofData,
 };
 
