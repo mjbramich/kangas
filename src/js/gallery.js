@@ -5,6 +5,7 @@ import houseData from './data/house';
 import gutterData from './data/gutter';
 import solarpanelData from './data/solarpanel';
 import drivewayData from './data/driveway';
+import bandpData from './data/bandp';
 
 const galleries = {
 	'roof-gallery': roofData,
@@ -12,7 +13,7 @@ const galleries = {
 	'gutter-gallery': gutterData,
 	'solarpanel-gallery': solarpanelData,
 	'driveway-gallery': drivewayData,
-	'bandp-gallery': roofData,
+	'bandp-gallery': bandpData,
 };
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			const options = {
 				dataSource: dataSource,
 				pswpModule: () => import('photoswipe'),
-				// Add other options for all galleries
+				// Add other options for all galleries if needed
 			};
 			const lightbox = new PhotoSwipe(options);
 			lightbox.init();
