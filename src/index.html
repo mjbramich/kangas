@@ -1,607 +1,985 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta name="description"
-    content="Kangas Exterior Solutions offers high-quality and professional exterior services, including pressure cleaning, soft-washing, roofs, windows, and more. Contact us for reliable solutions to enhance the beauty and durability of your property.">
-
-<meta
-    name="keywords"
-    content="Kangas Solutions, maintenance services, exterior solutions, Devonport, Soft-Washing, pressure cleaning, Roof, Window, Solar panel, Tasmania, clean, tidy, "
-/>
-<meta
-    name="robots"
-    content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
-/>
-
-<link rel="canonical" href="https://kangas.netlify.app" />
-<!--Preload backgorund image-->
-<link rel="preload" href="https://kangas.netlify.app/images/hero.webp" as="image" />
-
-<meta property="og:locale" content="en_AU" />
-<meta property="og:type" content="website" />
-<meta
-    property="og:title"
-    content="Your Trusted Partner for Maintenance and Exterior Transformations | Kangas Solutions"
-/>
-<meta
-    property="og:description"
-    content="Kangas Exterior Solutions offers high-quality and professional exterior services, including pressure cleaning, soft-washing, roofs, windows, and more. Contact us for reliable solutions to enhance the beauty and durability of your property."
-/>
-<meta property="og:url" content="https://kangas.netlify.app" />
-<meta property="og:site_name" content="Kangas Solutions" />
-
-<title>Your Trusted Partner for Maintenance and Exterior Transformations | Kangas Solutions</title>
-
-
-    <!--Dont need script tag, webpack generates it-->
-</head>
-
-<body class="lg:overflow-auto">
-    <!-- NAVBAR -->
-    <nav class="drop-shadow-xl relative z-10 bg-kangablue" id="navbar" role="navigation" aria-label="main navigation">
-        <div class=" mx-auto max-w-7xl px-6">
-            <div class="flex items-center justify-between h-24" id="navbar">
-                <div class="logo w-36 object-cover">
-                    <a href="./index.html">
-                        <img class='object-cover' src=" ./images/kangaL300.png" alt="Kangas text logo" height="40" width="144">
-                    </a>
-                </div>
-
-                <div class="hidden lg:flex" id="navbar-dropdown">
-                    <ul class="lg:flex gap-4 items-center uppercase  text-white font-semibold">
-                        <li><a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                                href="./about.html">About</a></li>
-                        <li>
-                            <a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                                href="./services.html">Services</a>
-                        </li>
-                        <li><a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                                href="./gallery.html">Gallery</a></li>
-                        <li><a class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                                href="./contact.html">Contact us</a></li>
-                    </ul>
-                </div>
-
-                <div class="flex gap-4 items-center justify-center text-white">
-                    <button aria-label="Call Button">
-                        <a class=" hidden md:block rounded-md border-2 border-white px-4 py-2 text-sm font-semibold uppercase text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-white hover:text-kangablue focus:outline-none"
-                            href="tel:0488352175">Call us
-                        </a></button>
-
-                    <div class="flex -mr-2 lg:hidden ">
-                        <button id="navBtn"
-                            class="text-white dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-labelledby="labelSpan"
-                            aria-controls="mobile-menu" aria-expanded="false">
-                            <span class="sr-only" id="labelSpan">Open main menu</span>
-
-                            <!--Hamburger Open Btn-->
-                            <svg width="20" height="20" id="navOpenBtn" fill="currentColor" class="w-8 h-8"
-                                viewBox="0 0 1792 1792" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z">
-                                </path>
-                            </svg>
-
-                            <!--Hamburger Close Btn-->
-                            <svg class="hidden h-8 w-8" id="navCloseBtn" fill="none" viewBox="0 0 24 24"
-                                stroke-width="3" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Hamburger Menu-->
-        <div class=" will-change-transform bg-richblack opacity-0 overflow-hidden text-white fixed w-screen h-mb-menu-height invisible aria-hidden pointer-events-none lg:hidden"
-            id="mobile-menu">
-            <div class="gap-1  h-mb-menu-height flex flex-col items-center justify-center text-2xl uppercase "
-                id="mobile-menu-list">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="./index.html"
-                    class="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 font-medium  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                   >Home</a>
-                <a href="./about.html"
-                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">About</a>
-                <a href="./services.html"
-                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ">Services</a>
-                <a href="./gallery.html"
-                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Gallery</a>
-                <a href="./contact.html"
-                    class=" hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2  font-medium  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white  ">Contact</a>
-                <a href="tel:0488352175"
-                    class="  md:hidden hover:bg-gray-700 hover:text-white  block rounded-md px-3 py-2  font-medium  truncate focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white  ">Call
-                    Us</a>
-
-
-
-
-                <p class="block rounded-md px-3 mt-8   font-medium truncate">
-                    Follow
-                    us
-                </p>
-
-
-                <div class="px-3 py-2 flex items-center justify-between gap-8">
-
-                    <a href="https://www.facebook.com/profile.php?id=100091895966657"
-                        class="text-white cursor-pointer hover:text-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            class="w-10 h-10" viewBox="0 0 24 24">
-                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                        </svg>
-                    </a>
-
-                    <a href="#"
-                        class="text-kangawhite cursor-pointer hover:text-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
-                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                        </svg>
-                    </a>
-
-                </div>
-
-
-            </div>
-        </div>
-    </nav>
-
-
-    <!--CONTENT-->
-    <main id="main-content bg-kangagray">
-
-        <!--HERO-->
-        <section
-            class=" flex items-center bg-cover bg-no-repeat bg-[85%] min-h-[500px] max-h-[93vh] xl:h-screen bg-blend-overlay  bg-[url('./images/hero.webp')] bg-overlay">
-
-            <div
-                class="flex flex-col justify-start lg:max-w-screen-xl mx-auto gap-4 lg:gap-8 px-6 md:px-8  md:py-40 lg:py-52 xl:py-60 ">
-
-                <div class="mr-auto ">
-                    <h1
-                        class=" mb-4 text-2xl  font-extrabold tracking-tight text-white uppercase leading-none md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
-                        Bouncing into <span class="text-kangablue">action</span>,<br class="hidden mobile:block">one
-                        transformation<br>at a time!
-                    </h1>
-                    <p
-                        class="max-w-3xl mb-6 font-light text-white  lg:mb-8 md:text-lg lg:text-xl  w-9/12 m:w-full">
-                        Welcome to Kanga’s Solutions, your experts for high-quality pressure cleaning and soft washing services on the North-West coast of Tasmania. </p>
-
-                    <div class="box-border"> <a href="./contact.html"
-                            class="rounded-md border-2 border-white md:px-6 py-3 px-2 md:py-4 text-sm md:text-md font-semibold uppercase text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-white hover:text-dark">Request
-                            a quote</a></div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <!--ABOUT-->
-
-        <div class="overflow-hidden bg-kangawhite py-24 sm:py-32">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div
-                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center">
-                    <div class="lg:pr-8 ">
-                        <div class="lg:max-w-lg">
-                            <h2 class="text-base font-semibold leading-7 text-gray-900 uppercase">About us</h2>
-                            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Solutions for
-                                home
-                                or business
-                            </p>
-                            <p class="mt-6 text-lg leading-8 text-gray-600">At Kanga’s Exterior Solutions, we're a passionate team of Pressure cleaning enthusiasts dedicated to making your property shine like never before. With years of experience and a keen eye for detail, we take pride in delivering exceptional results. Whether it's reviving your driveway, rejuvenating your roof, or refreshing your home or business exterior, we've got you covered. Get ready to experience the pleasure of a clean, pristine property. Get in contact with us today for a free quote!  
-
-                            
-                        </div>
-                    </div>
-                    <img src="./images/actionshot1.webp" alt="Jamie and Declan cleaning business" loading="lazy"
-                        class=" rounded-lg shadow-xl  ring-gray-400/10  w-full">
-                </div>
-            </div>
-        </div>
-
-        <!-- WHY -->
-
-        <div class="overflow-hidden bg-kangagray py-24 sm:py-32">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div
-                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center ">
-
-                    <div class="lg:pl-8">
-                        <div class="lg:max-w-lg">
-                            <h2 class="text-base font-semibold leading-7 text-gray-900 uppercase">Why choose kanga's?
-                            </h2>
-                            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"> Elevate Your
-                                Exterior with Kanga's
-                            </p>
-                            <!-- <p class="mt-6 text-lg leading-8 text-gray-600">When it comes to choosing a Pressure cleaning and soft washing service, you deserve nothing but the best. Our team is dedicated to providing top quality results and exceptional customer service. We go the extra mile to ensure your satisfaction, using the latest equipment and eco-friendly cleaning solutions. With our expertise and attention to detail, we'll make sure your property shines like never before. Plus, we offer competitive pricing and flexible scheduling to fit your needs. Don't settle for anything less than the best – choose us for a hassle-free, reliable, and outstanding cleaning experience. Let us transform your property and leave you amazed with the results. </p> -->
-                            <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                                <div class="relative pl-9">
-                                    <dt class="inline font-semibold text-gray-900">
-
-
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                            class="absolute left-1 top-1 h-5 w-5 text-kangablue">
-                                            <path fill-rule="evenodd"
-                                                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-
-                                        Expertise and experience:
-                                    </dt>
-                                    <dd class="inline">With years of industry experience, our team of skilled
-                                        professionals
-                                        brings a wealth of knowledge to every project. We have a track record of
-                                        successfully delivering outstanding results for our clients.</dd>
-                                </div>
-                                <div class="relative pl-9">
-                                    <dt class="inline font-semibold text-gray-900">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                            class="absolute left-1 top-1 h-5 w-5 text-kangablue">
-                                            <path fill-rule="evenodd"
-                                                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                        Eco-Friendly Practices:
-                                    </dt>
-                                    <dd class="inline">Kangas Exterior Solutions is committed to sustainability and
-                                        eco-conscious practices. We strive to incorporate environmentally friendly
-                                        materials
-                                        and methods whenever possible to minimize our environmental impact.</dd>
-                                </div>
-                                <div class="relative pl-9">
-                                    <dt class="inline font-semibold text-gray-900">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                            class="absolute left-1 top-1 h-5 w-5 text-kangablue">
-                                            <path fill-rule="evenodd"
-                                                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                        Fully insured:
-                                    </dt>
-                                    <dd class="inline">We understand that protecting your investment is paramount.
-                                        That's
-                                        why we go the extra mile to provide you with a level of confidence that goes
-                                        beyond
-                                        our exceptional services. We take pride in being fully insured, assuring you
-                                        that
-                                        your property is in safe hands.</dd>
-                                </div>
-                            </dl>
-                        </div>
-
-                    </div>
-
-
-                    <img src="./images/actionshot2.webp" alt="Jamie and Declan communicating" loading="lazy"
-                        class=" hidden md:block  w-full rounded-lg shadow-xl  ring-gray-400/10 lg:-ml-0 lg:order-first">
-                </div>
-            </div>
-        </div>
-
-
-
-        <!--SERVICES-->
-
-        <section class="overflow-hidden bg-kangawhite py-24 sm:py-32">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8  lg:mx-0 lg:max-w-none items-center">
-
-                    <div class="lg:max-w-lg">
-                        <h2 class="text-base font-semibold leading-7 text-gray-900 uppercase">Services</h2>
-                        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                            Comprehensive Range of Exterior Solutions to Enhance Your investment
-                        </p>
-                    </div>
-
-                    <div
-                    class="mt-6 grid grid-cols-1 items-stretch gap-x-6 gap-y-4 lg:gap-y-8 sm:mt-8 md:grid-cols-3  lg:gap-x-8 auto-rows-[1fr]"
-                >
-                    <div
-                        class="flex flex-col items-center justify-center gap-2  p-6 bg-kangagray border border-gray-200 rounded-lg shadow hover:bg-white"
-                    >
-                    <svg xmlns="http://www.w3.org/2000/svg" height="70" viewBox="0 -960 960 960" width="70"><path d="M480-484.616q-14.692 0-25.038-10.346T444.616-520q0-14.692 10.346-25.038T480-555.384q14.692 0 25.038 10.346T515.384-520q0 14.692-10.346 25.038T480-484.616Zm0-160q-14.692 0-25.038-10.346T444.616-680q0-14.692 10.346-25.038T480-715.384q14.692 0 25.038 10.346T515.384-680q0 14.692-10.346 25.038T480-644.616Zm0-160q-14.692 0-25.038-10.346T444.616-840q0-14.692 10.346-25.038T480-875.384q14.692 0 25.038 10.346T515.384-840q0 14.692-10.346 25.038T480-804.616Zm120 400q-14.692 0-25.038-10.346T564.616-440q0-14.692 10.346-25.038T600-475.384q14.692 0 25.038 10.346T635.384-440q0 14.692-10.346 25.038T600-404.616Zm113-114q-14.692 0-25.038-10.346T677.616-554q0-14.692 10.346-25.038T713-589.384q14.692 0 25.038 10.346T748.384-554q0 14.692-10.346 25.038T713-518.616Zm113-112q-14.692 0-25.038-10.346T790.616-666q0-14.692 10.346-25.038T826-701.384q14.692 0 25.038 10.346T861.384-666q0 14.692-10.346 25.038T826-630.616Zm-466 226q-14.692 0-25.038-10.346T324.616-440q0-14.692 10.346-25.038T360-475.384q14.692 0 25.038 10.346T395.384-440q0 14.692-10.346 25.038T360-404.616Zm-113-114q-14.692 0-25.038-10.346T211.616-554q0-14.692 10.346-25.038T247-589.384q14.692 0 25.038 10.346T282.384-554q0 14.692-10.346 25.038T247-518.616Zm-113-112q-14.692 0-25.038-10.346T98.616-666q0-14.692 10.346-25.038T134-701.384q14.692 0 25.038 10.346T169.384-666q0 14.692-10.346 25.038T134-630.616ZM450.001-90.001v-160h-160v-59.998h379.998v59.998h-160v160h-59.998Z"/></svg>
-                        <h5
-                            class="mb-2 text-xl sm:text-2xl font-bold tracking-tight text-center text-gray-900 dark:text-white"
-                        >
-                            Pressure Cleaning
-                        </h5>
-                    </div>
-
-                    <div
-                        class="flex flex-col items-center justify-center gap-2  p-6 bg-kangagray border border-gray-200 rounded-lg shadow hover:bg-white"
-                    >
-                    <svg xmlns="http://www.w3.org/2000/svg" height="70" viewBox="0 -960 960 960" width="70"><path d="M489.846-206.154q10.461-1 17.231-7.828 6.769-6.827 6.769-16.465 0-11.245-7.378-17.822-7.377-6.577-18.853-5.577-41 3-89.308-24.038Q350-304.923 338-371.923q-2-10.231-8.577-16.077-6.577-5.846-15.654-5.846-10.923 0-18.192 8.192-7.269 8.193-4.653 21.039 16.23 87.153 78.461 124.615 62.231 37.461 120.461 33.846Zm-9.917 106.153q-128.467 0-214.197-88.268Q180.001-276.537 180.001-408q0-93.076 74.5-204.037Q329.001-722.999 480-853.844q150.999 130.845 225.499 241.807 74.5 110.961 74.5 204.037 0 131.463-85.801 219.731-85.802 88.268-214.269 88.268ZM480-160q104 0 172-70.5T720-408q0-73-60.5-165T480-774Q361-665 300.5-573T240-408q0 107 68 177.5T480-160Zm0-316.923Z"/></svg>
-                        <h5
-                            class="mb-2 text-xl sm:text-2xl font-bold tracking-tight text-gray-900 text-center"
-                        >
-                            Soft Washing
-                        </h5>
-                    </div>
-
-                    <div
-                        class="flex flex-col items-center justify-center gap-2  p-6 bg-kangagray border border-gray-200 rounded-lg shadow hover:bg-white"
-                    >
-                    <svg xmlns="http://www.w3.org/2000/svg" height="70" viewBox="0 -960 960 960" width="70"><path d="M224.614-220.001v50q0 12.75-8.625 21.375-8.624 8.625-21.374 8.625h-24.614q-12.75 0-21.375-8.625t-8.625-21.375v-306.922l81.693-233.076q4.461-13.769 16.384-21.884 11.923-8.116 26.538-8.116h432.307q14.041 0 25.495 8.25t15.888 21.75l81.693 233.076v306.922q0 12.75-8.625 21.375t-21.375 8.625h-24.614q-12.75 0-21.375-8.625-8.624-8.625-8.624-21.375v-50H224.614Zm-.307-316.92h511.386L685.231-680H274.769l-50.462 143.079ZM200-476.923V-280v-196.923Zm98.552 150.769q21.832 0 37.024-15.283 15.193-15.283 15.193-37.115t-15.283-37.024q-15.283-15.193-37.115-15.193t-37.025 15.283q-15.192 15.283-15.192 37.115t15.283 37.025q15.283 15.192 37.115 15.192Zm363.077 0q21.832 0 37.025-15.283 15.192-15.283 15.192-37.115t-15.283-37.024q-15.283-15.193-37.115-15.193t-37.024 15.283q-15.193 15.283-15.193 37.115t15.283 37.025q15.283 15.192 37.115 15.192ZM200-280h560v-196.923H200V-280Z"/></svg>
-                        <h5
-                            class="mb-2 text-xl sm:text-2xl font-bold tracking-tight text-gray-900 text-center"
-                        >
-                        Driveway Cleaning
-                    </h5>
-                    </div>
-                     
-
-                </div>
-            
-            
-
-                <div class="mt-10 flex items-center justify-center lg:justify-start gap-x-6 ">
-                    <a href="./services.html#other"
-                        class="rounded-md border-2 border-dark md:px-6 py-3 px-2 md:py-4 text-sm md:text-md font-semibold uppercase text-dark shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dark transition duration-200 ease-in hover:bg-dark hover:text-kangawhite">
-                        more services</a>
-
-                </div>
-            </div>
-        </section>
-
-        <!--CTA-->
-
-
-        <div class="bg-kangablue lg:bg-kangagray">
-            <div class="mx-auto max-w-7xl  lg:py-32 sm:px-6  lg:px-8">
-                <div
-                    class="relative isolate overflow-hidden  bg-kangablue px-6 xl:shadow-2xl lg:rounded-3xl sm:px-16  lg:flex lg:justify-between lg:gap-x-20 lg:px-24 lg:pt-0 lg:h-[400px]">
-                    <svg viewBox="0 0 1024 1024"
-                        class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] hidden xl:block sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
-                        aria-hidden="true">
-                        <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
-                            fill-opacity="0.7" />
-                        <defs>
-                            <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                                <stop stop-color="#7775D6" />
-                                <stop offset="1" stop-color="#E935C1" />
-                            </radialGradient>
-                        </defs>
-                    </svg>
-                    <div
-                        class="mx-auto flex flex-col justify-center max-w-lg text-center lg:mx-0 lg:flex-auto shrink-0 py-12 lg:text-left">
-                        <h2 class="text-3xl font-bold tracking-tight text-kangawhite sm:text-4xl">Is it time to start
-                            looking
-                            after your investments?</h2>
-                        <p class="mt-4 xl:mt-8 text-lg leading-8 text-kangawhite">Ac euismod vel sit maecenas id
-                            pellentesque eu
-                            sed
-                            consectetur. Malesuada adipiscing sagittis vel nulla.</p>
-                        <div class="mt-4 xl:mt-8 flex items-center justify-center gap-x-6 lg:justify-start">
-                            <a href="./contact.html"
-                                class="rounded-md border-2 border-kangawhite md:px-6 py-3 px-2 md:py-4 text-sm md:text-md font-semibold uppercase text-kangawhite shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-kangawhite hover:text-kangablue">Get
-                                in touch</a>
-
-                        </div>
-
-                    </div>
-                    <div class="mt-8 lg:mt-0 flex items-end justify-center">
-                        <img class=" max-w-[20rem] md:max-w-[24rem]  xl:max-w-[28rem]  rounded-md"
-                            src="./images/kangaBodyNew.png" alt="Kanga kangaroo logo" loading="lazy"  >
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--TESTIMONIALS-->
-
-        <section class="bg-kangawhite">
-
-        <div class=" py-24 sm:py-32 sm:px-6 lg:px-8 relative max-w-7xl mx-auto ">
-
-            <svg fill="#e2edf3" width="100px" height="100px" viewBox="0 0 64 64" version="1.1"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
-                xmlns:serif="http://www.serif.com/"
-                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
-                transform="rotate(0)" class=" absolute bottom-0 right-0 sm:right-8 z-0">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                    <rect id="Icons" x="-1216" y="0" width="1280" height="800" style="fill:none;"></rect>
-                    <path id="quote-2"
-                        d="M36.806,51.968l0,-8.026c2.537,-0.14 4.458,-0.604 5.761,-1.391c1.304,-0.786 2.22,-2.063 2.749,-3.829c0.528,-1.766 0.793,-4.293 0.793,-7.581l-9.303,0l0,-19.147l19.081,0l0,18.203c0,7.519 -1.612,13.028 -4.836,16.525c-3.225,3.497 -7.973,5.246 -14.245,5.246Zm-28.806,0l0,-8.026c2.537,-0.14 4.457,-0.586 5.761,-1.338c1.304,-0.752 2.247,-2.029 2.828,-3.83c0.581,-1.801 0.872,-4.345 0.872,-7.633l-9.461,0l0,-19.147l19.186,0l0,18.203c0,7.519 -1.603,13.028 -4.809,16.525c-3.207,3.497 -7.999,5.246 -14.377,5.246Z"
-                        style="fill-rule:nonzero;"></path>
-
-            </svg>
-
-            <svg fill="#e2edf3" width="100px" height="100px" viewBox="0 0 64 64" version="1.1"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
-                xmlns:serif="http://www.serif.com/"
-                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
-                transform="rotate(180)" class="absolute top-0 left-0 sm:left-8 z-0">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                    <rect id="Icons" x="-1216" y="0" width="1280" height="800" style="fill:none;"></rect>
-                    <path id="quote-2"
-                        d="M36.806,51.968l0,-8.026c2.537,-0.14 4.458,-0.604 5.761,-1.391c1.304,-0.786 2.22,-2.063 2.749,-3.829c0.528,-1.766 0.793,-4.293 0.793,-7.581l-9.303,0l0,-19.147l19.081,0l0,18.203c0,7.519 -1.612,13.028 -4.836,16.525c-3.225,3.497 -7.973,5.246 -14.245,5.246Zm-28.806,0l0,-8.026c2.537,-0.14 4.457,-0.586 5.761,-1.338c1.304,-0.752 2.247,-2.029 2.828,-3.83c0.581,-1.801 0.872,-4.345 0.872,-7.633l-9.461,0l0,-19.147l19.186,0l0,18.203c0,7.519 -1.603,13.028 -4.809,16.525c-3.207,3.497 -7.999,5.246 -14.377,5.246Z"
-                        style="fill-rule:nonzero;"></path>
-
-            </svg>
-
-            <div class=" mx-auto max-w-7xl px-6 lg:px-8 z-1">
-
-
-                <div class="mx-auto max-w-2xl lg:text-center">
-                    <h2 class="text-base font-semibold leading-7 text-gray-900 uppercase">Testimonials</h2>
-                    <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Feedback from our valued
-                        clients</p>
-                </div>
-                <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-                    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-                        <div class="relative pl-16 ">
-                            <dt class="text-base font-semibold leading-7 text-gray-900">
-                                <div
-                                    class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-20 h-20">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-
-                                </div>
-                                Graham
-                            </dt>
-                            <dd class="mt-2 text-base leading-7 text-gray-600">“I highly recommend Kangas as they did
-                                around
-                                a larger property for me yesterday and came up with amazing results!
-                                From tired, dirty old grime and moss to fresh clean and sparkly concrete driveways,
-                                footpaths and fences their work was brilliant.
-                                I can’t recommend them enough.”</dd>
-                        </div>
-                        <div class="relative pl-16">
-                            <dt class="text-base font-semibold leading-7 text-gray-900">
-                                <div
-                                    class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-20 h-20">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-                                </div>
-                                Renate 
-                            </dt>
-                            <dd class="mt-2 text-base leading-7 text-gray-600">“We are extremely happy with the cleaning outcome of our roof and solar panels. Only been a few days, but already the solar output has increased 3 x on before. Communication was great, Jamie and Declan, great work guys, highly recommend.”</dd>
-                        </div>
-                        <div class="relative pl-16">
-                            <dt class="text-base font-semibold leading-7 text-gray-900">
-                                <div
-                                    class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-20 h-20">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-                                </div>
-                                Kym
-                            </dt>
-                            <dd class="mt-2 text-base leading-7 text-gray-600">“I highly recommend Jamie and his cleaning services, Kanga Exterior Solutions.
-                                We are so impressed with how our concrete came up and how it now makes our home look so neat and tidy!
-                                Great price,
-                                Great service
-                                Excellent job.”</dd>
-                        </div>
-                       
-
-                        <div class="relative pl-16">
-                            <dt class="text-base font-semibold leading-7 text-gray-900">
-                                <div
-                                    class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-20 h-20">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-                                </div>
-                                Leonie
-                            </dt>
-                            <dd class="mt-2 text-base leading-7 text-gray-600">“I can highly recommend Kanga’s Exterior Solutions, our home and out buildings now have very clean roofs, shiny solar panels and clean decks. A great job!”</dd>
-                        </div>
-                        <div class="relative pl-16">
-                            <dt class="text-base font-semibold leading-7 text-gray-900">
-                                <div
-                                    class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-20 h-20">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-                                </div>
-                                Karen
-                            </dt>
-                            <dd class="mt-2 text-base leading-7 text-gray-600">“Jamie is an absolute champion.....he worked tiresly for over 7 hrs....cleaning my solar panels, my driveway, paths, BBQ area, edging, actually every concrete area....super impressed....not only is he great at what he does, he's just a really nice bloke.”
-                            </dd>
-                        </div>
-                        <div class="relative pl-16">
-                            <dt class="text-base font-semibold leading-7 text-gray-900">
-                                <div
-                                    class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor" class="w-20 h-20">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
-                                    </svg>
-                                </div>
-                                Blake
-                            </dt>
-                            <dd class="mt-2 text-base leading-7 text-gray-600">“Highly recommend these guys very informative. With the amount of restoration we needed with the roof, gutters, pavers, decking, solar panels, car port, drive way and our garden bed walls. They ended up giving us a fantastic deal and with the amount of work that I needed done and the short notice I gave them, without going on about how impressed I am with the work they’ve done”</dd>
-                        </div>
-                    </dl>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-        <!--CONTACT-->
-
-        <div class=" bg-kangagray px-6 py-24 sm:py-32 lg:px-8">
-
-            <div class="mx-auto max-w-2xl text-center">
-                <h2 class="text-base font-semibold leading-7 text-gray-900 uppercase">Contact Us</h2>
-                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Get your free quote today!</h2>
-            </div>
-
-            <form id="quote" method="POST" name="Quote Request" class="mx-auto mt-16 max-w-2xl" netlify
-                enctype="multipart/form-data">
-                <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 items-center">
-                    <div>
-                        <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First
-                            name</label>
-                        <div class="mt-2.5">
-                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" required
-                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-kangablue sm:text-sm sm:leading-6">
-                        </div>
-                    </div>
-                    <div>
-                        <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last
-                            name</label>
-                        <div class="mt-2.5">
-                            <input type="text" name="last-name" id="last-name" autocomplete="family-name" required
-                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-kangablue sm:text-sm sm:leading-6">
-                        </div>
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
-                        <div class="mt-2.5">
-                            <input type="email" name="email" id="email" autocomplete="email" required
-                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-kangablue sm:text-sm sm:leading-6">
-                        </div>
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label for="address" class="block text-sm font-semibold leading-6 text-gray-900">Address</label>
-                        <div class="mt-2.5">
-                            <input type="text" name="address" id="address" autocomplete="street-address" required
-                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-kangablue sm:text-sm sm:leading-6">
-                        </div>
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Phone
-                            number</label>
-                        <div class="relative mt-2.5">
-                            <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" required
-                                class="block w-full rounded-md border-0  px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-kangablue sm:text-sm sm:leading-6">
-                        </div>
-                    </div>
-
-
-                    <div class="sm:col-span-2">
-                        <label for="file-input"
-                            class="block text-sm font-semibold leading-6 text-gray-900">Attachments</label>
-
-                        <!-- <label
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta
+			name="description"
+			content="Kangas Exterior Solutions offers high-quality and professional exterior services, including pressure cleaning, soft-washing, roofs, windows, and more. Contact us for reliable solutions to enhance the beauty and durability of your property."
+		/>
+
+		<meta
+			name="keywords"
+			content="Kangas Solutions, maintenance services, exterior solutions, Devonport, Soft-Washing, pressure cleaning, Roof, Window, Solar panel, Tasmania, clean, tidy, "
+		/>
+		<meta
+			name="robots"
+			content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+		/>
+
+		<link rel="canonical" href="https://kangas.netlify.app" />
+		<!--Preload backgorund image-->
+		<link
+			rel="preload"
+			href="https://kangas.netlify.app/images/hero.webp"
+			as="image"
+		/>
+
+		<meta property="og:locale" content="en_AU" />
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:title"
+			content="Your Trusted Partner for Maintenance and Exterior Transformations | Kangas Solutions"
+		/>
+		<meta
+			property="og:description"
+			content="Kangas Exterior Solutions offers high-quality and professional exterior services, including pressure cleaning, soft-washing, roofs, windows, and more. Contact us for reliable solutions to enhance the beauty and durability of your property."
+		/>
+		<meta property="og:url" content="https://kangas.netlify.app" />
+		<meta property="og:site_name" content="Kangas Solutions" />
+
+		<title>
+			Your Trusted Partner for Maintenance and Exterior Transformations | Kangas
+			Solutions
+		</title>
+
+		<!--Dont need script tag, webpack generates it-->
+	</head>
+
+	<body class="lg:overflow-auto">
+		<!-- NAVBAR -->
+		<nav
+			class="drop-shadow-xl relative z-10 bg-kangablue"
+			id="navbar"
+			role="navigation"
+			aria-label="main navigation"
+		>
+			<div class="mx-auto max-w-7xl px-6">
+				<div class="flex items-center justify-between h-24" id="navbar">
+					<div class="logo w-36 object-cover">
+						<a href="./index.html">
+							<img
+								class="object-cover"
+								src=" ./images/kangaL300.png"
+								alt="Kangas text logo"
+								height="40"
+								width="144"
+							/>
+						</a>
+					</div>
+
+					<div class="hidden lg:flex" id="navbar-dropdown">
+						<ul
+							class="lg:flex gap-4 items-center uppercase text-white font-semibold"
+						>
+							<li>
+								<a
+									class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+									href="./about.html"
+									>About</a
+								>
+							</li>
+							<li>
+								<a
+									class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+									href="./services.html"
+									>Services</a
+								>
+							</li>
+							<li>
+								<a
+									class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+									href="./gallery.html"
+									>Gallery</a
+								>
+							</li>
+							<li>
+								<a
+									class="transition duration-200 ease-in hover:bg-white hover:text-kangablue rounded p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+									href="./contact.html"
+									>Contact us</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div class="flex gap-4 items-center justify-center text-white">
+						<button aria-label="Call Button">
+							<a
+								class="hidden md:block rounded-md border-2 border-white px-4 py-2 text-sm font-semibold uppercase text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-white hover:text-kangablue focus:outline-none"
+								href="tel:0488352175"
+								>Call us
+							</a>
+						</button>
+
+						<div class="flex -mr-2 lg:hidden">
+							<button
+								id="navBtn"
+								class="text-white dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+								aria-labelledby="labelSpan"
+								aria-controls="mobile-menu"
+								aria-expanded="false"
+							>
+								<span class="sr-only" id="labelSpan">Open main menu</span>
+
+								<!--Hamburger Open Btn-->
+								<svg
+									width="20"
+									height="20"
+									id="navOpenBtn"
+									fill="currentColor"
+									class="w-8 h-8"
+									viewBox="0 0 1792 1792"
+									aria-hidden="true"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z"
+									></path>
+								</svg>
+
+								<!--Hamburger Close Btn-->
+								<svg
+									class="hidden h-8 w-8"
+									id="navCloseBtn"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="3"
+									stroke="currentColor"
+									aria-hidden="true"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M6 18L18 6M6 6l12 12"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Hamburger Menu-->
+			<div
+				class="will-change-transform bg-richblack opacity-0 overflow-hidden text-white fixed w-screen h-mb-menu-height invisible aria-hidden pointer-events-none lg:hidden"
+				id="mobile-menu"
+			>
+				<div
+					class="gap-1 h-mb-menu-height flex flex-col items-center justify-center text-2xl uppercase"
+					id="mobile-menu-list"
+				>
+					<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+					<a
+						href="./index.html"
+						class="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						>Home</a
+					>
+					<a
+						href="./about.html"
+						class="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						>About</a
+					>
+					<a
+						href="./services.html"
+						class="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						>Services</a
+					>
+					<a
+						href="./gallery.html"
+						class="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						>Gallery</a
+					>
+					<a
+						href="./contact.html"
+						class="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						>Contact</a
+					>
+					<a
+						href="tel:0488352175"
+						class="md:hidden hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 font-medium truncate focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						>Call Us</a
+					>
+
+					<p class="block rounded-md px-3 mt-8 font-medium truncate">
+						Follow us
+					</p>
+
+					<div class="px-3 py-2 flex items-center justify-between gap-8">
+						<a
+							href="https://www.facebook.com/profile.php?id=100091895966657"
+							class="text-white cursor-pointer hover:text-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						>
+							<svg
+								fill="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								class="w-10 h-10"
+								viewBox="0 0 24 24"
+							>
+								<path
+									d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+								></path>
+							</svg>
+						</a>
+
+						<a
+							href="#"
+							class="text-kangawhite cursor-pointer hover:text-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+						>
+							<svg
+								fill="none"
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								class="w-10 h-10"
+								viewBox="0 0 24 24"
+							>
+								<rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+								<path
+									d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+								></path>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!--CONTENT-->
+		<main id="main-content bg-kangagray">
+			<!--HERO-->
+			<section
+				class="flex items-center bg-cover bg-no-repeat bg-[85%] min-h-[500px] max-h-[93vh] xl:h-screen bg-blend-overlay bg-[url('./images/hero.webp')] bg-overlay"
+			>
+				<div
+					class="flex flex-col justify-start lg:max-w-screen-xl mx-auto gap-4 lg:gap-8 px-6 md:px-8 md:py-40 lg:py-52 xl:py-60"
+				>
+					<div class="mr-auto">
+						<h1
+							class="mb-4 text-2xl font-extrabold tracking-tight text-white uppercase leading-none md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
+						>
+							Bouncing into <span class="text-kangablue">action</span>,<br
+								class="hidden mobile:block"
+							/>one transformation<br />at a time!
+						</h1>
+						<p
+							class="max-w-3xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-xl w-9/12 m:w-full"
+						>
+							Welcome to Kanga’s Solutions, your experts for high-quality
+							pressure cleaning and soft washing services on the North-West
+							coast of Tasmania.
+						</p>
+
+						<div class="box-border">
+							<a
+								href="./contact.html"
+								class="rounded-md border-2 border-white md:px-6 py-3 px-2 md:py-4 text-sm md:text-md font-semibold uppercase text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-white hover:text-dark"
+								>Request a quote</a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--ABOUT-->
+
+			<div class="overflow-hidden bg-kangawhite py-24 sm:py-32">
+				<div class="mx-auto max-w-7xl px-6 lg:px-8">
+					<div
+						class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center"
+					>
+						<div class="lg:pr-8">
+							<div class="lg:max-w-lg">
+								<h2
+									class="text-base font-semibold leading-7 text-gray-900 uppercase"
+								>
+									About us
+								</h2>
+								<p
+									class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+								>
+									Solutions for home or business
+								</p>
+								<p class="mt-6 text-lg leading-8 text-gray-600">
+									At Kanga’s Exterior Solutions, we're a passionate team of
+									Pressure cleaning enthusiasts dedicated to making your
+									property shine like never before. With years of experience and
+									a keen eye for detail, we take pride in delivering exceptional
+									results. Whether it's reviving your driveway, rejuvenating
+									your roof, or refreshing your home or business exterior, we've
+									got you covered. Get ready to experience the pleasure of a
+									clean, pristine property. Get in contact with us today for a
+									free quote!
+								</p>
+							</div>
+						</div>
+						<img
+							src="./images/actionshot1.webp"
+							alt="Jamie and Declan cleaning business"
+							loading="lazy"
+							class="rounded-lg shadow-xl ring-gray-400/10 w-full"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<!-- WHY -->
+
+			<div class="overflow-hidden bg-kangagray py-24 sm:py-32">
+				<div class="mx-auto max-w-7xl px-6 lg:px-8">
+					<div
+						class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 items-center"
+					>
+						<div class="lg:pl-8">
+							<div class="lg:max-w-lg">
+								<h2
+									class="text-base font-semibold leading-7 text-gray-900 uppercase"
+								>
+									Why choose kanga's?
+								</h2>
+								<p
+									class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+								>
+									Elevate Your Exterior with Kanga's
+								</p>
+								<!-- <p class="mt-6 text-lg leading-8 text-gray-600">When it comes to choosing a Pressure cleaning and soft washing service, you deserve nothing but the best. Our team is dedicated to providing top quality results and exceptional customer service. We go the extra mile to ensure your satisfaction, using the latest equipment and eco-friendly cleaning solutions. With our expertise and attention to detail, we'll make sure your property shines like never before. Plus, we offer competitive pricing and flexible scheduling to fit your needs. Don't settle for anything less than the best – choose us for a hassle-free, reliable, and outstanding cleaning experience. Let us transform your property and leave you amazed with the results. </p> -->
+								<dl
+									class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
+								>
+									<div class="relative pl-9">
+										<dt class="inline font-semibold text-gray-900">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												class="absolute left-1 top-1 h-5 w-5 text-kangablue"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+
+											Expertise and experience:
+										</dt>
+										<dd class="inline">
+											With years of industry experience, our team of skilled
+											professionals brings a wealth of knowledge to every
+											project. We have a track record of successfully delivering
+											outstanding results for our clients.
+										</dd>
+									</div>
+									<div class="relative pl-9">
+										<dt class="inline font-semibold text-gray-900">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												class="absolute left-1 top-1 h-5 w-5 text-kangablue"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+											Eco-Friendly Practices:
+										</dt>
+										<dd class="inline">
+											Kangas Exterior Solutions is committed to sustainability
+											and eco-conscious practices. We strive to incorporate
+											environmentally friendly materials and methods whenever
+											possible to minimize our environmental impact.
+										</dd>
+									</div>
+									<div class="relative pl-9">
+										<dt class="inline font-semibold text-gray-900">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 24 24"
+												fill="currentColor"
+												class="absolute left-1 top-1 h-5 w-5 text-kangablue"
+											>
+												<path
+													fill-rule="evenodd"
+													d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+													clip-rule="evenodd"
+												/>
+											</svg>
+											Fully insured:
+										</dt>
+										<dd class="inline">
+											We understand that protecting your investment is
+											paramount. That's why we go the extra mile to provide you
+											with a level of confidence that goes beyond our
+											exceptional services. We take pride in being fully
+											insured, assuring you that your property is in safe hands.
+										</dd>
+									</div>
+								</dl>
+							</div>
+						</div>
+
+						<img
+							src="./images/actionshot2.webp"
+							alt="Jamie and Declan communicating"
+							loading="lazy"
+							class="hidden md:block w-full rounded-lg shadow-xl ring-gray-400/10 lg:-ml-0 lg:order-first"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<!--SERVICES-->
+
+			<section class="overflow-hidden bg-kangawhite py-24 sm:py-32">
+				<div class="mx-auto max-w-7xl px-6 lg:px-8">
+					<div
+						class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-8 lg:mx-0 lg:max-w-none items-center"
+					>
+						<div class="lg:max-w-lg">
+							<h2
+								class="text-base font-semibold leading-7 text-gray-900 uppercase"
+							>
+								Services
+							</h2>
+							<p
+								class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+							>
+								Comprehensive Range of Exterior Solutions to Enhance Your
+								investment
+							</p>
+						</div>
+
+						<!-- CARD GRID -->
+						<div
+							class="mt-6 grid grid-cols-1 items-stretch gap-x-6 gap-y-4 lg:gap-y-8 sm:mt-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8 auto-rows-[1fr]"
+						>
+							<div
+								class="flex flex-col items-center justify-center gap-2 p-6 bg-kangagray border border-gray-200 rounded-lg shadow"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									height="70"
+									viewBox="0 -960 960 960"
+									width="70"
+								>
+									<path
+										d="M132.312-500.001 480-813.075l156.923 141.692v-97.846h92.306v180.46l98.459 88.768h-89.997L480-732 222.309-500.001h-89.997Zm241.535 320v-216.153h212.306v216.153H373.847ZM433.846-240h92.308v-96.155h-92.308V-240ZM480-288.078Z"
+									/>
+								</svg>
+								<h5
+									class="mb-2 text-xl sm:text-2xl font-bold tracking-tight text-center text-gray-900 dark:text-white"
+								>
+									Roof Cleaning
+								</h5>
+							</div>
+
+							<div
+								class="flex flex-col items-center justify-center gap-2 p-6 bg-kangagray border border-gray-200 rounded-lg shadow"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									height="70"
+									viewBox="0 -960 960 960"
+									width="70"
+								>
+									<path
+										d="M220.001-180.001v-320h-87.689L480-813.075l156.923 141.692v-97.846h92.306v180.46l98.459 88.768h-87.689v320H524.616v-224.615h-89.232v224.615H220.001ZM280-240h95.386v-224.614h209.228V-240H680v-312L480-732 280-552v312Zm95.386-224.614h209.228-209.228Zm28.46-94.771h152.308q0-30.076-22.847-49.422-22.846-19.347-53.307-19.347-30.461 0-53.307 19.312-22.847 19.312-22.847 49.457Z"
+									/>
+								</svg>
+								<h5
+									class="mb-2 text-xl sm:text-2xl font-bold tracking-tight text-center text-gray-900 dark:text-white"
+								>
+									House Cleaning
+								</h5>
+							</div>
+
+							<div
+								class="flex flex-col items-center justify-center gap-2 p-6 bg-kangagray border border-gray-200 rounded-lg shadow"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									height="70"
+									viewBox="0 -960 960 960"
+									width="70"
+								>
+									<path
+										d="M224.614-220.001v50q0 12.75-8.625 21.375-8.624 8.625-21.374 8.625h-24.614q-12.75 0-21.375-8.625t-8.625-21.375v-306.922l81.693-233.076q4.461-13.769 16.384-21.884 11.923-8.116 26.538-8.116h432.307q14.041 0 25.495 8.25t15.888 21.75l81.693 233.076v306.922q0 12.75-8.625 21.375t-21.375 8.625h-24.614q-12.75 0-21.375-8.625-8.624-8.625-8.624-21.375v-50H224.614Zm-.307-316.92h511.386L685.231-680H274.769l-50.462 143.079ZM200-476.923V-280v-196.923Zm98.552 150.769q21.832 0 37.024-15.283 15.193-15.283 15.193-37.115t-15.283-37.024q-15.283-15.193-37.115-15.193t-37.025 15.283q-15.192 15.283-15.192 37.115t15.283 37.025q15.283 15.192 37.115 15.192Zm363.077 0q21.832 0 37.025-15.283 15.192-15.283 15.192-37.115t-15.283-37.024q-15.283-15.193-37.115-15.193t-37.024 15.283q-15.193 15.283-15.193 37.115t15.283 37.025q15.283 15.192 37.115 15.192ZM200-280h560v-196.923H200V-280Z"
+									/>
+								</svg>
+								<h5
+									class="mb-2 text-xl sm:text-2xl font-bold tracking-tight text-center text-gray-900 dark:text-white"
+								>
+									Driveway Cleaning
+								</h5>
+							</div>
+
+							<div
+								class="flex flex-col items-center justify-center gap-2 p-6 bg-kangagray border border-gray-200 rounded-lg shadow"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									height="70"
+									viewBox="0 -960 960 960"
+									width="70"
+								>
+									<path
+										d="M229.847-190.039q-42.307-42.5-66.076-97.739-23.77-55.238-23.77-114.222 0-59.154 22.654-117.384 22.654-58.231 73.192-108.769 36.539-36.538 91.501-60.192 54.961-23.654 124.5-36.038 69.538-12.385 151.576-14.423 82.038-2.039 172.113 5.269 6.462 85.998 4.423 167.113-2.038 81.115-14.192 151.269-12.154 70.154-35.5 126.346-23.346 56.193-60.115 92.962-49.538 49.923-105.961 72.884-56.423 22.962-114.292 22.962-60.669 0-119.207-23.77-58.538-23.769-100.846-66.268Zm89.691-6.577q30.154 18.923 63.731 27.77Q416.846-160 450-160q46.26 0 91.515-18.308 45.254-18.307 85.87-59.692 17.927-18 36.353-50.5 18.426-32.5 31.872-85 13.446-52.5 20.418-127Q723-575 718.769-678q-49-2-110.884-1.115-61.885.884-123.462 10.077-61.577 9.192-116.385 28.807-54.807 19.616-88.653 53.462-44.616 44.615-62 90.346Q200-450.692 200-409.692q0 56.692 22.115 102.538 22.116 45.847 46.039 68.078 33.538-75.385 94.268-144.654 60.73-69.269 153.884-120.884-70.461 61.461-120.692 134.999-50.23 73.538-76.076 172.999Zm0 0Zm0 0Z"
+									/>
+								</svg>
+								<h5
+									class="mb-2 text-xl sm:text-2xl font-bold tracking-tight text-center text-gray-900 dark:text-white"
+								>
+									Gutter Cleaning
+								</h5>
+							</div>
+
+							<div
+								class="flex flex-col items-center justify-center gap-2 p-6 bg-kangagray border border-gray-200 rounded-lg shadow"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									height="70"
+									viewBox="0 -960 960 960"
+									width="70"
+								>
+									<path
+										d="M450.001-751.538v-147.691h59.998v147.691h-59.998Zm242.921 100.769-41.153-41.153L754.922-798.46l42.538 43.153-104.538 104.538Zm58.616 200.768v-59.998h147.691v59.998H751.538ZM450.001-60.771v-147.307h59.998v147.307h-59.998ZM267.847-652.385 161.54-754.922l43.538-42.153 104.537 104.153-41.768 40.537Zm486.46 490.845L651.769-268.078l40.538-40.153 104.768 101.923-42.768 44.768ZM60.771-450.001v-59.998h147.691v59.998H60.771ZM204.693-161.54l-41.768-43.538 103.153-103.153 21.692 20.461 22.076 21.077L204.693-161.54Zm275.398-98.461q-91.629 0-155.859-64.14-64.231-64.14-64.231-155.768 0-91.629 64.14-155.859 64.14-64.231 155.768-64.231 91.629 0 155.859 64.14 64.231 64.14 64.231 155.768 0 91.629-64.14 155.859-64.14 64.231-155.768 64.231ZM480-320q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-160Z"
+									/>
+								</svg>
+								<h5
+									class="mb-2 text-xl sm:text-2xl font-bold tracking-tight text-center text-gray-900 dark:text-white"
+								>
+									Solar Panel Cleaning
+								</h5>
+							</div>
+
+							<div
+								class="flex flex-col items-center justify-center gap-2 p-6 bg-kangagray border border-gray-200 rounded-lg shadow"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									height="70"
+									viewBox="0 -960 960 960"
+									width="70"
+								>
+									<path
+										d="M480-484.616q-14.692 0-25.038-10.346T444.616-520q0-14.692 10.346-25.038T480-555.384q14.692 0 25.038 10.346T515.384-520q0 14.692-10.346 25.038T480-484.616Zm0-160q-14.692 0-25.038-10.346T444.616-680q0-14.692 10.346-25.038T480-715.384q14.692 0 25.038 10.346T515.384-680q0 14.692-10.346 25.038T480-644.616Zm0-160q-14.692 0-25.038-10.346T444.616-840q0-14.692 10.346-25.038T480-875.384q14.692 0 25.038 10.346T515.384-840q0 14.692-10.346 25.038T480-804.616Zm120 400q-14.692 0-25.038-10.346T564.616-440q0-14.692 10.346-25.038T600-475.384q14.692 0 25.038 10.346T635.384-440q0 14.692-10.346 25.038T600-404.616Zm113-114q-14.692 0-25.038-10.346T677.616-554q0-14.692 10.346-25.038T713-589.384q14.692 0 25.038 10.346T748.384-554q0 14.692-10.346 25.038T713-518.616Zm113-112q-14.692 0-25.038-10.346T790.616-666q0-14.692 10.346-25.038T826-701.384q14.692 0 25.038 10.346T861.384-666q0 14.692-10.346 25.038T826-630.616Zm-466 226q-14.692 0-25.038-10.346T324.616-440q0-14.692 10.346-25.038T360-475.384q14.692 0 25.038 10.346T395.384-440q0 14.692-10.346 25.038T360-404.616Zm-113-114q-14.692 0-25.038-10.346T211.616-554q0-14.692 10.346-25.038T247-589.384q14.692 0 25.038 10.346T282.384-554q0 14.692-10.346 25.038T247-518.616Zm-113-112q-14.692 0-25.038-10.346T98.616-666q0-14.692 10.346-25.038T134-701.384q14.692 0 25.038 10.346T169.384-666q0 14.692-10.346 25.038T134-630.616ZM450.001-90.001v-160h-160v-59.998h379.998v59.998h-160v160h-59.998Z"
+									/>
+								</svg>
+								<h5
+									class="mb-2 text-xl sm:text-2xl font-bold tracking-tight text-center text-gray-900 dark:text-white"
+								>
+									Pressure Cleaning
+								</h5>
+							</div>
+						</div>
+
+						<div
+							class="mt-10 flex items-center justify-center lg:justify-start gap-x-6"
+						>
+							<a
+								href="./services.html#other"
+								class="rounded-md border-2 border-dark md:px-6 py-3 px-2 md:py-4 text-sm md:text-md font-semibold uppercase text-dark shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dark transition duration-200 ease-in hover:bg-dark hover:text-kangawhite"
+							>
+								more services</a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--CTA-->
+
+			<div class="bg-kangablue lg:bg-kangagray">
+				<div class="mx-auto max-w-7xl lg:py-32 sm:px-6 lg:px-8">
+					<div
+						class="relative isolate overflow-hidden bg-kangablue px-6 xl:shadow-2xl lg:rounded-3xl sm:px-16 lg:flex lg:justify-between lg:gap-x-20 lg:px-24 lg:pt-0 lg:h-[400px]"
+					>
+						<svg
+							viewBox="0 0 1024 1024"
+							class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] hidden xl:block sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+							aria-hidden="true"
+						>
+							<circle
+								cx="512"
+								cy="512"
+								r="512"
+								fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+								fill-opacity="0.7"
+							/>
+							<defs>
+								<radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+									<stop stop-color="#7775D6" />
+									<stop offset="1" stop-color="#E935C1" />
+								</radialGradient>
+							</defs>
+						</svg>
+						<div
+							class="mx-auto flex flex-col justify-center max-w-lg text-center lg:mx-0 lg:flex-auto shrink-0 py-12 lg:text-left"
+						>
+							<h2
+								class="text-3xl font-bold tracking-tight text-kangawhite sm:text-4xl"
+							>
+								Is it time to start looking after your investments?
+							</h2>
+							<p class="mt-4 xl:mt-8 text-lg leading-8 text-kangawhite">
+								Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
+								Malesuada adipiscing sagittis vel nulla.
+							</p>
+							<div
+								class="mt-4 xl:mt-8 flex items-center justify-center gap-x-6 lg:justify-start"
+							>
+								<a
+									href="./contact.html"
+									class="rounded-md border-2 border-kangawhite md:px-6 py-3 px-2 md:py-4 text-sm md:text-md font-semibold uppercase text-kangawhite shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition duration-200 ease-in hover:bg-kangawhite hover:text-kangablue"
+									>Get in touch</a
+								>
+							</div>
+						</div>
+						<div class="mt-8 lg:mt-0 flex items-end justify-center">
+							<img
+								class="max-w-[20rem] md:max-w-[24rem] xl:max-w-[28rem] rounded-md"
+								src="./images/kangaBodyNew.png"
+								alt="Kanga kangaroo logo"
+								loading="lazy"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--TESTIMONIALS-->
+
+			<section class="bg-kangawhite">
+				<div class="py-24 sm:py-32 sm:px-6 lg:px-8 relative max-w-7xl mx-auto">
+					<div class="mx-auto max-w-7xl px-6 lg:px-8 z-1">
+						<div class="mx-auto max-w-2xl lg:text-center">
+							<h2
+								class="text-base font-semibold leading-7 text-gray-900 uppercase"
+							>
+								Testimonials
+							</h2>
+							<p
+								class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+							>
+								Feedback from our valued clients
+							</p>
+						</div>
+						<div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+							<dl
+								class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+							>
+								<div class="relative pl-16">
+									<dt class="text-base font-semibold leading-7 text-gray-900">
+										<div
+											class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-20 h-20"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+												/>
+											</svg>
+										</div>
+										Graham
+									</dt>
+									<dd class="mt-2 text-base leading-7 text-gray-600">
+										“I highly recommend Kangas as they did around a larger
+										property for me yesterday and came up with amazing results!
+										From tired, dirty old grime and moss to fresh clean and
+										sparkly concrete driveways, footpaths and fences their work
+										was brilliant. I can’t recommend them enough.”
+									</dd>
+								</div>
+								<div class="relative pl-16">
+									<dt class="text-base font-semibold leading-7 text-gray-900">
+										<div
+											class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-20 h-20"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+												/>
+											</svg>
+										</div>
+										Renate
+									</dt>
+									<dd class="mt-2 text-base leading-7 text-gray-600">
+										“We are extremely happy with the cleaning outcome of our
+										roof and solar panels. Only been a few days, but already the
+										solar output has increased 3 x on before. Communication was
+										great, Jamie and Declan, great work guys, highly recommend.”
+									</dd>
+								</div>
+								<div class="relative pl-16">
+									<dt class="text-base font-semibold leading-7 text-gray-900">
+										<div
+											class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-20 h-20"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+												/>
+											</svg>
+										</div>
+										Kym
+									</dt>
+									<dd class="mt-2 text-base leading-7 text-gray-600">
+										“I highly recommend Jamie and his cleaning services, Kanga
+										Exterior Solutions. We are so impressed with how our
+										concrete came up and how it now makes our home look so neat
+										and tidy! Great price, Great service Excellent job.”
+									</dd>
+								</div>
+
+								<div class="relative pl-16">
+									<dt class="text-base font-semibold leading-7 text-gray-900">
+										<div
+											class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-20 h-20"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+												/>
+											</svg>
+										</div>
+										Leonie
+									</dt>
+									<dd class="mt-2 text-base leading-7 text-gray-600">
+										“I can highly recommend Kanga’s Exterior Solutions, our home
+										and out buildings now have very clean roofs, shiny solar
+										panels and clean decks. A great job!”
+									</dd>
+								</div>
+								<div class="relative pl-16">
+									<dt class="text-base font-semibold leading-7 text-gray-900">
+										<div
+											class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-20 h-20"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+												/>
+											</svg>
+										</div>
+										Karen
+									</dt>
+									<dd class="mt-2 text-base leading-7 text-gray-600">
+										“Jamie is an absolute champion.....he worked tiresly for
+										over 7 hrs....cleaning my solar panels, my driveway, paths,
+										BBQ area, edging, actually every concrete area....super
+										impressed....not only is he great at what he does, he's just
+										a really nice bloke.”
+									</dd>
+								</div>
+								<div class="relative pl-16">
+									<dt class="text-base font-semibold leading-7 text-gray-900">
+										<div
+											class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke-width="1.5"
+												stroke="currentColor"
+												class="w-20 h-20"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+												/>
+											</svg>
+										</div>
+										Blake
+									</dt>
+									<dd class="mt-2 text-base leading-7 text-gray-600">
+										“Highly recommend these guys very informative. With the
+										amount of restoration we needed with the roof, gutters,
+										pavers, decking, solar panels, car port, drive way and our
+										garden bed walls. They ended up giving us a fantastic deal
+										and with the amount of work that I needed done and the short
+										notice I gave them, without going on about how impressed I
+										am with the work they’ve done”
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--CONTACT-->
+
+			<div class="bg-kangagray px-6 py-24 sm:py-32 lg:px-8">
+				<div class="mx-auto max-w-2xl text-center">
+					<h2 class="text-base font-semibold leading-7 text-gray-900 uppercase">
+						Contact Us
+					</h2>
+					<h2
+						class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+					>
+						Get your free quote today!
+					</h2>
+				</div>
+
+				<form
+					id="quote"
+					method="POST"
+					name="Quote Request"
+					class="mx-auto mt-16 max-w-2xl"
+					netlify
+					enctype="multipart/form-data"
+				>
+					<div
+						class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 items-center"
+					>
+						<div>
+							<label
+								for="first-name"
+								class="block text-sm font-semibold leading-6 text-gray-900"
+								>First name</label
+							>
+							<div class="mt-2.5">
+								<input
+									type="text"
+									name="first-name"
+									id="first-name"
+									autocomplete="given-name"
+									required
+									class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-kangablue sm:text-sm sm:leading-6"
+								/>
+							</div>
+						</div>
+						<div>
+							<label
+								for="last-name"
+								class="block text-sm font-semibold leading-6 text-gray-900"
+								>Last name</label
+							>
+							<div class="mt-2.5">
+								<input
+									type="text"
+									name="last-name"
+									id="last-name"
+									autocomplete="family-name"
+									required
+									class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-kangablue sm:text-sm sm:leading-6"
+								/>
+							</div>
+						</div>
+						<div class="sm:col-span-2">
+							<label
+								for="email"
+								class="block text-sm font-semibold leading-6 text-gray-900"
+								>Email</label
+							>
+							<div class="mt-2.5">
+								<input
+									type="email"
+									name="email"
+									id="email"
+									autocomplete="email"
+									required
+									class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-kangablue sm:text-sm sm:leading-6"
+								/>
+							</div>
+						</div>
+						<div class="sm:col-span-2">
+							<label
+								for="address"
+								class="block text-sm font-semibold leading-6 text-gray-900"
+								>Address</label
+							>
+							<div class="mt-2.5">
+								<input
+									type="text"
+									name="address"
+									id="address"
+									autocomplete="street-address"
+									required
+									class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-kangablue sm:text-sm sm:leading-6"
+								/>
+							</div>
+						</div>
+						<div class="sm:col-span-2">
+							<label
+								for="phone-number"
+								class="block text-sm font-semibold leading-6 text-gray-900"
+								>Phone number</label
+							>
+							<div class="relative mt-2.5">
+								<input
+									type="tel"
+									name="phone-number"
+									id="phone-number"
+									autocomplete="tel"
+									required
+									class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-kangablue sm:text-sm sm:leading-6"
+								/>
+							</div>
+						</div>
+
+						<div class="sm:col-span-2">
+							<label
+								for="file-input"
+								class="block text-sm font-semibold leading-6 text-gray-900"
+								>Attachments</label
+							>
+
+							<!-- <label
                             class="w-full mt-2.5 px-3.5 py-2 flex  justify-center items-center gap-4 text-kangablue-dark   form-textarea rounded-md shadow-sm tracking-wide uppercase border-0 border-kangablue cursor-pointer hover:bg-kangablue hover:text-white ring-1 ring-inset  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-kangablue"
                             tabindex="0" id="file-input-container">
                             <span class="font-semibold text-xs sm:text-sm ">Select a
@@ -615,234 +993,342 @@
                             <input type='file' class="sr-only" id="file-input" />
 
                         </label> -->
-                        <div class="relative mt-2.5">
-                            <input
-                                class="block w-full file:border-0 file:bg-kangablue file:text-white file:px-3.5 text-gray-500 ring-gray-300 file:py-2.5 file:cursor-pointer file:text-sm file:font-semibold text-sm  border-0 shadow-sm ring-1 ring-inset focus:ring-2 focus:ring-inset focus:ring-kangablue rounded-md cursor-pointer bg-white  focus:outline-none "
-                                id="file-input" type="file" name="Attachments">
-                        </div>
+							<div class="relative mt-2.5">
+								<input
+									class="block w-full file:border-0 file:bg-kangablue file:text-white file:px-3.5 text-gray-500 ring-gray-300 file:py-2.5 file:cursor-pointer file:text-sm file:font-semibold text-sm border-0 shadow-sm ring-1 ring-inset focus:ring-2 focus:ring-inset focus:ring-kangablue rounded-md cursor-pointer bg-white focus:outline-none"
+									id="file-input"
+									type="file"
+									name="Attachments"
+								/>
+							</div>
+						</div>
 
-                    </div>
+						<div class="sm:col-span-2">
+							<p class="block text-sm font-semibold leading-6 text-gray-900">
+								What service/s are you interested in?
+							</p>
 
+							<div class="sm:flex gap-x-4 gap-y-2 flex-wrap capitalize mt-2.5">
+								<div class="flex items-center">
+									<input
+										id="service1"
+										name="roof-cleaning"
+										value="true"
+										type="checkbox"
+										class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue"
+									/>
+									<label
+										for="service1"
+										class="ml-2 min-w-0 flex-1 text-gray-600"
+										>Roof Cleaning</label
+									>
+								</div>
 
+								<div class="flex items-center">
+									<input
+										id="service2"
+										name="house-cleaning"
+										value="true"
+										type="checkbox"
+										class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue"
+									/>
+									<label
+										for="service2"
+										class="ml-2 min-w-0 flex-1 text-gray-600"
+										>House Cleaning</label
+									>
+								</div>
 
-                    <div class="sm:col-span-2">
-                        <p class="block text-sm font-semibold leading-6 text-gray-900">What service/s are
-                            you interested in?</p>
+								<div class="flex items-center">
+									<input
+										id="service3"
+										name="driveway cleaning"
+										value="true"
+										type="checkbox"
+										class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue"
+									/>
+									<label
+										for="service3"
+										class="ml-2 min-w-0 flex-1 text-gray-600"
+										>Driveway Cleaning</label
+									>
+								</div>
 
-                        <div class="sm:flex gap-x-4 gap-y-2 flex-wrap capitalize mt-2.5">
-                            <div class="flex items-center ">
-                                <input id="service1" name="roof-cleaning" value="true" type="checkbox"
-                                    class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
-                                <label for="service1" class="ml-2 min-w-0 flex-1 text-gray-600 ">Roof
-                                    Cleaning</label>
-                            </div>
+								<div class="flex items-center">
+									<input
+										id="service4"
+										name="gutter-cleaning"
+										value="true"
+										type="checkbox"
+										class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue"
+									/>
+									<label
+										for="service4"
+										class="ml-2 min-w-0 flex-1 text-gray-600"
+										>Gutter Cleaning</label
+									>
+								</div>
 
-                            <div class="flex items-center">
-                                <input id="service2" name="house-cleaning" value="true" type="checkbox"
-                                    class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
-                                <label for="service2" class="ml-2 min-w-0 flex-1 text-gray-600 ">House
-                                    Cleaning</label>
-                            </div>
+								<div class="flex items-center">
+									<input
+										id="service5"
+										name="solarpanel-cleaning"
+										value="true"
+										type="checkbox"
+										class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue"
+									/>
+									<label
+										for="service5"
+										class="ml-2 min-w-0 flex-1 text-gray-600"
+										>Solar Panel Cleaning</label
+									>
+								</div>
 
-                            <div class="flex items-center">
-                                <input id="service3" name="driveway cleaning" value="true" type="checkbox"
-                                    class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
-                                <label for="service3" class="ml-2 min-w-0 flex-1 text-gray-600 ">Driveway
-                                    Cleaning</label>
-                            </div>
+								<div class="flex items-center">
+									<input
+										id="service6"
+										name="other"
+										value="white"
+										type="checkbox"
+										class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue"
+									/>
+									<label
+										for="service6"
+										class="ml-2 min-w-0 flex-1 text-gray-600"
+										>Other</label
+									>
+								</div>
+							</div>
+						</div>
 
-                            <div class="flex items-center">
-                                <input id="service4" name="gutter-cleaning" value="true" type="checkbox"
-                                    class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
-                                <label for="service4" class="ml-2 min-w-0 flex-1 text-gray-600 ">Gutter
-                                    Cleaning</label>
-                            </div>
+						<div class="sm:col-span-2">
+							<label
+								for="description"
+								class="block text-sm font-semibold leading-6 text-gray-900"
+								>Job Description</label
+							>
+							<div class="mt-2.5">
+								<textarea
+									name="description"
+									id="description"
+									rows="4"
+									required
+									class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-kangablue sm:text-sm sm:leading-6"
+								></textarea>
+							</div>
+						</div>
 
-                            <div class="flex items-center">
-                                <input id="service5" name="solarpanel-cleaning" value="true" type="checkbox"
-                                    class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
-                                <label for="service5" class="ml-2 min-w-0 flex-1 text-gray-600 ">Solar
-                                    Panel
-                                    Cleaning</label>
-                            </div>
+						<div class="flex gap-x-4 sm:col-span-2">
+							<div class="flex h-6 items-center">
+								<!-- Enabled: "bg-kangablue", Not Enabled: "bg-gray-200" -->
+								<button
+									type="button"
+									id="privacy-toggle-btn"
+									class="bg-dark-gray flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-kangablue"
+									role="switch"
+									aria-checked="false"
+									aria-labelledby="switch-1-label"
+								>
+									<span class="sr-only">Agree to policies</span>
+									<!-- Enabled: "translate-x-3.5", Not Enabled: "translate-x-0" -->
+									<span
+										aria-hidden="true"
+										id="privacy-slider"
+										class="translate-x-0 h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"
+									></span>
+								</button>
+							</div>
+							<label
+								class="text-sm leading-6 text-gray-600"
+								id="switch-1-label"
+							>
+								By selecting this, you agree to our
+								<a
+									href="./privacy.html"
+									class="font-semibold text-gray-900 focus-visible:outline-kangablue underline"
+									>Privacy Policy</a
+								>.
+							</label>
+						</div>
+					</div>
 
-                            <div class="flex items-center">
-                                <input id="service6" name="other" value="white" type="checkbox"
-                                    class="h-4 w-4 rounded border-gray-300 text-kangablue focus:ring-kangablue">
-                                <label for="service6" class="ml-2 min-w-0 flex-1 text-gray-600 ">Other</label>
-                            </div>
+					<div class="mt-10">
+						<button
+							id="form-submit"
+							class="block w-full rounded-md bg-kangablue px-3.5 py-2.5 text-center text-sm uppercase font-semibold text-white hover:bg-sky-800 shadow-sm hover:bg-kangablue-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-kangablue-dark"
+						>
+							Submit
+						</button>
+					</div>
+				</form>
+			</div>
+		</main>
 
-                        </div>
+		<!-- FOOTER -->
 
-                    </div>
+		<footer class="bg-kangablue">
+			<div class="mx-auto max-w-7xl px-6 lg:px-8 text-white">
+				<div class="pt-16 pb-4">
+					<div class="grid grid-cols-1 gap-x-8 gap-y-8 lg:grid-cols-2">
+						<div class="max-w-sm">
+							<a href="./index.html" aria-label="home" class="">
+								<img
+									class="w-36"
+									src="./images/kangaL300.png"
+									alt="Kangas text logo"
+									loading="lazy"
+									height="40"
+									width="144"
+								/>
+							</a>
+							<p class="mt-4">
+								Servicing the whole North-west coast of Tasmania, from Stanley
+								to Hobart you can count on us to transform your space.
+							</p>
 
+							<div class="mt-4 flex items-center justify-start gap-2">
+								<span class="font-semibold">Follow Us:</span>
+								<a
+									href="https://www.facebook.com/profile.php?id=100091895966657"
+									aria-label="Kangas Facebook"
+									class="cursor-pointer hover:text-slate-400"
+								>
+									<svg
+										fill="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										class="w-8 h-8"
+										viewBox="0 0 24 24"
+									>
+										<path
+											d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+										></path>
+									</svg>
+								</a>
 
-                    <div class="sm:col-span-2">
-                        <label for="description" class="block text-sm font-semibold leading-6 text-gray-900">Job
-                            Description</label>
-                        <div class="mt-2.5">
-                            <textarea name="description" id="description" rows="4" required
-                                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-kangablue sm:text-sm sm:leading-6"></textarea>
-                        </div>
-                    </div>
+								<a
+									href="https://www.instagram.com/kangas_exterior_solutions/?hl=en"
+									aria-label="Kangas Instagram"
+									class="cursor-pointer hover:text-slate-400"
+								>
+									<svg
+										fill="none"
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										class="w-8 h-8"
+										viewBox="0 0 24 24"
+									>
+										<rect
+											width="20"
+											height="20"
+											x="2"
+											y="2"
+											rx="5"
+											ry="5"
+										></rect>
+										<path
+											d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+										></path>
+									</svg>
+								</a>
+							</div>
+						</div>
 
+						<nav class="max-w-l">
+							<ul
+								role="list"
+								class="grid grid-cols-2 gap-8 sm:grid-cols-3 text-white"
+							>
+								<li class="">
+									<div class="font-display text-sm font-bold tracking-wider">
+										Company
+									</div>
+									<ul role="list" class="font-display text-sm tracking-wider">
+										<li class="mt-4 hover:text-slate-400">
+											<a href="./about.html">About</a>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a href="./services.html">Services</a>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a href="./gallery.html"> Gallery</a>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a href="./contact.html"> Contact</a>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a href="./privacy.html"> Privacy policy</a>
+										</li>
+									</ul>
+								</li>
 
+								<li>
+									<div class="font-display text-sm font-bold tracking-wider">
+										Our Services
+									</div>
+									<ul role="list" class="font-display text-sm tracking-wider">
+										<li class="mt-4 hover:text-slate-400">
+											<a href="./services.html#all">Roof Cleaning</a>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a href="./services.html#all">House Cleaning</a>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a href="./services.html#all">Driveway Cleaning</a>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a href="./services.html#all">Gutter Cleaning</a>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a href="./services.html#all">Solar Panel Cleaning</a>
+										</li>
+									</ul>
+								</li>
 
+								<li>
+									<div class="font-display text-sm font-bold tracking-wider">
+										Contact Info
+									</div>
+									<ul role="list" class="font-display text-sm tracking-wider">
+										<li class="mt-4 hover:text-slate-400">
+											<a href="tel:0488352175">0488 352 175</a>
+										</li>
+										<li class="mt-2 hover:text-slate-400">
+											<a href="tel:0447286666">0447 286 666</a>
+										</li>
+										<li class="mt-2 break-words hover:text-slate-400">
+											<a href="mailto:kangas.exterior.solutions@gmail.com"
+												>solutions@kangas.au</a
+											>
+										</li>
+										<li class="mt-2">Latrobe, TAS.</li>
+										<li class="mt-2">ABN - 24 328 415 081</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
 
-                    <div class="flex gap-x-4 sm:col-span-2">
-                        <div class="flex h-6 items-center">
-                            <!-- Enabled: "bg-kangablue", Not Enabled: "bg-gray-200" -->
-                            <button type="button" id="privacy-toggle-btn"
-                                class="bg-dark-gray flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-kangablue"
-                                role="switch" aria-checked="false" aria-labelledby="switch-1-label">
-                                <span class="sr-only">Agree to policies</span>
-                                <!-- Enabled: "translate-x-3.5", Not Enabled: "translate-x-0" -->
-                                <span aria-hidden="true" id="privacy-slider"
-                                    class="translate-x-0 h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"></span>
-                            </button>
-                        </div>
-                        <label class="text-sm leading-6 text-gray-600" id="switch-1-label">
-                            By selecting this, you agree to our
-                            <a href="./privacy.html" class="font-semibold text-gray-900 focus-visible:outline-kangablue underline">Privacy Policy</a>.
-                        </label>
-                    </div>
+					<div
+						class="mb-4 mt-16 flex flex-wrap items-end justify-between gap-x-6 border-t border-white pt-6 text-sm"
+					>
+						<p>
+							Copyright © <span id="get-year"></span>
 
+							Kangas Exterior Solutions. All rights reserved.
+						</p>
 
-                </div>
-
-                <div class="mt-10">
-                    <button id="form-submit"
-                        class="block w-full rounded-md bg-kangablue px-3.5 py-2.5 text-center text-sm uppercase font-semibold text-white
-                        hover:bg-sky-800 shadow-sm hover:bg-kangablue-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-kangablue-dark">Submit</button>
-                </div>
-
-            </form>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-
-    <footer class="bg-kangablue  ">
-
-        <div class="mx-auto max-w-7xl px-6 lg:px-8  text-white">
-            <div class=" pt-16 pb-4">
-                <div class="grid grid-cols-1 gap-x-8 gap-y-8 lg:grid-cols-2">
-                    <div class="max-w-sm">
-                        <a href="./index.html" aria-label="home" class="">
-                            <img class="w-36" src="./images/kangaL300.png" alt="Kangas text logo" loading="lazy" height="40" width="144">
-                        </a>
-                        <p class="mt-4">Servicing the whole North-west coast of Tasmania, from Stanley to Hobart you can
-                            count on us to transform your space.
-                        </p>
-
-                        <div class="mt-4 flex items-center justify-start gap-2">
-                            <span class="font-semibold">Follow Us:</span>
-                            <a href="https://www.facebook.com/profile.php?id=100091895966657"
-                                aria-label="Kangas Facebook" class=" cursor-pointer hover:text-slate-400">
-                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    class="w-8 h-8" viewBox="0 0 24 24">
-                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                </svg>
-                            </a>
-
-                            <a href="https://www.instagram.com/kangas_exterior_solutions/?hl=en"
-                                aria-label="Kangas Instagram" class=" cursor-pointer hover:text-slate-400">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
-                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                                </svg>
-                            </a>
-
-
-
-                        </div>
-                    </div>
-
-                    <nav class="max-w-l">
-                        <ul role="list" class="grid grid-cols-2 gap-8 sm:grid-cols-3 text-white">
-                            <li class="">
-                                <div class="font-display text-sm font-bold tracking-wider ">Company
-                                </div>
-                                <ul role="list" class="font-display text-sm tracking-wider ">
-                                    <li class="mt-4 hover:text-slate-400"> <a href="./about.html">About</a></li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="./services.html">Services</a>
-                                    </li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="./gallery.html"> Gallery</a></li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="./contact.html"> Contact</a></li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="./privacy.html"> Privacy
-                                            policy</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <div class="font-display text-sm font-bold tracking-wider ">Our
-                                    Services
-                                </div>
-                                <ul role="list" class="font-display text-sm tracking-wider  ">
-                                    <li class="mt-4 hover:text-slate-400"><a
-                                            href="./services.html#all">Roof
-                                            Cleaning</a></li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="./services.html#all">House
-                                            Cleaning</a>
-                                    </li>
-                                    <li class="mt-2 hover:text-slate-400"><a
-                                            href="./services.html#all">Driveway
-                                            Cleaning</a>
-                                    </li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="./services.html#all">Gutter
-                                            Cleaning</a></li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="./services.html#all">Solar
-                                            Panel Cleaning</a>
-                                    </li>
-
-
-                                </ul>
-                            </li>
-
-                            <li>
-                                <div class="font-display text-sm font-bold tracking-wider ">Contact
-                                    Info
-                                </div>
-                                <ul role="list" class="font-display text-sm  tracking-wider  ">
-                                    <li class="mt-4 hover:text-slate-400"><a href="tel:0488352175">0488 352 175</a>
-                                    </li>
-                                    <li class="mt-2 hover:text-slate-400"><a href="tel:0447286666">0447 286 666</a>
-                                    </li>
-                                    <li class="mt-2 break-words hover:text-slate-400"><a
-                                            href="mailto:kangas.exterior.solutions@gmail.com">solutions@kangas.au</a>
-                                    </li>
-                                    <li class="mt-2">Latrobe, TAS.</li>
-                                    <li class="mt-2">ABN - 24 328 415 081</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-
-
-                </div>
-
-                <div class=" mb-4 mt-16  flex flex-wrap items-end justify-between gap-x-6 border-t
-                        border-white pt-6 text-sm">
-
-
-
-                    <p>Copyright © <span id="get-year"></span>
-
-                        Kangas Exterior Solutions.
-                        All rights reserved.
-                    </p>
-
-                    <p class="mt-0 text-sm text-center sm:text-left"> <a href="https://www.mjbramich.dev"
-                            class="hover:text-slate-400"> Created
-                            by mjbramich</a></p>
-                </div>
-
-            </div>
-        </div>
-    </footer>
-
-</body>
-
+						<p class="mt-0 text-sm text-center sm:text-left">
+							<a href="https://www.mjbramich.dev" class="hover:text-slate-400">
+								Created by mjbramich</a
+							>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
