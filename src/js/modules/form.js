@@ -14,8 +14,6 @@ const privacySlider = () => {
 	const privacyToggle = document.querySelector('#privacy-toggle-btn');
 	const privacySlider = document.querySelector('#privacy-slider');
 
-	console.log(privacyToggle);
-
 	let privacyEnabled = false;
 
 	privacyToggle.onclick = () => {
