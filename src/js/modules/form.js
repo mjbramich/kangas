@@ -18,7 +18,7 @@ const privacySlider = () => {
 
 	privacyToggle.onclick = () => {
 		privacyEnabled = !privacyEnabled;
-		console.log(privacyToggle);
+
 		if (privacyEnabled) {
 			privacyToggle.classList.add('bg-kangablue');
 			privacyToggle.classList.remove('bg-kangagray');
