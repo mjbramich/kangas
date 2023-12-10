@@ -107,6 +107,8 @@ const config = {
 			patterns: [
 				// Copy all files within src/images over to the dist folder
 				{ from: 'src/images', to: 'images' },
+				// Copy sitemap.xml to the root of the dist folder
+				{ from: 'sitemap.xml', to: './' },
 			],
 		}),
 	],
