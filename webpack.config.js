@@ -109,6 +109,8 @@ const config = {
 				{ from: 'src/images', to: 'images' },
 				// Copy sitemap.xml to the root of the dist folder
 				{ from: 'sitemap.xml', to: './' },
+				// // Copy robots.txt to the root of the dist folder
+				{ from: 'robots.txt', to: './' },
 			],
 		}),
 	],
